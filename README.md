@@ -1,2 +1,2 @@
 # Estudos
- Todos Exercicios e Praticas do meu estido de Programação
+ Todos Exercicios e Praticas do meu estudo de Programação
