@@ -7,13 +7,23 @@
   <title>Midias</title>
 </head>
 <body>
-  <h1>Imagens Dinamicas</h1>
+  <h1>Midias</h1>
+  <h2>Imagens Dinamicas</h2>
   <p>Tente abri esse site em dispositivos com telas de tamanho diferente, e veja as midias se adaptando as telas.</p>
   <picture>
     <source media="(max-width: 750px )" srcset="imagens/foto_p.png" type="image/png">
     <source media="(max-width: 1050px )" srcset="imagens/foto_m.png" type="image/png">
     <img src="Imagens/foto_g.png" alt="Foto Teste Grande">
   </picture>
+  <h2>Audio</h2>
+  <p>Inserindo arquivos de midia do tipo audio no seu site.</p>
+  <audio preload="metadata" controls autoplay>
+    <source src="Midias/Smokey's Lounge - TrackTribe.mp3" type="audio/mpeg"><!--Proximas linhjas opções para transformar formato de audio, e download caso navegador nao funcione-->
+    <source src="Midias/Smokey's Lounge - TrackTribe.mp3" type="audio/ogg">
+    <source src="Midias/Smokey's Lounge - TrackTribe.mp3" type="audio/wav">
+    <p>Seu Navegador é imcompativel com audio, baixe <a href="Midias/Smokey's Lounge - TrackTribe.mp3">aqui!</a></p>    
+  </audio>
+  
 
   
 </body>
