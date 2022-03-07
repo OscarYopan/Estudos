@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  /*
+Mediadas Absolutas:
+cm, mm, in(polegadas), pt, pc
+Medias Relativas:
+em, ex, rem, vw, vh, %
+16 px = 1em
+*/
+font-size: 1.2em;
+}
+h1, h2, h3 {
+  font-family: 'Times New Roman', Times, serif;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
