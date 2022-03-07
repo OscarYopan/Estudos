@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+h1{
+  color: brown;
+}
+h2{
+  color: blue;
+}
+h3{
+  color: green;
+}
+h4{
+  color: rgb(146, 92, 25);
+}
+p{
+  text-align: justify;
+}
