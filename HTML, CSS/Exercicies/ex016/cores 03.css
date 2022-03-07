@@ -9,10 +9,21 @@ body{
 }
 main{
   background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #d99c9ca1;
   width: 1000px; 
   padding: 10px;
   margin: auto;
 }
+h1{
+  color: #400101;
+  text-align: center;
+  text-shadow: 1px 1px 2px #2901016c;
+}
+h2{
+  color: #A66565;
+}
 p{
   text-align: justify;
+  font-size: 17px;
 }
