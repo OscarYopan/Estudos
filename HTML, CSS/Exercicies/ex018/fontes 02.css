@@ -1,0 +1,17 @@
+@charset
+
+@font-face{
+  font-family: 'terror';
+  src: url('../fonts/Melted_Monster.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  font-family: 'terror', 'Times New Roman', Times, serif;
+  font-size: 3em;
+  font-weight: normal;
+  font-style: normal;    
+}
