@@ -26,3 +26,23 @@ h2{
 p{
   text-align: justify;
 }
+a{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  color: #5D89C7;
+  text-decoration: underline;  
+}
+a:visited{
+  color: #5E6A7A;
+}
+img{
+  width: 150px;]
+  height: 150px;  
+}
+image:hover{
+  background-color: #C0D9FA;
+  height: 200px;
+  width: 200px;
+}
