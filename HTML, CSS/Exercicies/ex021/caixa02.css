@@ -10,6 +10,8 @@ header{
   background-color: #ffffff;
   padding: 10px;
   margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
 }
 nav{
   background-color: #006A95;
@@ -28,6 +30,8 @@ main{
   background-color: #ffffff;
   margin: auto;
   padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
 }
 article{
   background-color: #58ADA0;
@@ -43,6 +47,8 @@ footer{
   margin: 10px auto;
   padding: 10px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.315);
 }
 footer > p{
   margin: 0px;
