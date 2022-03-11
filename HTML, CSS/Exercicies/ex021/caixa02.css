@@ -13,12 +13,13 @@ header{
 }
 nav{
   background-color: #006A95;
-  padding: 5px
+  padding: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);  
 }
 nav > a{
   color: white;
   text-decoration: none;
-  padding: 0px 15px; 
+  padding: 0px 15px;   
 }
 nav > a:hover{
   color: #FF1400;
@@ -40,9 +41,16 @@ footer{
   background-color: #006A95;
   color: #ffffff; 
   margin: 10px auto;
-  padding: 5px;
+  padding: 10px;
+  text-align: center;
+}
+footer > p{
+  margin: 0px;
   text-align: center;
 }
 h1{
   color: #FF5C00;
+}
+p{
+  text-align: justify;
 }
