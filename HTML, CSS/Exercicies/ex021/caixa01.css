@@ -4,23 +4,46 @@ h1{
   background-color: aquamarine;
   width: 200px;
   height: 200px;
+
   border-width: 10px;
   border-style: solid;
   border-color: burlywood;
+  border: 10px solid blueviolet; /* Short Hand border configuration */
+
   padding-top: 5px;
   padding-right: 5px;
   padding-bottom: 5px;
   padding-left: 5px;
+
+  padding: 10px; /* Short Hand padding configuration */
+
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 35px;
+  margin-left: 10px;
+
+  margin:10px auto 45px auto; /*short hand margin configuration*/
+
+  outline-width: 5px;
+  outline-style: dashed;
+  outline-color: greenyellow;
+  outline:  10px dashed orangered; /* short hand outline configuration */
 }
 a{
   background-color: antiquewhite;
   width: 25px;
   height: 20px;
+
   border-width: 5px;
   border-color: brown;
   border-style: solid;
+
+  border: 5px brown solid; /* short hand border configuration */
+
   padding-top: 2px;
   padding-right: 2px;
   padding-bottom: 4px;
   padding-left: 2px;
+
+  padding: 2px 2px 4px 2px; /* short hand padding configuration */
 }
