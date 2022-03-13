@@ -27,58 +27,82 @@ body{
   font-family: var(--fontpadrao);
 }
 header{
-  background-color: #63AEBF;
+  background-image: linear-gradient(135deg, var(--cor1), var(--cor4));
   margin: 5px auto;
   text-align: center;
   border-radius: 10px;
-  height: 150px;
+  min-height: 150px;
+  padding-top: 40px;
 }
 header > h1{
   font-family: var(--fontdestaque);
   font-size: 4em;
-    color: var(--cor3);
+  color: var(--cor3);
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.87);
 }
 header > p{
+  font-family: var(--fontpadrao);
   text-align: center;
   color: var(--cor3);
-  font-weight: bold;
-  margin: 0px;
+  font-size: 1.5em;
+  padding: auto 10px;
+  margin: auto;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.87);
 }
 nav{
   background-color: #A66C4B;
-  padding: 10px;
-  text-align: left;
-  border-radius: 10px
+  padding: 10px;  
+  border-radius: 10px;  
+  font-weight: bold;
 }
-nav > a{
+nav a{
   text-decoration: none;
   padding: 0px 15px;
   font-size: 20px;
   color: #ffffff;  
 }
-a:hover{
+nav a:hover{
   color: #9AD9C7;
 }
 main{
   background-color: #ffffff;
-  border-radius: 5px
+  border-radius: 5px;
+  max-width: 1000px;
+  min-width: 300px;
+  margin: 10px auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.623);
 }
-main > h1{
+main h1{
   font-family: var(--fontandroid);
+}
+main h2{
+  font-family: var(--fontandroid);
+}
+main img{
+  width: 100%;
+}
+main img.pequena{
+  width: 80%;
+  display: block;
+  margin: auto;  
 }
 footer{
   background-color: #592D14;
   padding: 7px;
   border-radius: 10px    
 }
-footer > p{
+footer p{
   text-align: center;
   color: white;  
-}  
+}
+footer a{
+  color: white
+}
 h2{
   font-family: 'fontes/IDroid.otf';
 }
 p{
   text-align: justify;
   padding: 3px;
-}
