@@ -18,6 +18,10 @@
   --fontdestaque: 'Bebas Neue', cursive;
   --fontandroid: 'android', cursive;
 }
+*{
+  margin: 0px;
+  padding: 0px;
+}
 body{
   background-color: var(--cor2);
   font-family: var(--fontpadrao);
@@ -31,9 +35,14 @@ header{
 }
 header > h1{
   font-family: var(--fontdestaque);
+  font-size: 4em;
+    color: var(--cor3);
 }
 header > p{
-  text-align: center;  
+  text-align: center;
+  color: var(--cor3);
+  font-weight: bold;
+  margin: 0px;
 }
 nav{
   background-color: #A66C4B;
@@ -45,8 +54,7 @@ nav > a{
   text-decoration: none;
   padding: 0px 15px;
   font-size: 20px;
-  color: #ffffff;
-  margin: 3px;
+  color: #ffffff;  
 }
 a:hover{
   color: #9AD9C7;
