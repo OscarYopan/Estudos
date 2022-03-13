@@ -11,13 +11,14 @@ header{
   margin: 5px auto;
   text-align: center;
   border-radius: 10px;
+  height: 150px;
 }
 header > p{
   text-align: center;  
 }
 nav{
   background-color: #A66C4B;
-  padding: 7px;
+  padding: 10px;
   text-align: left;
   border-radius: 10px
 }
@@ -33,7 +34,7 @@ a:hover{
 }
 main{
   background-color: #ffffff;
-  border-radius: 10px
+  border-radius: 5px
 }
 main > img{
   
@@ -45,9 +46,10 @@ footer{
 }
 footer > p{
   text-align: center;
+  color: white;  
 }
 h1{
-  font-size: 2.5em;]
+  font-size: 2.5em;
 }
 h2{
   font-family: 'fontes/IDroid.otf';
