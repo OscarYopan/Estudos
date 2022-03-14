@@ -26,8 +26,11 @@ body{
   background-color: var(--cor2);
   font-family: var(--fontpadrao);
 }
+a.externo::after{
+  content: '\00A0\1f517';
+}
 header{
-  background-image: linear-gradient(135deg, var(--cor1), var(--cor4));
+  background-image: linear-gradient(135deg, var(--cor1), var(--cor5));
   margin: 5px auto;
   text-align: center;
   border-radius: 10px;
@@ -51,7 +54,7 @@ header > p{
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.87);
 }
 nav{
-  background-color: #A66C4B;
+  background-color: var(--cor4);
   padding: 10px;  
   border-radius: 10px;  
   font-weight: bold;
@@ -121,8 +124,9 @@ aside ul{
 }
 aside h3{
   background-color: var(--cor2);
-  padding: 5px;
-  margin: -10px -10px 0px -10px;
+  padding: 10px;
+  margin: -10px -13px 0px -10px;
+  border-radius: 10px 10px 0px 0px;  
 }
 footer{
   background-color: #592D14;
@@ -131,9 +135,10 @@ footer{
 }
 footer p{
   text-align: center;
-  color: white;  
+  color: white;   
 }
 footer a{
+  text-decoration: none;
   color: white  
 }
 footer a:hover{
