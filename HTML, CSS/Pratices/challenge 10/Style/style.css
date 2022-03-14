@@ -112,6 +112,17 @@ aside{
   background-color: var(--cor1);
   border-radius: 10px;
   padding: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.445);
+}
+aside ul{
+  list-style-position: inside;
+  columns: 2;
+  list-style-type: '\2714\00A0\00a0';
+}
+aside h3{
+  background-color: var(--cor2);
+  padding: 5px;
+  margin: -10px -10px 0px -10px;
 }
 footer{
   background-color: #592D14;
