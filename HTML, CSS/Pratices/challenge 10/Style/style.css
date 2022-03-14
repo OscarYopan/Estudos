@@ -108,6 +108,11 @@ main img.pequena{
   display: block;
   margin: auto;  
 }
+aside{
+  background-color: var(--cor1);
+  border-radius: 10px;
+  padding: 10px;
+}
 footer{
   background-color: #592D14;
   padding: 7px;
@@ -118,7 +123,10 @@ footer p{
   color: white;  
 }
 footer a{
-  color: white
+  color: white  
+}
+footer a:hover{
+  color: var(--cor1);
 }
 h2{
   font-family: 'fontes/IDroid.otf';
