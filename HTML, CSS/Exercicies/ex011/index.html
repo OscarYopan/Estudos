@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Midias</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Midias</h1>
@@ -17,11 +18,13 @@
   </picture>
   <h2>Audio</h2>
   <p>Inserindo arquivos de midia do tipo audio no seu site.</p>
-  <audio preload="metadata" controls autoplay>
-    <source src="Midias/Smokey's Lounge - TrackTribe.mp3" type="audio/mpeg"><!--Proximas linhjas opções para transformar formato de audio, e download caso navegador nao funcione-->
-    <source src="Midias/Smokey's Lounge - TrackTribe.mp3" type="audio/ogg">
-    <source src="Midias/Smokey's Lounge - TrackTribe.mp3" type="audio/wav">
-    <p>Seu Navegador é imcompativel com audio, baixe <a href="Midias/Smokey's Lounge - TrackTribe.mp3">aqui!</a></p>    
-  </audio>  
+  <div class="audio">
+    <audio preload="metadata" controls autoplay>
+      <source src="Midias/Smokey's Lounge - TrackTribe.mp3" type="audio/mpeg"><!--Proximas linhjas opções para transformar formato de audio, e download caso navegador nao funcione-->
+      <source src="Midias/Smokey's Lounge - TrackTribe.mp3" type="audio/ogg">
+      <source src="Midias/Smokey's Lounge - TrackTribe.mp3" type="audio/wav">
+      <p>Seu Navegador é imcompativel com audio, baixe <a href="Midias/Smokey's Lounge - TrackTribe.mp3">aqui!</a></p>
+    </audio>
+  </div> 
 </body>
 </html>
