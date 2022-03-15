@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aquamarine;
+}
+header{
+  background-color: darkcyan;
+  margin: 5px auto;
+  padding: 5px;
+}
+main{
+  background-color: white;
+  margin: 5px auto;
+  padding: 5px;
+}
+abbr{
+  text-decoration: none;
+}
+abbr:hover{
+  color: darkcyan;
+}
