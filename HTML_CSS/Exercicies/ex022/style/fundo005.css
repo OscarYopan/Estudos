@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+body{
+  height: 98vh;
+  width: 100vh;
+  background-image: url('../imagens/wallpaper003.jpg');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
