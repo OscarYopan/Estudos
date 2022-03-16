@@ -9,7 +9,7 @@ body{
 header{
   background-color: blanchedalmond;
   background-image: url('Imagens/Banner.png');
-  background-size: 1025px;
+  background-size: cover;
   background-repeat: no-repeat;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.438);
   border-radius: 10px;
@@ -20,7 +20,8 @@ header{
 nav{
   background-color: darkcyan;
   padding: 10px;
-  margin: auto auto 20px auto;  
+  margin: auto auto 20px auto;
+  border-radius: 10px 10px 0px 0px;
 }
 nav a{
   color: white;
