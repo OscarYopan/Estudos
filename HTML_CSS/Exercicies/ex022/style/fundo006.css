@@ -2,15 +2,22 @@
 
 body{
   height: 100vh;
-  background-color: darkcyan;
+  /*background-color: darkcyan;
   background-image: url('../imagens/wallpaper002.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;*/
+
+  /* Abaixo o Shorthand de BackGround*/
+  /* color > image > position > repeat > [size] > attachment*/
+
+  background: darkcyan url(../imagens/wallpaper002.jpg) center center no-repeat fixed;
+  background-size: cover;
 }
 main{
   background-color: white;
-  width: 400px;
+  max-width: 400px;
   padding: 10px;
   margin: auto;
   border: 2px solid palevioletred;
