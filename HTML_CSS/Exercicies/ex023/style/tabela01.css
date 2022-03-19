@@ -17,3 +17,12 @@ tr.impar{
 td.destaque{
   background-color: brown;
 }
+#tab02{
+  width: 400px;
+  border-collapse: collapse;
+  height: 400px;
+}
+#tab02 td{
+  text-align: center;
+  vertical-align: top;
+}
