@@ -12,20 +12,21 @@
   <!--
     Anatomia Para Tabelas Grandes
 	  table
+      caption
 		  thead
 			  tr, td, th
 		  tbody
 			  tr, td, th
 		  tfoot
 			  tr, td, th
-  -->
-  <h2>10 Estados Mais Populosos do Brasil</h2>
+  -->  
   <table>
+    <caption>10 Estados Mais Populosos do Brasil</caption>
     <thead>
       <tr>
-        <th>Posição</th>
-        <th>Estado</th>
-        <th>População</th>
+        <th scope="row">Posição</th>
+        <th scope="row">Estado</th>
+        <th class="num">População</th>
       </tr>
     </thead>
     <tbody>
@@ -82,7 +83,7 @@
     </tbody>
     <tfoot>
       <th>-</th>
-      <th>total População</th>
+      <th scope="row">total População</th>
       <td class="num"><p><strong>158 603 772</strong></p></td>
     </tfoot>
   </table>
