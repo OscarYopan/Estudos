@@ -1,10 +1,40 @@
 @charset "UTF-8";
 
 body{
-  font-family: Arial, Helvetica, sans-serif  
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aquamarine;
 }
 div{
   border: 2px solid black;
-  margin: 10px auto;
   width: 150px;
+}
+h1{
+  text-align: center;
+}
+.botao{
+  position: fixed;
+  padding: 15px;
+  text-align: center;
+  border-radius: 25px;
+  font-weight: bolder;
+  color: white;
+  margin: auto;
+}
+#botao1{
+  left: 480px;
+  top: 100px;
+  background-color: brown;
+}
+#botao2{
+  left: 680px;
+  top: 100px;
+  background-color: darkcyan;
+}
+#botao3{
+  left: 880px;
+  top: 100px;
+  background-color: darkolivegreen;
+}
+a{
+  text-decoration: none;
 }
