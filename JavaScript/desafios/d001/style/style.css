@@ -7,28 +7,16 @@ body{
 h1{
   text-align: center;
 }
-div{
-  display: inline-block;
-  border: 2px solid black;
-  width: 200px;
-  position: sticky;
-}
-.botao{
-  padding: 15px;
-  text-align: center;
-  border-radius: 25px;
-  font-weight: bolder;
-  color: white; 
-}
-#botao1{
-  background-color: brown;
-  }
-#botao2{
+button{
   background-color: darkcyan;
+  color: white;
+  padding: 15px;
+  margin: auto;
+  font-weight: bolder;
 }
-#botao3{
-  background-color: darkolivegreen;
-}
-a{
+button a{
   text-decoration: none;
+}
+button a:hover{
+  color: aquamarine;
 }
