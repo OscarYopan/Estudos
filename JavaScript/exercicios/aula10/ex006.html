@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos DOM</title>
+  <link rel="stylesheet" href="style/ex006.css">
+</head>
+<body>
+  <div id="divina">
+    Interaja
+  </div>
+
+  <script>
+    var a = document.getElementById('divina')
+    a.addEventListener('click', clicar)
+    a.addEventListener('mouseenter', entra)
+    a.addEventListener('mouseout', sai)
+    function clicar(){
+      a.innerText = 'Tudo Bem?'
+    }
+    function entra(){
+      a.innerHTML = 'Oi'
+      a.style.backgroundColor = '#80ffd4'
+    }
+    function sai(){
+      a.innerHTML = 'Interaja'
+      a.style.backgroundColor = '#037951'
+    }
+  </script>
+</body>
+</html>
