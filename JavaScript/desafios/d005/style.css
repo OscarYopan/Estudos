@@ -1,2 +1,26 @@
 @charset "UTF-8";
 
+body{
+  background-color: khaki;
+}
+header{
+  background-color: salmon;
+  width: 60vh;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+main{
+  background-color: sandybrown;
+  width: 60vh;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+input{
+  padding: 10px;
+  font-weight: bolder;
+  border-radius: 5px;
+}
