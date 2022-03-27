@@ -1,2 +1,16 @@
 @charset "UTF-8";
 
+body{
+  background-color: darkcyan;
+  text-align: center; 
+}
+main{
+  background-color: khaki;
+  width: 60vh;
+  padding: 15px;
+  margin: 250px auto;
+}
+input{
+  padding: 15px;
+  border-radius: 10px;
+}
