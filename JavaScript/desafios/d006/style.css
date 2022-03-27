@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body{
+  background-color: peachpuff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+header{
+  background-color: darkcyan;
+  width: 60vh;
+  padding: 15px;
+  margin: 20px auto;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.74);
+}
+main{
+  background-color: lightgreen;
+  width: 60vh;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.767);
+}
+input{
+  padding: 10px;
+  border-radius: 10px;
+}
