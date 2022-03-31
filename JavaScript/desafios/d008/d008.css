@@ -15,7 +15,7 @@ main{
   min-width: 45vh;
   max-width: 60vh;
   margin: 30px auto 10px auto;
-  padding: 10px 0px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.479);
 }
@@ -33,6 +33,11 @@ footer p{
 }
 p{
   font-weight: bold;
+}
+div{
+  text-align: justify;
+  border: 2px solid darkcyan;
+  border-radius: 10px;
 }
 a{
   text-decoration: none;
