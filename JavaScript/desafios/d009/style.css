@@ -12,7 +12,34 @@ main{
   width: 500px;
   padding: 10px 0px;
   margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.427);
 }
-main#botao{
-  margin: 0px auto;
+div{
+  text-align: center;
+}
+div#botao input{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: darkcyan;
+  color: white;
+  font-weight: bolder;
+}
+input{
+  background-color: lightgray;
+}
+footer{
+  text-align: center;
+  color: white;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+  color: khaki;
+}
+p{
+  padding: 5px;
 }
