@@ -25,6 +25,9 @@ div#botao input{
   color: white;
   font-weight: bolder;
 }
+div#esquerda p{
+  text-align: center;
+}
 input{
   background-color: lightgray;
 }
