@@ -8,6 +8,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>Calcule o Reajuste Salarial</h1>
+  </header>
+  <main>
+    <p>Nome do Funcionário: <input type="textnome"></p>
+    <p>Salario Atual: <input type="number" name="txtnum" id="salario"></p>
+    <p>Porcentagem de Aumento (%): <input type="number" name="txtnum" id="aumento"></p>
+    <input type="button" value="Calcular" onclick="calculo()" id="botao">
+    <div id="res">
+      <p>Clique no Botão acima para iniciar</p>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; Criado po <a href="https://github.com/OscarYopan">Oscar Yopan</a></p>
+  </footer>
   
 </body>
 <script src="script.js"></script>
