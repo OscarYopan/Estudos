@@ -29,12 +29,18 @@ div#botao input{
   border-radius: 5px;
   font-weight: bolder;
 }
+div#saida{
+  padding: 10px;
+}
 footer{
   text-align: center;
   color: white;
 }
 input{
   background-color: lightpink;
+}
+h2{
+  text-align: center;
 }
 p{
   padding: 0px 10px;
