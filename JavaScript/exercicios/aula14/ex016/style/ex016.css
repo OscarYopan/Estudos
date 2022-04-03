@@ -13,12 +13,37 @@ main{
   padding: 5px;
   margin: 15px auto;
   width: 500px;
+  border-radius: 10px;
 }
 div{
-  border: 2px solid darkolivegreen;
-  margin: 5px auto;
+  border: 3px solid darkolivegreen;
+  margin: 10px;
+  border-radius: 5px;
+}
+div#botao{
+  border: 0px;
+  text-align: center; 
+}
+div#botao input{
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bolder;
 }
 footer{
   text-align: center;
   color: white;
+}
+input{
+  background-color: lightpink;
+}
+p{
+  padding: 0px 10px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: pink;
+  text-decoration: underline;
 }
