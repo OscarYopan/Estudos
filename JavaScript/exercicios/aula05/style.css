@@ -19,6 +19,9 @@ div{
   border-radius: 15px;
   text-align: center;  
 }
+h1{
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.409);
+}
 p{
   font-weight: bolder;
 }
