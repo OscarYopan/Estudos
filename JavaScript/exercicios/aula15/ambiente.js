@@ -6,3 +6,5 @@ console.log(`Nosso vetor é: ${num}`)
 console.log(`O comprimento do vetor é: ${num.length}`/*comando mede o copmprimento de um vetor*/)
 //console.log(num.sort()/*Coloca os atributos de um vetor em ordem*/)
 console.log(`O sexto elemento é: ${num[6]}`)
+num.indexOf(4)//Busca em qual posição estpa o valor solicitado
+console.log(`O numero '4' está na posição ${num.indexOf(4)}`)
