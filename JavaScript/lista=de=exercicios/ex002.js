@@ -1,0 +1,1 @@
+console.log(`Olá ${nome}, é uma prazer te conhecer!`)
