@@ -6,6 +6,6 @@ function calcular(){
   var a = Number(aa.value)
   var b = Number(bb.value)
   var c = Number(cc.value)
-  delta = a + b + c
-  res.innerHTML = `<p>${delta}</p>`
+  var delta = (a + b + c)
+  res.innerHTML = `<p>O resultado é: ${delta}</p>`
 }
