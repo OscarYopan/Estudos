@@ -1,2 +1,56 @@
 @charset "UTF-8";
 
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: darkseagreen;
+}
+header{
+  background-color: chocolate;
+  max-width: 500px;
+  margin: 30px auto 10px auto;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+main{
+  background-color: white;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+div{
+  border: 3px solid darkseagreen;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+div#bot{
+  text-align: center;
+  padding: 5px;
+}
+div input{
+  background-color: lightgray;
+}
+div input#botao{
+  padding: 8px;
+  margin: 0px auto;
+  border-radius: 5px;
+}
+footer{
+  background-color: chocolate;
+  max-width: 510px;
+  padding: 5px;
+  margin: 10px auto;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  text-decoration: underline;
+  color: chocolate;
+}
