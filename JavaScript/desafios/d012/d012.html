@@ -4,11 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Preço Mudou</title>
   <link rel="stylesheet" href="style/d012.css">
 </head>
 <body>
-  
+  <header><h1>O preço Mudou</h1></header>
+  <main>
+    <section>
+      <h2>Informe os dados abaixo</h2>
+      <p>Preço anterior do produto:&nbsp&nbsp<input type="preco" name="num" id="precant"></p>
+      <p>Preço Atual do Produto:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="number" name="preco" id="precatu"></p>
+      <div id="botao"><input type="button" value="Verificar" onclick="verificar()"></div>
+    </section>  
+      <section>
+        <div id="res">
+          <p><strong>Analisando os valores informados</strong></p>
+        </div>
+      </section>
+  </main>
+  <footer>
+    <p>&copy; Criado por <a href="https://github.com/OscarYopan" target="_blank">Oscar Yopan</a></p>
+  </footer>  
 </body>
 <script src="script/d012.js"></script>
 </html>
