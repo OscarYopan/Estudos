@@ -7,16 +7,18 @@ function media(){
   let n2 = Number(nota2.value).toFixed(1)
   let res = document.getElementById('res')
   let media = ((n1/2)+(n2/2)).toFixed(1)
-  if (media<3 && media>=0){
-    res.innerHTML=`<p><strong>Aluno ${name} aproveitamento:</strong></p>
+  let str = document.getElementsByTagName('strong')
+  if(media<3 && media>=0){
+    res.innerHTML=`<h3>Aluno ${name} aproveitamento:</h3>
     <p>Com as notas ${n1} e ${n2} sua média foi: ${media}.</p>
     <p>O Aluno está <strong>REPROVADO!</strong></p>`
+    str.style.color='red';
   }else if(media>= 3 && media<6){
-    res.innerHTML=`<p><strong>Aluno ${name} aproveitamento:</strong></p>
+    res.innerHTML=`<h3>Aluno ${name} aproveitamento</h3>:
     <p>Com as notas ${n1} e ${n2} sua média foi: ${media}.</p>
     <p>O Aluno está de <strong>RECUPERAÇÂO!</strong></p>`
   }else if(media>=6 && media<=10){
-    res.innerHTML=`<p><strong>Aluno ${name} aproveitamento:</strong></p>
+    res.innerHTML=`<h3>Aluno ${name} aproveitamento:</h3>
     <p>Com as notas ${n1} e ${n2} sua média foi: ${media}.</p>
     <p>O Aluno está <strong>APROVADO!</strong></p>`    
   }else if(media>10){
