@@ -31,6 +31,12 @@ div input{
 #botaof{
   text-align: center;
 }
+#lista{
+  width: 300px;
+}
+#nlista{
+  width: 300px;
+}
 footer{
   text-align: center;
   color: white;
