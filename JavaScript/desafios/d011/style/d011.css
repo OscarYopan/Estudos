@@ -37,11 +37,6 @@ div p{
   padding: 5px;
 }
 footer{
-  background-color: chocolate;
-  max-width: 510px;
-  padding: 5px;
-  margin: 10px auto;
-  border-radius: 10px;
   text-align: center;
   color: white;
 }
