@@ -1,1 +1,2 @@
-console.log(`Olá ${nome}, é uma prazer te conhecer!`)
+let nome = prompt('Qual é o seu nome?')
+console.log(`Olá ${nome}, é um prazer conhece-lo(a)`)
