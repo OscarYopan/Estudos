@@ -28,6 +28,9 @@ div input{
   border-radius: 10px;
   font-weight: bolder;
 }
+select#flista{
+  width: 300px;
+}
 #botaof{
   text-align: center;
 }
