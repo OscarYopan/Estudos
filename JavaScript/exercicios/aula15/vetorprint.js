@@ -1,7 +1,5 @@
 let valores = [8,5,9,7,6,2,4]
-
 //console.log(valores)
-
 /*
 console.log(valores[0])
 console.log(valores[1])

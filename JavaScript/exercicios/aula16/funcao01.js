@@ -5,8 +5,6 @@ function parouimpar(n){
     return 'Impar'
   }
 }
-
 //let res = parouimpar(12)
 //console.log(res)
-
 console.log(parouimpar(55))
