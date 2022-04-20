@@ -12,21 +12,15 @@
   --color4: #025E73;
   --color5: #F8AB24;  
 }
+body{
+  font: 400 1em 'DM Sans', sans-serif;
+}
 img{
   width: 100%;
   height: auto;
 }
 a{
   text-decoration: none;
-}
-nav{
-  height: 4.5rem;
-  display: flex; /*coloca os itens lado a lado*/
-  justify-content: space-between; /*separa os conteudos para o estremo de cada lado*/
-  align-items: center;
-}
-#header{
-  border-bottom: 1px solid var(--color1);
 }
 .logo{
   font: 700 1.875rem 'Poppins', sans-serif;
@@ -35,27 +29,46 @@ nav{
 .logo span{
   color: var(--color3);
 }
-body{
-  font: 400 1em 'DM Sans', sans-serif;
-}
 h1{
   font: 700 1.875rem 'Poppins', sans-serif;
   color: var(--color4);
 }
-.container{
+#header{
+  border-bottom: 1px solid var(--color1);
+  margin-bottom: 2rem;
+}
+nav{
+  height: 4.5rem;
+  display: flex; /*coloca os itens lado a lado*/
+  align-items: center;
+  justify-content: space-between; /*separa conteudos p/ o estremo de cada lado*/
   width: 100%;
+}
+/*---------------Layout----------*/
+.container{
   margin: 0 1.5rem;
 }
 .grid{
   display: grid;
   gap: 2rem;
 }
-section{
-  padding: 5rem 0;
+.section{
+  padding: 9.5rem 0;
 }
 /*---------------Button-----------*/
-button{
-
+.button{
+  background-color: var(--color1);
+  color: white;
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.5rem;
+  font: 500 1rem 'DM Sans', sans-serif;
+  transition: background 0.5s;
+}
+.button:hover{
+ background-color: var(--color4);
 }
 /*----------------home------------*/
 #home {
@@ -67,7 +80,7 @@ button{
 #home .image{
   position: relative;
 }
-#home .image ::before{
+#home .image::before{
   content: '';
   height: 100%;
   width: 100%;
@@ -76,12 +89,12 @@ button{
   top: -16.8%;
   left: 16.8%;
   z-index: 0;
-  border-radius: 0,25rem;
+  border-radius: 1rem;
 }
 #home .image img{
   position: relative;
   right: 2.93rem;
-  border-radius: 0.25rem;
+  border-radius: 1rem;
 }
 #home .text{
   margin: 0 1.5rem;
