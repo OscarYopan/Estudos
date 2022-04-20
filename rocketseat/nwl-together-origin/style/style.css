@@ -1,9 +1,32 @@
 @charset "UTF-8";
 
-root{
+:root{
   --color1: #D99A9A;
   --color2: #F2F5E4;
   --color3: #2FCFE0;
   --color4: #025E73;
   --color5: #F8AB24;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+#header{
+  height: 4.5rem;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+body{
+
+}
+.container{
+  width: 100%;
+  margin: 0 1.5rem;
 }
