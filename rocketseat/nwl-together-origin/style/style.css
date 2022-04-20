@@ -53,7 +53,14 @@ h1{
 section{
   padding: 5rem 0;
 }
+/*---------------Button-----------*/
+button{
+
+}
 /*----------------home------------*/
+#home {
+  overflow: hidden;
+}
 #home .container{
   margin: 0;
 }
@@ -74,8 +81,15 @@ section{
 #home .image img{
   position: relative;
   right: 2.93rem;
-  border-radius: 0,25rem;
+  border-radius: 0.25rem;
 }
 #home .text{
   margin: 0 1.5rem;
+  text-align: center;
+}
+#home .text h1{
+  margin-bottom: 1rem;
+}
+#home .text p{
+  margin-top: 2rem;
 }
