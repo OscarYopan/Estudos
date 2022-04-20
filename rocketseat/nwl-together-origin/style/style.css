@@ -15,6 +15,10 @@
 body{
   font: 400 1em 'DM Sans', sans-serif;
 }
+.title{
+  font: 700 1.875rem 'Poppins', sans-serif;
+  color: var(--color4);
+}
 img{
   width: 100%;
   height: auto;
@@ -22,16 +26,16 @@ img{
 a{
   text-decoration: none;
 }
+main{
+  margin-top: 4.5rem;
+}
+/*---------------Logo-----------------*/
 .logo{
   font: 700 1.875rem 'Poppins', sans-serif;
   color: black;
 }
 .logo span{
   color: var(--color3);
-}
-h1{
-  font: 700 1.875rem 'Poppins', sans-serif;
-  color: var(--color4);
 }
 #header{
   border-bottom: 1px solid var(--color1);
@@ -43,16 +47,6 @@ h1{
   left: 0;
   z-index: 100;
   background-color: white;
-}
-nav{
-  height: 4.5rem;
-  display: flex; /*coloca os itens lado a lado*/
-  align-items: center;
-  justify-content: space-between; /*separa conteudos p/ o estremo de cada lado*/
-  width: 100%;
-}
-main{
-  margin-top: 4.5rem;
 }
 /*---------------Layout----------*/
 .container{
@@ -83,6 +77,36 @@ main{
 .divider-1{
   height: 1px;
   background: linear-gradient(270deg, #2FCFE0,  #025E73 );
+}
+/*---------------Navegation--------*/
+nav{
+  height: 4.5rem;
+  display: flex; /*coloca os itens lado a lado*/
+  align-items: center;
+  justify-content: space-between; /*separa conteudos p/ o estremo de cada lado*/
+  width: 100%;
+}
+nav ul.grid{
+  gap: 4rem;
+}
+nav ul li{
+  text-align: center;
+}
+nav .menu{
+  opacity: 0;
+  visibility: hidden;
+}
+nav.show .menu{
+  opacity: 1;
+  visibility: visible;
+
+  background: white;
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 /*----------------home------------*/
 #home {
