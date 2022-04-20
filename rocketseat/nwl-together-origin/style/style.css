@@ -19,15 +19,21 @@ img{
 a{
   text-decoration: none;
 }
-#header{
-  height: 4.5rem;
-}
 nav{
+  height: 4.5rem;
   display: flex; /*coloca os itens lado a lado*/
   justify-content: space-between; /*separa os conteudos para o estremo de cada lado*/
+  align-items: center;
+}
+#header{
+  border-bottom: 1px solid var(--color1);
 }
 .logo{
-
+  font: 700 1.875rem 'Poppins', sans-serif;
+  color: black;
+}
+.logo span{
+  color: var(--color3);
 }
 body{
   font: 400 1em 'DM Sans', sans-serif;
@@ -39,4 +45,7 @@ h1{
 .container{
   width: 100%;
   margin: 0 1.5rem;
+}
+section{
+  padding: 5rem 0rem;
 }
