@@ -51,8 +51,9 @@ h1{
   gap: 2rem;
 }
 section{
-  padding: 5rem 0rem;
+  padding: 5rem 0;
 }
+/*----------------home------------*/
 #home .container{
   margin: 0;
 }
@@ -63,14 +64,17 @@ section{
   content: '';
   height: 100%;
   width: 100%;
-  background-color: red;
+  background: var(--color3);
   position: absolute;
   top: -16.8%;
+  left: 16.8%;
   z-index: 0;
+  border-radius: 0,25rem;
 }
 #home .image img{
   position: relative;
   right: 2.93rem;
+  border-radius: 0,25rem;
 }
 #home .text{
   margin: 0 1.5rem;
