@@ -36,6 +36,13 @@ h1{
 #header{
   border-bottom: 1px solid var(--color1);
   margin-bottom: 2rem;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: white;
 }
 nav{
   height: 4.5rem;
@@ -43,6 +50,9 @@ nav{
   align-items: center;
   justify-content: space-between; /*separa conteudos p/ o estremo de cada lado*/
   width: 100%;
+}
+main{
+  margin-top: 4.5rem;
 }
 /*---------------Layout----------*/
 .container{
@@ -53,7 +63,7 @@ nav{
   gap: 2rem;
 }
 .section{
-  padding: 9.5rem 0;
+  padding: 4.5rem 0;
 }
 /*---------------Button-----------*/
 .button{
@@ -69,6 +79,10 @@ nav{
 }
 .button:hover{
  background-color: var(--color4);
+}
+.divider-1{
+  height: 1px;
+  background: linear-gradient(270deg, #2FCFE0,  #025E73 );
 }
 /*----------------home------------*/
 #home {
