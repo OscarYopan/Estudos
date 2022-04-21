@@ -32,7 +32,7 @@ a{
 main{
   margin-top: 4.5rem;
 }
-/*---------------Logo-----------------*/
+/*-----------------Logo--------------------*/
 .logo{
   font: 700 1.875rem 'Poppins', sans-serif;
   color: black;
@@ -51,7 +51,7 @@ main{
   z-index: 100;
   background-color: white;
 }
-/*---------------Layout----------*/
+/*------------------Layout----------------------*/
 .container{
   margin: 0 1.5rem;
 }
@@ -65,7 +65,13 @@ main{
 .section .title{
   margin-bottom: 1rem;
 }
-/*---------------Button-----------*/
+.section header{
+  margin-bottom: 4rem;
+}
+.section header strong{
+  color: var(--color5);
+}
+/*-----------------Button---------------------*/
 .button{
   background-color: var(--color1);
   color: white;
@@ -88,7 +94,7 @@ main{
   height: 1px;
   background: linear-gradient(270deg, #025E73, #2FCFE0 );
 }
-/*---------------Navegation--------*/
+/*----------------Navegation--------------*/
 nav{
   height: 4.5rem;
   display: flex; 
@@ -142,7 +148,7 @@ nav.show .menu{
 nav.show ul.grid{
   gap: 4rem;
 }
-/*-------------Toogle Menu-----------*/
+/*-------------Toogle Menu---------------*/
 .toggle{
   color: var(--color4);
   font-size: 1.5rem;
@@ -160,7 +166,7 @@ nav.show div.icon-x{
   visibility: visible;
   opacity: 1;
 }
-/*----------------home------------*/
+/*------------------home-----------------*/
 #home {
   overflow: hidden;
   background-color: var(--color2);
@@ -231,4 +237,19 @@ nav.show div.icon-x{
 }
 #about .text p{
   margin-top: 2rem;
+}
+/*----------------Services-------------------*/
+.cards .grip{
+  gap: 1.5rem;
+}
+.card{
+  padding: 3.625rem;
+  text-align: center;
+  box-shadow: 0px 0px 2px black;
+  border-bottom: 0.25rem solid var(--color1); 
+  border-radius: .25rem .25rem 0 0;
+}
+.card i{
+  display: block;
+  margin-bottom: 1.5rem;
 }
