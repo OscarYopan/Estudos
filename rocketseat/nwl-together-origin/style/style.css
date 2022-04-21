@@ -88,7 +88,7 @@ main{
 }
 /*-----------------Button---------------------*/
 .button{
-  background-color: var(--color1);
+  background-color: var(--color3);
   color: white;
   height: 3.5rem;
   display: inline-flex;
@@ -100,6 +100,9 @@ main{
 }
 .button:hover{
  background-color: var(--color4);
+}
+.botao{
+  text-align: center;
 }
 .divider-1{
   height: 1px;
@@ -207,12 +210,12 @@ nav.show div.icon-x{
   content: '';
   height: 100%;
   width: 100%;
-  background: var(--color3);
+  background: var(--color1);
   position: absolute;
   top: -16.8%;
   left: 16.8%;
   z-index: 0;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 #home .image img{
   position: relative;
@@ -244,12 +247,12 @@ nav.show div.icon-x{
   content: '';
   height: 100%;
   width: 100%;
-  background: var(--color3);
+  background: var(--color1);
   position: absolute;
   top: -8.3%;
   left: -33%;
   z-index: 0;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 #about .image img{
   position: relative;
