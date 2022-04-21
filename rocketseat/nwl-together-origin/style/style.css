@@ -60,7 +60,10 @@ main{
   gap: 2rem;
 }
 .section{
-  padding: 4.5rem 0;
+  padding: 5rem 0;
+}
+.section .title{
+  margin-bottom: 1rem;
 }
 /*---------------Button-----------*/
 .button{
@@ -79,7 +82,11 @@ main{
 }
 .divider-1{
   height: 1px;
-  background: linear-gradient(270deg, #2FCFE0,  #025E73 );
+  background: linear-gradient(270deg, #2FCFE0, #025E73 );
+}
+.divider-2{
+  height: 1px;
+  background: linear-gradient(270deg, #025E73, #2FCFE0 );
 }
 /*---------------Navegation--------*/
 nav{
@@ -156,6 +163,7 @@ nav.show div.icon-x{
 /*----------------home------------*/
 #home {
   overflow: hidden;
+  background-color: var(--color2);
 }
 #home .container{
   margin: 0;
@@ -187,5 +195,40 @@ nav.show div.icon-x{
   margin-bottom: 1rem;
 }
 #home .text p{
+  margin-top: 2rem;
+}
+
+/*-------------About-------------------------*/
+#about{
+  background-color: white;
+}
+#about .container{
+  margin: 0;
+}
+#about .image{
+  position: relative;
+}
+#about .image::before{
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--color3);
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+  z-index: 0;
+  border-radius: 1rem;
+}
+#about .image img{
+  position: relative;
+  border-radius: 1rem;
+}
+#about .text{
+  margin: 0 1.5rem;
+}
+#about .text h1{
+  margin-bottom: 1rem;
+}
+#about .text p{
   margin-top: 2rem;
 }
