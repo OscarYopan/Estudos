@@ -15,6 +15,10 @@ ul{
   --color4: #025E73;
   --color5: #F8AB24;  
 }
+html{
+  scroll-behavior: smooth;
+
+}
 body{
   font: 400 1em 'DM Sans', sans-serif;
 }
@@ -239,6 +243,9 @@ nav.show div.icon-x{
   margin-top: 2rem;
 }
 /*----------------Services-------------------*/
+#services{
+  background-color: var(--color2);
+}
 .cards .grip{
   gap: 1.5rem;
 }
@@ -252,4 +259,10 @@ nav.show div.icon-x{
 .card i{
   display: block;
   margin-bottom: 1.5rem;
+  font-size: 5rem;
+  color: var(--color3);
+}
+.card .text{
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
 }
