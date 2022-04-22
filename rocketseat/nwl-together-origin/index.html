@@ -5,13 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OriginSix</title>
+  <!-- Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <!--Style-->
   <link rel="stylesheet" href="style/style.css">
   <!--Icones-->
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets-2/style.css">
-  <!-- Swiper-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <!-- fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
           <li><a class="title" href="#home">Inicio</a></li>
           <li><a class="title" href="#about">Sobre</a></li>
           <li><a class="title" href="#services">Serviços</a></li>
-          <li><a class="title" href="#testemonials">Depoimentos</a></li>
+          <li><a class="title" href="#testimonials">Depoimentos</a></li>
           <li><a class="title" href="#contact">Contato</a></li>
         </ul>       
       </div>
@@ -95,50 +95,53 @@
     </section>
     <div class="divider-1"></div>
     <!-- Testemonies -->    
-    <section class="section" id="testemonials">
-      <div class="container grid">
-        <section class="section" id="testemonials">
-          <div class="container grid">
-            <header>
-              <h2 class="title">Depoimentos de quem já passou por aqui</h2>
-            </header>
-            <div class="testemonials swiper">
-              <div class="swiper-wrapper">
-                <div class="testemonial swiper-slide"></div>
-                  <blockquote>                                  
-                    <p><span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ducimus quod quam suscipit adipisci facilis accusamus.</p>
-                    <cite>
-                      <img src="imagens/wanessa.jpg" alt="foto wanessa">
-                      Wanessa Conceição
-                    </cite>
-                  </blockquote>
-                </div>
-              </div> 
-            </div>
-            <div class="testemonials swiper-wrapper">
+    <section class="section" id="testimonials">
+      <div class="container">
+        <header>
+          <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+        </header>
+        <div class="testimonials swiper-container">
+          <div class="swiper-wrapper">
+            <div class="testimonial swiper-slide">
               <blockquote>
-                <div class="testemonial swiper-slide">                
-                  <p><span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ducimus quod quam suscipit adipisci facilis accusamus.</p>                
-                </div>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                  ipsam neque</p>
                 <cite>
-                  <img src="imagens/esther.jpg" alt="foto esther">
+                  <img src="imagens/wanessa.jpg" alt="Foto de Wanessa"/>
+                  Wanessa Conceição
+                </cite>
+              </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p><span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum blanditiis saepe nam excepturi xplicabo ipsa error ipsam neque</p>
+                <cite>
+                  <img src="imagens/esther.jpg"  alt="Foto de Esther"/>
                   Esther Damaceno
                 </cite>
               </blockquote>
             </div>
-            <div class="testemonials swiper-wrapper">
+
+            <div class="testimonial swiper-slide">
               <blockquote>
-                <div class="testemonial swiper-slide">                
-                  <p><span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ducimus quod quam suscipit adipisci facilis accusamus.</p>                
-                </div>
+                <p><span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                  ipsam neque</p>
                 <cite>
-                  <img src="imagens/juliano.jpg" alt="foto Juliano">
+                  <img src="imagens/juliano.jpg" alt="Foto Juliano Queiroz"/>
                   Juliano Queiroz
                 </cite>
               </blockquote>
             </div>
           </div>
-        </section>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </section>
     <div class="divider-2"></div>
