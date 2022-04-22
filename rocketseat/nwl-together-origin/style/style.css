@@ -291,3 +291,35 @@ nav.show div.icon-x{
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
 }
+/*------------------Testemonials-----------------*/
+#testemonials{
+  background-color: white;
+}
+#testemonials blockquote{
+  padding: 2rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.48);
+  border-radius: 00.5rem;
+}
+#testemonials blockquote p{
+  position: relative;
+  text-indent: 1.875rem;
+  margin-bottom: 1.5rem;
+}
+#testemonials blockquote p span{
+  font: 700 3rem 'serif';
+  color: var(--color3);
+  position: absolute;
+  top: -1rem;
+  left: -1.875rem;
+}
+#testemonials cite{
+  display: flex;
+  align-items: center;
+}
+#testemonials cite img{
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 0.5rem;
+}

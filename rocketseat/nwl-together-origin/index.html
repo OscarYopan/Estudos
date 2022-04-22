@@ -10,6 +10,8 @@
   <!--Icones-->
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets-2/style.css">
+  <!-- Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <!-- fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +38,7 @@
     </nav>    
   </header>
   <main>
-    <!--Home-->
+    <!-- Home -->
     <section class="section" id="home">
       <div class="container grid">
         <div class="image">
@@ -48,6 +50,7 @@
         </div>
         <div class="botao"><a class="button" href="#">Saiba Mais</a></div>
       </div>
+      <!-- About -->
     </section>
     <div class="divider-1"></div>
     <section class="section" id="about">
@@ -64,6 +67,7 @@
       </div>
     </section>
     <div class="divider-2"></div>
+    <!-- Services -->
     <section class="section" id="services">
       <div class="container grid">
         <header>
@@ -89,18 +93,57 @@
         </div>
       </div>
     </section>
-    
-    <section class="section" id="testemonies">
+    <div class="divider-1"></div>
+    <!-- Testemonies -->    
+    <section class="section" id="testemonials">
       <div class="container grid">
-
+        <section class="section" id="testemonials">
+          <div class="container grid">
+            <header>
+              <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+            </header>
+            <div class="testemonials swiper">
+              <div class="swiper-wrapper">
+                <div class="testemonial swiper-slide"></div>
+                  <blockquote>                                  
+                    <p><span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ducimus quod quam suscipit adipisci facilis accusamus.</p>
+                    <cite>
+                      <img src="imagens/wanessa.jpg" alt="foto wanessa">
+                      Wanessa Conceição
+                    </cite>
+                  </blockquote>
+                </div>
+              </div> 
+            </div>
+            <div class="testemonials swiper-wrapper">
+              <blockquote>
+                <div class="testemonial swiper-slide">                
+                  <p><span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ducimus quod quam suscipit adipisci facilis accusamus.</p>                
+                </div>
+                <cite>
+                  <img src="imagens/esther.jpg" alt="foto esther">
+                  Esther Damaceno
+                </cite>
+              </blockquote>
+            </div>
+            <div class="testemonials swiper-wrapper">
+              <blockquote>
+                <div class="testemonial swiper-slide">                
+                  <p><span>&ldquo;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ducimus quod quam suscipit adipisci facilis accusamus.</p>                
+                </div>
+                <cite>
+                  <img src="imagens/juliano.jpg" alt="foto Juliano">
+                  Juliano Queiroz
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
+    <div class="divider-2"></div>
+    <!-- Contact -->
     <section class="section" id="contact">
-      <div class="container grid">
-
-      </div>
-    </section>
-        <section class="section" id="testemonies">
       <div class="container grid">
 
       </div>
@@ -110,5 +153,8 @@
     <p>&copy; Criado por <a href="https://github.com/OscarYopan" target="_blank">Oscar Yopan</a></p>
   </footer>
 </body>
+<!--Swiper-->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<!--Main-->
 <script src="script/main.js"></script>
 </html>
