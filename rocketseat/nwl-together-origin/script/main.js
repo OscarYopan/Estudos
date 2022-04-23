@@ -56,3 +56,14 @@ scrollReveal.reveal(
   footer .brand, footer .social
   `, { interval: 100 }
 )
+
+//--------------To Top Button------------------------------
+
+const toTopButton = document.querySelector('.to-top')
+window.addEventListener('scroll', function(){
+  if(window.scrollY >= 400){
+    toTopButton.classList.add('show')
+  }else{
+    toTopButton.classList.remove('show')
+  }
+})

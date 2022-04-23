@@ -407,3 +407,23 @@ footer i{
   font-size: 1.5rem;
   margin-right: 2rem;
 }
+/*-------------=----- To Top -----------------*/
+.to-top{
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  font-size: 2.5rem;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s;
+}
+.to-top.show{
+  visibility: visible;
+  opacity: 1;
+}
+.to-top a{
+  text-decoration: none;
+  color: var(--color3);
+}
