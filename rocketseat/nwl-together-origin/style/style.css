@@ -433,3 +433,11 @@ footer i{
   text-decoration: none;
   color: var(--color3);
 }
+/*-----------------Responsividade---------------*/
+/* extra large devices: 1200 > */
+/* large devices: 1023 > */
+/* Large devices: 992 > */
+@media (min-width: 992px){
+  
+}
+/* medium devices: 767 > */
