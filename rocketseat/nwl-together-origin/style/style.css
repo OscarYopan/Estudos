@@ -44,6 +44,9 @@ main{
 .logo span{
   color: var(--color3);
 }
+.logo-alt span{
+  color: white;
+}
 #header{
   border-bottom: 1px solid var(--color1);
   margin-bottom: 2rem;
@@ -380,4 +383,27 @@ nav.show div.icon-x{
   font-size: 1.5rem;
   margin-right: 0.625rem;
   color: var(--color4);
+}
+/*-------------=----- Footer -----------------*/
+footer{
+  background-color: var(--color4);
+}
+footer .logo{
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+footer p{
+  color: white;
+  margin-bottom: 0.75rem;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+footer a:hover{
+  color: var(--color3);
+}
+footer i{
+  font-size: 1.5rem;
+  margin-right: 2rem;
 }
