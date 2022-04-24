@@ -140,7 +140,8 @@ nav ul li{
   text-align: center;
   position: relative;
 }
-nav ul li a:hover{
+nav ul li a:hover,
+nav ul li a.active{
   color: var(--color3);
 }
 nav ul li a::after{
@@ -156,7 +157,8 @@ nav ul li a::after{
 
   transition: width 0.2s;
 }
-nav ul li a:hover::after{
+nav ul li a:hover::after,
+nav ul li a.active::after{
   width: 100%;
 }
 nav .menu{
@@ -484,6 +486,9 @@ footer .social{
   nav .menu ul li a.title{
     font: 400 1rem var(--body-font);
   }
+  nav .menu ul li a.title.active{
+    font-weight: bold;
+  }
   nav .icon-menu{
     display: none;
   }
@@ -542,6 +547,12 @@ footer .social{
   .logo{
     font-size: 2.25rem;
   }
+  .scroll .title {
+    color: white;
+  }
+  .scroll nav ul li a::after{
+    background-color: white;
+  }  
 }
 /* large devices: 1023 > */
 /* Large devices: 992 > */
