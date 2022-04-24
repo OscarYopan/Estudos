@@ -17,6 +17,8 @@ img{
 }
 /*-----------------Variaveis--------------------*/
 :root{
+  --header-height: 4.5rem;
+
   /*colors*/
   --color1: #D99A9A;
   --color2: #F2F5E4;
@@ -41,9 +43,6 @@ body{
 .title{
   font: 700 var(--title-font-size) var(--title-font);
   color: var(--color4);
-}
-main{
-  margin-top: 4.5rem;
 }
 /*-----------------Logo--------------------*/
 .logo{
@@ -88,7 +87,7 @@ main{
   gap: 2rem;
 }
 .section{
-  padding: 5rem 0;
+  padding: calc(5rem + var(--header-height)) 0;
 }
 .section .title{
   margin-bottom: 1rem;
@@ -130,7 +129,7 @@ main{
 }
 /*----------------Navegation--------------*/
 nav{
-  height: 4.5rem;
+  height: var(--header-height);
   display: flex; 
   align-items: center;
   justify-content: space-between;
@@ -401,6 +400,9 @@ nav.show div.icon-x{
 footer{
   background-color: var(--color4);
 }
+footer.section{
+  padding: 4rem 0;
+}
 footer .logo{
   display: inline-block;
   margin-bottom: 1.5rem;
@@ -421,7 +423,10 @@ footer a:hover{
 }
 footer i{
   font-size: 1.5rem;
-  margin-right: 2rem;
+}
+footer .social{
+  grid-auto-flow: column;
+  width: fit-content;
 }
 /*-------------=----- To Top -----------------*/
 .to-top{
@@ -448,6 +453,11 @@ footer i{
 }
 /*-----------------Responsividade---------------*/
 /* extra large devices: 1200 > */
+@media(min-width: 1200px){
+  main{
+    margin-top: var(--header-height);
+  }
+}
 /* large devices: 1023 > */
 /* Large devices: 992 > */
 @media (min-width: 992px) {
