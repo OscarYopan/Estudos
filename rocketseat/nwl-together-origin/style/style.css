@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/*-----------------Reset--------------------*/
 *{
   margin: 0px;
   padding: 0px;
@@ -8,6 +8,14 @@
 ul{
   list-style: none;
 }
+a{
+  text-decoration: none;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+/*-----------------Variaveis--------------------*/
 :root{
   /*colors*/
   --color1: #D99A9A;
@@ -16,9 +24,9 @@ ul{
   --color4: #025E73;
   --color5: #F8AB24;
 }
+/*-----------------Base--------------------*/
 html{
   scroll-behavior: smooth;
-
 }
 body{
   font: 400 1em 'DM Sans', sans-serif;
@@ -26,13 +34,6 @@ body{
 .title{
   font: 700 1.875rem 'Poppins', sans-serif;
   color: var(--color4);
-}
-img{
-  width: 100%;
-  height: auto;
-}
-a{
-  text-decoration: none;
 }
 main{
   margin-top: 4.5rem;
@@ -48,6 +49,7 @@ main{
 .logo-alt span{
   color: white;
 }
+/*-----------------Header--------------------*/
 #header{
   border-bottom: 1px solid var(--color1);
   margin-bottom: 2rem;
