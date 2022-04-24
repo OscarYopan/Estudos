@@ -15,10 +15,6 @@ ul{
   --color3: #2FCFE0;
   --color4: #025E73;
   --color5: #F8AB24;
-  
-  /*fonts*/
- /* --title-size: 1.875rem;
-  --title-size: 1rem;*/
 }
 html{
   scroll-behavior: smooth;
@@ -440,16 +436,6 @@ footer i{
 }
 /*-----------------Responsividade---------------*/
 /* extra large devices: 1200 > */
-@media (min-width: 1200px){
-  
-}
 /* large devices: 1023 > */
 /* Large devices: 992 > */
-/*@media (min-width: 992px){
-  :root{
-    --title-size: 2.25rem;
-    --subtitle-size: 1.125rem;
-
-  }
-}*/
 /* medium devices: 767 > */
