@@ -112,6 +112,7 @@ body{
   border-radius: 0.5rem;
   font: 500 1rem 'DM Sans', sans-serif;
   transition: background 0.5s;
+  margin-top: 1.5rem;
 }
 .button:hover{
  background-color: var(--color4);
@@ -462,6 +463,15 @@ footer .social{
   .section{
     padding: 10rem 0;
   }
+  .section header, #testimonials header{
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button{
+    height: 3.125rem;
+  }
   nav .menu{
     opacity: 1;
     visibility: visible;
@@ -477,6 +487,9 @@ footer .social{
   nav .icon-menu{
     display: none;
   }
+  main{
+    margin-top: var(--header-height);
+  }
   /*home*/
   #home .container{
     grid-auto-flow: column;
@@ -488,9 +501,22 @@ footer .social{
   }
   #home .text{
     order: 0;
+    max-width: 24rem;
+    text-align: left;
   }
-  main{
-    margin-top: var(--header-height);
+  /*about*/
+  #about .container{
+    margin: 0 auto;
+    grid-auto-flow: column;
+  }
+  /*service*/
+  .cards{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /*testimonials*/
+  #testimonials .container{
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /* large devices: 1023 > */
