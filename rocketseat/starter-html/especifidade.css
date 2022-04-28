@@ -27,3 +27,9 @@ h1{ /*valor da força = 1*/
 *{ /*valor da foraça = 0*/
   color: green;
 }
+
+/*OBS: Os valores são acumulativos Abaixo soma-se valor = 111
+h1 .title #mytitle{ 
+  color: blue
+}
+*/
