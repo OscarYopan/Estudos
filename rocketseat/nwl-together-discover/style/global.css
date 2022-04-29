@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/*-------------------reset------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/*-------------------Default---------------*/
+html{
+  /*Colors*/
+  --cor01: #04B2D9;
+  --cor02: #06E3F6;
+  --cor03: #8CEDF6;
+  --cor04: #D9FBFA;
+  --cor05: #00B294;
+  
+  /*Fonts*/
+  --font1: 'Open Sans', sans-serif;
+  --font2: 'Poppins', sans-serif;
+
+  /*reset default font-size*/
+  font-size: 62.5%; /*10px*/
+}
+
+body{
+  height: 100vh;
+  background-color: var(--cor04);
+}
+
+body, button, input, textarea{
+  /*intervalo de tamanho*/
+  font-size: clamp(14px, 1.6rem, 2vw);
+
+  font-family: var(--font1);
+}
+
+.sr-only{
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
