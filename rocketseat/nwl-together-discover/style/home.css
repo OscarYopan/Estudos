@@ -9,6 +9,19 @@
   'header header'
   'left rigth';
 }
+
 header{
   grid-area: header;
 }
+
+#bg{
+  grid-area: left;
+
+  background: url(../assets/image/home-bg-img.svg) no-repeat top/contain;
+}
+
+/*
+main{
+  grid-area: right;
+}
+*/
