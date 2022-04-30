@@ -1,2 +1,14 @@
 @charset "UTF-8";
 
+.content{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 11.4rem 1fr 2fr;
+
+  grid-template-areas: 
+  'header header'
+  'left rigth';
+}
+header{
+  grid-area: header;
+}
