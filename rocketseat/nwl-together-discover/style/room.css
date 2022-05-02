@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
 .content{
-  max-width: 90%;
+  max-width: min(112rem, 90%);
 }
 
+
+/*---------------------- header -------------------------*/
 #room header{
   width: 100%;
 
@@ -35,4 +37,62 @@
 #room header .buttons .button:nth-child(2) img{
   width: 2rem;
   height: 2rem;
+}
+
+/*---------------------- question section -------------------------*/
+
+#question-form h2{
+  font-family: var(--font2);
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+  line-height: 4.2rem;
+}
+
+#question-form form{
+  border: .2rem solid var(--cor05);
+  padding: 1.6rem;
+  border-radius: 0 .8rem .8rem .8rem;
+
+  background-color: var(--cor04);
+}
+
+#question-form form textarea{
+  resize: none; /*remove a borda*/
+
+  background-color: var(--cor04);
+  width: 100%;
+
+  outline: none;
+}
+
+#question-form textarea::placeholder{
+  color: var(--cor01);
+  opacity: 50%;
+}
+
+#question-form form footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#question-form form footer div{
+  font-family: var(--font2);
+  font-weight: 400;
+  font-size: 1.4rem;
+  opacity: 50%;
+
+  display: flex;
+  align-items: center;
+}
+
+#question-form form footer div img{
+  margin-right: .9rem;
+}
+
+#question-form form footer button{
+  height: auto;
+  padding: .8rem 2.4rem;
+  line-height: 2.4rem;
 }

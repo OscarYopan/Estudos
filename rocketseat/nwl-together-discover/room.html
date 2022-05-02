@@ -11,16 +11,17 @@
   <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="room" class="content">
-
     <header>
+      <!--logo-->
       <a href="#">
         <img src="assets/image/logo.svg" alt="logo">
       </a>
 
+      <!--buttons-->
       <div class="buttons">
 
         <div class="button outlined">
@@ -34,11 +35,25 @@
         </a>
 
       </div>
-
     </header>
 
-
-  </div>
-  
+    <main>
+      <section id="question-form">
+        <h2>Faça Sua Pergunta:</h2>
+        <!--question place -->
+          <form action="">
+            <label for-id="questiion" class="sr-only">Qual sua pergunta?</label>
+            <textarea name="question" id="question" placeholder="Qual a sua pergunta?"></textarea>
+            <footer>
+              <div>
+                <img src="assets/image/lock.svg" alt="Incone Cadeado">
+                Esta pergunta é anônima
+              </div>
+              <button>Enviar</button>
+            </footer>
+          </form>
+      </section>
+    </main>
+  </div>  
 </body>
 </html>
