@@ -55,6 +55,8 @@
   border-radius: 0 .8rem .8rem .8rem;
 
   background-color: var(--cor04);
+
+  margin-bottom: 1.6rem;
 }
 
 #question-form form textarea{
