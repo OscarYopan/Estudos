@@ -1,0 +1,12 @@
+{
+  "name": "nwl-together-discover",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido junto ao boocamp da RocketSeat, trata-se de uma página para se fazer perguntas anônimas para o admin.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Oscar Yopan",
+  "license": "ISC"
+}
