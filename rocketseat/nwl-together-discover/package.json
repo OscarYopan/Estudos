@@ -4,9 +4,13 @@
   "description": "Projeto desenvolvido junto ao boocamp da RocketSeat, trata-se de uma página para se fazer perguntas anônimas para o admin.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js"
   },
   "keywords": [],
   "author": "Oscar Yopan",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.18.1"
+  }
 }
