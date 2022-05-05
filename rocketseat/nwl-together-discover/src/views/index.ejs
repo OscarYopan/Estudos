@@ -1,1 +1,60 @@
-<h1>Oi!</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Perguntas</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="stylesheet" href="style/home.css">
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <div class="content" id="home">
+
+      <header>
+        <img src="assets/image/logo.svg" alt="logo">
+      </header>
+
+      <div id="bg">
+        <div class="ball top"></div>
+        <div class="ball botton"></div>
+      </div>
+
+      <main>
+        <div class="container">
+
+          <section>
+            <h2>Participar de uma Sala</h2>
+            <form action="">
+              <label class="sr-only" for="room-id">Código da Sala</label>
+              <input type="number" id="room-id" placeholder="Código da sala">
+              <button>
+                <a href=""><img src="assets/image/enter-room.svg" alt="Entrar em Uma Sala"></a>
+                Entrar na Sala
+              </button>
+            </form>
+          </section>
+
+          <div class="separator">
+            <div></div>
+            <div>ou</div>
+            <div></div>
+          </div>
+
+          <section>
+            <h2>Criar Sala</h2>
+            <a href="create-room.html" class="button outlined">
+              <img src="assets/image/users.svg" alt="Imagem Usuarios"> Criar Sala
+            </a>
+          </section> 
+
+        </div>
+      </main>
+    </div>       
+</body>
+</html>
