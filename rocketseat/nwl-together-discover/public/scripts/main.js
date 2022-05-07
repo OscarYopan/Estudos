@@ -1,4 +1,4 @@
-import { Modal } from './modal'
+import Modal from './modal'
 
 const modal = Modal()
 
@@ -9,7 +9,9 @@ const checkButtons = document.querySelectorAll('.actions a.check')
 
 //adicionar escuta nos botões, para saber quando forem clicados
 checkButtons.forEach(button => {
-  button.eventlistener()
+  button.addEventlistener('click', event => {
+    modal.open()
+  })
 })
 
 //const deleteButtons = document.querySelectorAll('.delete')
