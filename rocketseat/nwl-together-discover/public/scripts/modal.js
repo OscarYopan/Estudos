@@ -1,6 +1,10 @@
 module.exports = function Modal(){
-  function open()
-  function close()
+  function open(){
+    //adicionar a classe 'active' para a modal
+  }
+  function close(){
+    //remover a classe 'active' da modal
+  }
 
   return{
     open,
