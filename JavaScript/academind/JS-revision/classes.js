@@ -18,11 +18,25 @@ console.log(myPerson.name)
 class Person extends Master
 */
 
-class Person{
+class Human{
   constructor(){
-    this.name = 'max'
- }
-  printMyName(){
-    console.log(this.name);
+    this.gender = 'male'
+  }
+  printGender(){
+    console.log(this.gender);
   }
 }
+
+class Person extends Human{
+  constructor(){
+    super() //keyword para fazer a extensao da classe Human fucionar
+    this.name = 'max' //propridade
+ }
+  printMyName(){
+    console.log(this.name); // metodo para saida
+  }
+}
+
+const person = new Person() // constante que recebe o metodo de saida
+person.printMyName() // o que será feito
+person.printGender() // vai mostrar o genero da classe 'person' herdado da classe 'Human'
