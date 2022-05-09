@@ -1,12 +1,14 @@
-import { Modal } from "./modal";
+import Modal from './modal.js';
 
 const modal = Modal()
 
 //Ler todos os botões com a class 'check'
+const checkButtons = document.querySelectorAll(".actions a.check")
 
-//Ler quando o 'marcar como lido' for clicado
-
-addEventListener
-
-//abrir a modal
-modal.open()
+checkButtons.forEach(button => {
+    //adicionar a escuta
+    button.addEventListener("click", event => {
+        //abrir modal
+        modal.open()
+    })
+})
