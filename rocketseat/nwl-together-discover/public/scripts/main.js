@@ -11,15 +11,7 @@ const checkButtons = document.querySelectorAll(".actions a.check")
 
 checkButtons.forEach(button => {
     //adicionar a escuta
-    button.addEventListener("click", event => {
-
-        modalTitle.innerHTML = 'Marcar como lida'
-        modalDescription.innerHTML = 'Tem certeza que quer marcar esta pergunta como lida?'
-        modalButton.innerHTML = 'Sim, marcar'
-
-        //abrir modal
-        modal.open()
-    })
+    button.addEventListener("click", handleClick)
 })
 
 
@@ -27,12 +19,15 @@ checkButtons.forEach(button => {
 const deleteButton = document.querySelectorAll('.actions a.delete')
 
 deleteButton.forEach(button => {
-    button.addEventListener('click', event =>{
-
-        modalTitle.innerHTML = 'Excluir pergunta'
-        modalDescription.innerHTML = 'Tem certeza que deseja excluir esta pergunta?'
-
-        //fechar modal
-        modal.open()
-    } )
+    button.addEventListener('click', (event) => handleClick(event, false)) 
 })
+
+
+function handleClick(event, check = true){
+    modalTitle.innerHTML = check ? 'Marcar como lida' : 'Excluir pergunta'
+    modalDescription.innerHTML = check ? 'Tem certeza que deseja marcar como lida esta pergunta?' : 'Tem certeza que deseja excluir esta pergunta?'
+    modalButton.innerHTML = check ? 'Sim, marcar' : 'Sim, excluir'
+    check ? modalButton.classList.remove('red') : modalButton.classList.add('red')
+    //Abrir modal
+    modal.open()
+}
