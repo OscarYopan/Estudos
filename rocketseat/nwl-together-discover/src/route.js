@@ -1,4 +1,6 @@
 const express = require('express')
+const QuestionController = require('./controllers/questionController')
+
 const req = require('express/lib/request')
 const res = require('express/lib/response')
 
@@ -9,6 +11,6 @@ route.get('/room', (req, res) => res.render('room'))
 route.get('/create-pass', (req, res) => res.render('create-pass'))
 
 //Formato de informação que o modal deve passar
-//route.post('/room/:room/:question/:action')
+route.post('/room/:room/:question/:action', QuestionController.index)
 
 module.exports = route
