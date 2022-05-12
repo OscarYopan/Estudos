@@ -4,7 +4,8 @@
   "description": "Projeto desenvolvido junto ao boocamp da RocketSeat, trata-se de uma página para se fazer perguntas anônimas para o admin.",
   "main": "src/server.js",
   "scripts": {
-    "start": "nodemon ."
+    "start": "nodemon .",
+    "init-db": "node src/db/init.js"
   },
   "keywords": [],
   "author": "Oscar Yopan",
