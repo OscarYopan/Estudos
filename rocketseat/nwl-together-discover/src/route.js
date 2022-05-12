@@ -13,5 +13,6 @@ route.get('/room', (req, res) => res.render('room'))
 
 //Formato de informação que o modal deve passar
 route.post('/room/:room/:question/:action', QuestionController.index)
+route.post('/room/create-room', RoomController.create)
 
 module.exports = route
