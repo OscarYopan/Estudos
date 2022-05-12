@@ -1,5 +1,6 @@
 const express = require('express')
 const QuestionController = require('./controllers/questionController')
+const RoomController = require('./controllers/roomController')
 
 const req = require('express/lib/request')
 const res = require('express/lib/response')
