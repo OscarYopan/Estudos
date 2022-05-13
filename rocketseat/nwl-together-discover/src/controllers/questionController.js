@@ -1,3 +1,5 @@
+const Database = require('../db/config')
+
 module.exports = {
   index(req, res){
     const roomId = req.params.room
@@ -9,8 +11,17 @@ module.exports = {
     action = ${action}, password = ${password}`)
   },
 
-  create(req, res){
+  async create(req, res){
+    const db = await Database()
     const question = req.body.question
-    const room = req.params.room 
+    const room = req.params.room
+
+    await db.run(`INSERT INTO questions(
+      title,
+      room
+    )VALUES(
+      ${question},
+      ${room}
+    )`)
   }
 }
