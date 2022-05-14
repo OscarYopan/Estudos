@@ -61,7 +61,7 @@
         <h2 class="sr-only">Perguntas da Comunidade</h2>
         <div class="questions">
 
-          <% questions.fotEach(questiion => {%>
+          <% questions.forEach(question => {%>
 
             <div class="question-wrapper">
 
@@ -88,35 +88,10 @@
             </div>            
 
           <% }); %>
-
-
-
-
-
+                  
+ 
+   
           
-          <div class="question-wrapper">
-
-            <div class="question-content">
-              <div class="user">
-                <img src="/images/image/user.svg" alt="">
-              </div>
-              <div class="question">
-                <p>Qual a linguagem mais rápida pro navegador, JavaScript ou PHP?</p>
-              </div>
-            </div>
-
-            <div class="actions">
-              <a href="#" class="check" data-id="3">
-                <img src="/images/image/check.svg" alt="Icone Check">
-                Marcar como lida
-              </a>
-              <a href="#" class="delete" data-id="3">
-                <img src="/images/image/trash.svg" alt="Icone Lixeira">
-                Excluir
-              </a>
-            </div>
-
-          </div>
 
           <!-- question list with read class-->
           <div class="question-wrapper read">
