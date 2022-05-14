@@ -87,32 +87,32 @@
   
             </div>            
 
-          <% }); %>
-                  
+          <% }); %>                        
  
    
           
+          <% questionsRead.forEach(questionRead => { %>
 
-          <!-- question list with read class-->
-          <div class="question-wrapper read">
-
-            <div class="question-content">
-              <div class="user">
-                <img src="/images/image/user.svg" alt="">
+            <!-- question list with read class-->
+            <div class="question-wrapper read">
+              <div class="question-content">
+                <div class="user">
+                  <img src="/images/image/user.svg" alt="">
+                </div>
+                <div class="question">
+                  <p> <%= questionRead.title %> </p>
+                </div>
               </div>
-              <div class="question">
-                <p>Porque não colocar os meus "scripts" depois do "body"?</p>
+              <div class="actions">
+                <a href="#" class="delete" data-id="1">
+                  <img src="/images/image/trash.svg" alt="Icone Lixeira">
+                  Excluir
+                </a>
               </div>
             </div>
 
-            <div class="actions">
-              <a href="#" class="delete" data-id="1">
-                <img src="/images/image/trash.svg" alt="Icone Lixeira">
-                Excluir
-              </a>
-            </div>
+          <% }) %>
 
-          </div>
 
         </div>
       </section>
