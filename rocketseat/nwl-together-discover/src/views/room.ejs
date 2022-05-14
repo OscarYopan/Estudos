@@ -61,29 +61,37 @@
         <h2 class="sr-only">Perguntas da Comunidade</h2>
         <div class="questions">
 
-          <div class="question-wrapper">
+          <% questions.fotEach(questiion => {%>
 
-            <div class="question-content">
-              <div class="user">
-                <img src="/images/image/user.svg" alt="">
+            <div class="question-wrapper">
+
+              <div class="question-content">
+                <div class="user">
+                  <img src="/images/image/user.svg" alt="">
+                </div>
+                <div class="question">
+                  <p>Qual é a linguagem ideal para quem está começando?</p>
+                </div>
               </div>
-              <div class="question">
-                <p>Qual é a linguagem ideal para quem está começando?</p>
+  
+              <div class="actions">
+                <a href="#" class="check" data-id="2">
+                  <img src="/images/image/check.svg" alt="Icone Check">
+                  Marcar como lida
+                </a>
+                <a href="#" class="delete" data-id="2">
+                  <img src="/images/image/trash.svg" alt="Icone Lixeira">
+                  Excluir
+                </a>
               </div>
-            </div>
+  
+            </div>            
 
-            <div class="actions">
-              <a href="#" class="check" data-id="2">
-                <img src="/images/image/check.svg" alt="Icone Check">
-                Marcar como lida
-              </a>
-              <a href="#" class="delete" data-id="2">
-                <img src="/images/image/trash.svg" alt="Icone Lixeira">
-                Excluir
-              </a>
-            </div>
+          <% }); %>
 
-          </div>
+
+          
+
 
           
           <div class="question-wrapper">
