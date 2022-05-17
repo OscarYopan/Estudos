@@ -10,3 +10,17 @@ São as seguintes:
     @font-face é para colocar fontes externas.
     @keyframes serve para as animations do CSS.
 */
+
+@import url('http//local.comstyle.css');
+
+@media (min-width: 500px){
+    /*regras aqui*/
+}
+
+@font-face{
+    /*regras aqui*/
+}
+
+@keyframes{
+    /*regras aqui*/
+}

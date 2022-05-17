@@ -1,0 +1,14 @@
+/*
+FUNÇÔES
+- Nome seguida de abre e fecha parenteses
+- Recebe argumentos
+
+Exemplos:
+*/
+
+@import url('http://urlaqui.com/style.css');
+
+body{
+  color: rgb(255, 0, 100);
+  width: calc(100% - 10px)
+}
