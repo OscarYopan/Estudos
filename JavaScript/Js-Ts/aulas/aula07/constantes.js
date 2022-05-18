@@ -10,6 +10,6 @@
   - Não se pode mudar o valor de uma constante;
   - Sempre que declarada já deve ser definido o valor;
   - valor da constante é imutavel.
-*/
-const nome = 'João'
-console.log(nome)
+  */
+ const nome = 'João'
+ console.log(nome)
