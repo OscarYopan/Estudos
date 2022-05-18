@@ -21,5 +21,7 @@ console.log(lugar)
   - Recomenda-se usar letras minusculas no começo;
   - não deve conter 'espaços' ou 'traços';
   - Caso nome composto use camelCase;
-  - Variaveis são case sensetive (sempre usa-se ela escrita totalmente igual).  
+  - Variaveis são case sensetive (sempre usa-se ela escrita totalmente igual).
+  - Não podemos redeclarar  variaveis com let
+  - Não utilize var
 */
