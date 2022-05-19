@@ -2,11 +2,13 @@
 
 /*
 Ordem  de Precedencia
-()
-**
-*, /, %
-+, -
-ordem da esquerda pra direita
+  ()
+  **
+  *, /, %
+  +, -
+  ordem da esquerda pra direita
+
+OBS: NaN significa 'Not a Number'
 */ 
 
 //Adição
@@ -54,8 +56,21 @@ let desContador = 10
 desContador -- //--contador (tambem está correto)
 console.log(desContador);
 
-//Incremento com passo - valido para qualquer operador aritmetico
+//Operadores de Atribuição - valido para qualquer operador aritmetico
 let cont = 0
 cont += 2
 console.log(cont);
+
+//Converter Strings numericas em numeros
+const numeroA = parseInt('5.2') //primeira maneira, somente retorna numeros inteiros
+console.log(numeroA);
+console.log(typeof numeroA);
+
+const numeroB = parseFloat('1.4') //segunda maneira
+console.log(numeroB);
+console.log(typeof numeroB);
+
+const numeroC = Number('5.4') //terceira maneira = melhor maneira
+console.log(numeroC);
+console.log(typeof numeroC);
 
