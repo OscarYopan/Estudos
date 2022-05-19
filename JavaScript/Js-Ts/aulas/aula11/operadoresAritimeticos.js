@@ -1,5 +1,14 @@
 /*     Operadores Aritiméticos   */
 
+/*
+Ordem  de Precedencia
+()
+**
+*, /, %
++, -
+ordem da esquerda pra direita
+*/ 
+
 //Adição
 const num1 = 5
 const num2 = 10
