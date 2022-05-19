@@ -44,3 +44,18 @@ const num13 = 9
 const num14 = 2
 console.log(num13 % num14);
 
+//Incremento
+let contador = 1
+contador ++ //++contador (também está coreto)
+console.log(contador);
+
+//Decremento
+let desContador = 10
+desContador -- //--contador (tambem está correto)
+console.log(desContador);
+
+//Incremento com passo - valido para qualquer operador aritmetico
+let cont = 0
+cont += 2
+console.log(cont);
+
