@@ -26,6 +26,12 @@ const num10 = 10
 console.log(num9 / num10);
 
 //Potenciação
-const num11 = 5
+const num11 = 2
 const num12 = 10
 console.log(num11 ** num12);
+
+//Resto da Divisao
+const num13 = 9
+const num14 = 2
+console.log(num13 % num14);
+
