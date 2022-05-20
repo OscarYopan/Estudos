@@ -11,5 +11,9 @@ console.log(outraString)
 let moreString = 'um texto' //aspas dentro de aspas
 console.log(moreString[4]); //vai mostrar o caractere do indice solicitado
 
+// Usando funcoões nas strings
 let anotherString = 'um texto'
 console.log(anotherString.length); //adiciona-se '.'  para acionar funcões para a string
+
+//é possível fazer de tudo com as strings usando-se as funcões.
+//consulte os sites do w3schools, ndn(mozila) e ecma
