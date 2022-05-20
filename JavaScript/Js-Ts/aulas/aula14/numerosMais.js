@@ -1,3 +1,5 @@
+// IEE 754-2008 => padrao usado na matematica de JS que pode conter pequenas inconsistencias
+
 let numero1 = 1 //typeof Number
 let numero2 = 2.5 //typeof Number
 let numero3 = 10.1587924 //typeof Number
@@ -15,3 +17,8 @@ console.log(numero3.toFixed(2));
 
 // Verificar se é um número inteiro
 console.log(Number.isInteger(numero4));
+
+// Identificar se o é NaN
+let temporario = numero4 * 'oi'
+console.log(Number.isNaN(temporario));
+
