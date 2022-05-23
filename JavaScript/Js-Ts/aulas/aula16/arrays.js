@@ -2,6 +2,7 @@
 /*
 - Pode-se colocar qualquer coisa dentro de uma array
 - Como pratica se coloca apenas conteudos do mesmo tipó dentro de uma array
+- Em geral as variaveis (const, var, let), em array são mutaveis, assim como em objetos, com excessão de null.
 */ 
 //                0         1         2         3         4
 const alunos = ['Oscar', 'Amanda', 'Vitor', 'Alicia', 'Sophia']
