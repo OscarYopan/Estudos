@@ -26,9 +26,21 @@ console.log(alunos);
 alunos.unshift('Luiza') // adiciona um elemento no incio do array
 console.log(alunos);
 
+//OBS: Em geral adiciona-se um elemente no final da array
+
 alunos.pop() //remove o ultimo elemento
 console.log(alunos);
 
 const removido = alunos.pop() //remove o ulltimo elemento e jogo numa nova constante
 console.log(alunos);
 console.log(removido);
+
+const remove = alunos.shift() //remove o primeiro elemento e jogo numa nova constante
+console.log(alunos);
+console.log(remove);
+
+//console.log(alunos.slice(1, 3)); //remove uma fatia de elementos da array apartir da esquerda
+//console.log(alunos.slice(1, -1)); // remove uma fatia de elementos da array apartir da direita
+
+console.log(typeof alunos); // Em JavaScript array é um objeto
+console.log(alunos instanceof Array); // para ter certeza que é uma array
