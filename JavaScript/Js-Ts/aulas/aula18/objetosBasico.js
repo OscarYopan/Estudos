@@ -3,6 +3,7 @@
 - Possuem constantes Mutaveis, assim como arrays
 - Para criar um objeto usa-se as '{}'.
 - Entre os atributos usa-se necessariamente ','
+- Obejtos é um dos corações do JavaScript, juntamente com funções
 */
 
 const pessoa1 = {
@@ -57,4 +58,12 @@ console.log(pessoa5.contagem);
 pessoa5.fala()
 pessoa5.contador()
 console.log(pessoa5.contagem);
-
+pessoa5.fala()
+pessoa5.contador()
+console.log(pessoa5.contagem);
+pessoa5.fala()
+pessoa5.contador()
+console.log(pessoa5.contagem);
+pessoa5.fala()
+pessoa5.contador()
+console.log(pessoa5.contagem);
