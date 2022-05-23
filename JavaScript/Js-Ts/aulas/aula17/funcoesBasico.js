@@ -29,7 +29,7 @@ console.log(variavel);
 function soma(x, y) {
   let total = x + y
   return total
-  console.log('Ola Mundo'); // não é executado, pois está abaixo do array.
+  console.log('Ola Mundo'); // não é executado, pois está abaixo do return.
 }
 
 console.log(soma(1, 2));
