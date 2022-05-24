@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/*================= Reset =================*/
+*{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+/*================= Default =================*/
+html{
+  /*Colors*/
+
+  /*Fonts*/
+
+  /*Reset default font size*/
+  font-size: 62.5%; /*10px*/
+}
