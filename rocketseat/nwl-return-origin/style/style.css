@@ -17,8 +17,7 @@ html{
   --cor3: #D99F59;
   --cor4: #592B02;
   --cor5: #0D0D0D;
-  --branco: white;
-  --preto: black;
+  --cor6: #f5f5dc;
 
   /*Fonts*/
   --font1: font-family: 'DM Sans', sans-serif;  
@@ -97,10 +96,12 @@ button:hover{
 
 .stats{
   background-color: var(--cor3);
-  border: 1px solid var(--cor4);
+  border: 2px solid var(--cor4);
+  border-radius: 0.6rem;
 
   width: 32.7rem;
-  height: 47rem;
+
+  padding-block: 4rem;
 
   margin-inline: auto; /*marge em linha direita e esquerda*/
 
@@ -124,8 +125,16 @@ button:hover{
   color: var(--cor2);
 }
 
-/*
-footer{
-  background-color: var(--cor4);
+header::before{
+  content: ""; /*conteudo vazio*/
+
+  width: 100vw;
+  height: 105rem;
+  background-color: var(--cor6);
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
-*/
