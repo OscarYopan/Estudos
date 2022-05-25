@@ -37,7 +37,7 @@ header{
   width: 100%;
   margin-top: 4.1rem auto 0 auto;
 
-  background-color: var(--cor2);
+  /*background-color: var(--cor2);*/
 }
 
 h1{
@@ -95,13 +95,37 @@ button:hover{
   margin: 0 auto 6rem auto;
 }
 
-.container{
-  background-color: #D99F59;
-  border: 1px solid black;
+.stats{
+  background-color: var(--cor3);
+  border: 1px solid var(--cor4);
 
-  margin: 0 5rem;
+  width: 32.7rem;
+  height: 47rem;
+
+  margin-inline: auto; /*marge em linha direita e esquerda*/
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6rem; /*separação entre os elementos*/
 }
 
+.stat h3 {
+  font-size: 4.8rem;
+  color: var(--cor5);
+  line-height: 130%;
+
+  margin-bottom: 0.4rem;
+}
+
+.stat p{
+  margin: 0;
+  
+  color: var(--cor2);
+}
+
+/*
 footer{
   background-color: var(--cor4);
 }
+*/
