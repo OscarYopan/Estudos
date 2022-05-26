@@ -14,21 +14,42 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
-<body>
-  <nav class="scroll">
+<body onscroll="onScroll()" onload="onFix()">
+  <nav class="" id="navigation">
     <div class="wrapper">
       <a href="#" class="logo">
         <h1>Flex<span class="logotipo">Construtora</span></h1>
       </a>
-      <a href="#">
-        <i class="icon-menu3"></i>
-      </a>
+
+      <div class="nenu">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Depoimentos</a></li>
+          <li><a href="#">Portifólio</a></li>
+        </ul>
+
+        <button>Orçamento</button>
+
+        <ul>
+          <li><a href="#"><i class="icon-facebook2"></i></a></li>
+          <li><a href="#"><i class="icon-instagram"></i></a></li>
+          <li><a href="#"><i class="icon-mail"></i></a></li>
+        </ul>
+        
+        <i class="icon-exit"></i>
+
+      </div>
+      
+      <i class="icon-menu3"></i>
+
     </div>
   </nav>
   <header class="wrapper">
     <!--HOME-->
     <h4>BOAS-VINDO A FLEX CONSTRUTORA!</h4>
-    <H1>Aqui nós contruímos os seus sonhos!</H1>
+    <H1>Aqui construímos os seus sonhos!</H1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptate labore dolorem quod voluptatibus, officiis veritatis consectetur illum odit vitae natus placeat, magni beatae. Vel, esse. Quidem itaque similique quos!</p>
     <button >      
       <i class="icon-whatsapp"></i>
@@ -60,4 +81,5 @@
     <p>&copy; Desenvolvido por Oscar Yopan</p>
   </footer>
 </body>
+<script src="script/main.js"></script>
 </html>
