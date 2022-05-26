@@ -32,10 +32,15 @@ body{
   text-align: center;
 }
 
+.wrapper{
+  width: 37.5rem;
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
 /*---------------- Header -------------------------*/
-header{
-  width: 100%;
-  margin-top: 4.1rem auto 0 auto;
+header{ 
+  margin-top: calc(4.1rem + 7.2rem);
 
   /*background-color: var(--cor2);*/
 }
@@ -93,7 +98,7 @@ header::before{
   content: ""; /*conteudo vazio*/
 
   width: 100vw;
-  height: 105rem;
+  height: 112.2rem;
   background-color: var(--cor6);
   display: block;
 
@@ -145,8 +150,37 @@ header::before{
 
 nav{
   display: flex;
+
+  height: 7.2rem;
+
+  padding: 1.6rem 2.4rem;
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav .wrapper{
+  display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
-  background-color: white;
+nav.scroll{
+  width: 100vw;
+  background-color: var(--cor1);
+}
+
+nav h1{
+  color: white;
+}
+
+nav .logotipo{
+  color: var(--cor3);
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
 }
