@@ -33,7 +33,7 @@ body{
 }
 
 .wrapper{
-  width: 37.5rem;
+  width: 100vw;
   margin-inline: auto;
   padding-inline: 2.4rem;
 }
@@ -69,7 +69,7 @@ header p{
 }
 
 header button{
-  background-color: var(--cor1);
+  background-color: var(--cor2);
 
   border: none;
   border-radius: 2rem;
@@ -153,7 +153,7 @@ nav{
 
   height: 7.2rem;
 
-  padding: 1.6rem 2.4rem;
+  /* padding: 1.6rem 2.4rem; */
 
   position: fixed;
   top: 0;
@@ -165,11 +165,10 @@ nav .wrapper{
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
-nav.scroll{
+  background-color: var(--cor2);
+  height: 7.2rem;
   width: 100vw;
-  background-color: var(--cor1);
 }
 
 nav h1{
@@ -183,4 +182,8 @@ nav .logotipo{
 nav a{
   text-decoration: none;
   color: white;
+}
+
+nav.scroll{
+  background-color: var(--cor4);
 }
