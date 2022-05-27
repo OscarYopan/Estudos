@@ -301,7 +301,7 @@ body.menu-expanded .menu{
 body.menu-expanded .logo,
 body.menu-expanded nav button{
   position: relative;
-  z-index: 10;
+  z-index: 100;
 }
 
 .close-menu p{
