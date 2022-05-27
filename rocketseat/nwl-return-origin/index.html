@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
-<body onscroll="onScroll()" onload="onFix()" class="menu-expanded">
+<body onscroll="onScroll()" onload="onFix()" class="">
   <nav class="" id="navigation">
     <div class="wrapper">
       <a href="#" class="logo">
@@ -33,19 +33,19 @@
         <a href="#" class="button">Orçamento</a>
 
         <ul class="social-links">
-          <li><a href="#"><i class="icon-facebook2"></i></a></li>
-          <li><a href="#"><i class="icon-instagram"></i></a></li>
-          <li><a href="#"><i class="icon-mail"></i></a></li>
+          <li><a href="https://www.facebook.com" target="_blank"><i class="icon-facebook2"></i></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank"><i class="icon-instagram"></i></a></li>
+          <li><a href="https://www.gmail.com/" target="_blank"><i class="icon-mail"></i></a></li>
         </ul>      
 
       </div>
 
-      <button class="open-menu">
+      <button class="open-menu" onclick="openMenu()" aria-expanded="false" aria-label="Abrir Menu">
         <i class="icon-menu3"></i>
       </button>
 
-      <button class="close-menu">
-        <i class="icon-exit"></i>
+      <button class="close-menu" onclick="closeMenu()" aria-expanded="true" aria-label="Fechar Menu">
+        <p>X</p>
       </button>    
 
     </div>

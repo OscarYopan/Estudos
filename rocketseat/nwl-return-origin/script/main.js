@@ -11,3 +11,11 @@ function onScroll() {
 function onFix() {
   navigation.classList.add('fix')
 }
+
+function openMenu() {
+  document.body.classList.add('menu-expanded')  
+}
+
+function closeMenu() {
+  document.body.classList.remove('menu-expanded')
+}

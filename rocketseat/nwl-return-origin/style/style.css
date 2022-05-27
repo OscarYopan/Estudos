@@ -35,6 +35,8 @@ body{
   font-family: var(--font1);
   font-size: 1.6rem;
   text-align: center;
+  
+  overflow: overlay;
 }
 
 .wrapper{
@@ -202,9 +204,18 @@ nav.fix{
   background-color: var(--cor2);
 }
 
+nav button{
+  background: none;
+  cursor: pointer;
+}
+
 /*================= Menu Expanded =================*/
 body.menu-expanded{
   overflow: hidden;
+}
+
+body.menu-expanded > :not(nav){
+  display: none;
 }
 
 .menu, 
@@ -230,6 +241,8 @@ body.menu-expanded .menu{
 
   width: 100vw;
   height: 100vh;
+
+  padding-top: 7.2rem;
 }
 
 .social-links{
@@ -239,7 +252,7 @@ body.menu-expanded .menu{
   justify-content: center;
 }
 
-.menu ul{
+.menu ul:nth-child(1){
   display: flex;
   flex-direction: column;
   gap: 4.8rem;
@@ -251,7 +264,7 @@ body.menu-expanded .menu{
   line-height: 3.1rem;
 }
 
-.menu a{
+.menu ul li a{
   color: white;
 }
 
@@ -271,6 +284,10 @@ body.menu-expanded .menu{
   margin: 4.8rem 0;
 }
 
+.menu .button:hover{
+  background-color: var(--cor3);
+}
+
 .social-links i{
   color: white;
   font-size: 2.5rem;  
@@ -279,4 +296,16 @@ body.menu-expanded .menu{
 .social-links i:hover{
   font-size: 3rem;
   color: var(--cor3);
+}
+
+body.menu-expanded .logo,
+body.menu-expanded nav button{
+  position: relative;
+  z-index: 10;
+}
+
+.close-menu p{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
 }
