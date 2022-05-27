@@ -26,6 +26,11 @@ html{
   font-size: 62.5%; /*10px*/
 }
 
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
 body{
   font-family: var(--font1);
   font-size: 1.6rem;
@@ -33,9 +38,13 @@ body{
 }
 
 .wrapper{
-  width: 100vw;
+  width: 100%;
   margin-inline: auto;
   padding-inline: 2.4rem;
+}
+
+ul{
+  list-style: none;
 }
 
 /*---------------- Header -------------------------*/
@@ -97,7 +106,7 @@ button:hover{
 header::before{
   content: ""; /*conteudo vazio*/
 
-  width: 100vw;
+  width: 100%;
   height: 112.2rem;
   background-color: var(--cor6);
   display: block;
@@ -191,4 +200,83 @@ nav.scroll{
 
 nav.fix{
   background-color: var(--cor2);
+}
+
+/*================= Menu Expanded =================*/
+body.menu-expanded{
+  overflow: hidden;
+}
+
+.menu, 
+.close-menu,
+body.menu-expanded .open-menu{
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.menu-expanded .menu,
+body.menu-expanded .close-menu{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+body.menu-expanded .menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-color: var(--cor2);
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.social-links{
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  justify-content: center;
+}
+
+.menu ul{
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+
+  margin-top: 6rem;
+
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+}
+
+.menu a{
+  color: white;
+}
+
+.menu .button{
+  background-color: white;
+  border-radius: 2rem;
+
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  text-transform: uppercase;
+  color: var(--cor2);
+
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+
+  margin: 4.8rem 0;
+}
+
+.social-links i{
+  color: white;
+  font-size: 2.5rem;  
+}
+
+.social-links i:hover{
+  font-size: 3rem;
+  color: var(--cor3);
 }
