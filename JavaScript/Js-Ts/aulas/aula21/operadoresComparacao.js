@@ -8,9 +8,9 @@
 < - Menor que
 >= - Maior ou igual a
 <= - Menor ou igual a
-== - igualdade (valor)
+== - igualdade (valor) - não se deve ser usado
 === - igualdade estrita (valor e tipo)
-!= - diferente
+!= - diferente  - não se deve ser usado
 !== - diferente estrito (valor e tipo)
 */
 
