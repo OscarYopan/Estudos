@@ -25,6 +25,3 @@ console.log(!true);
 console.log(!false);
 
 console.log(!!true); // é acumulativo
-
-
-
