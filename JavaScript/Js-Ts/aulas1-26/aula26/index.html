@@ -11,25 +11,16 @@
   <section class="container">
     <h1>Calcule o seu IMC</h1>
     <p>O IMC (ou índice de massa corporal) é um cálculo simples que permite avaliar se a pessoa está dentro do peso que é considerado ideal para a sua altura.</p>
-    
-    <ul>
-      <li><strong>IMC</strong></li>
-      <li>Menos que 18,5kg</li>
-      <li>Entre 18,5kg e 24,9kg</li>
-      <li>Entre 25kg e </li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
+    <p>Esta é uma fórmula simples que vários profissionais de saúde, incluindo médicos, enfermeiros e nutricionistas, usam para saber, de uma forma rápida, se a pessoa precisa ganhar ou perder peso. Isso porque, tanto o excesso de peso, como a falta, podem trazer diversas consequências para a saúde, desde desnutrição até ao aumento do risco de infartos ou AVC.</p>  
 
-    <form action="">
+    <form action="/" class="form" method="POST">
       <label for="peso">Peso (KG).</label>
-      <input type="number" id="peso">
+      <input type="number" id="peso" name="peso">
 
       <label for="altura">Altura (M).</label>
       <input type="number" id="altura">
 
-      <button onclick="calculo()">Enviar</button>
+      <button onclick="calculo()" type="submit">Enviar</button>
       <div class="resultado">
         <p>resultado...</p>
       </div>
