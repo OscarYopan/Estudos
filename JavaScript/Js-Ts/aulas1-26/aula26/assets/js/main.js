@@ -4,10 +4,17 @@ const form = document.querySelector('.form')
 //parar de recarregar a página
 form.addEventListener('submit', function(event){
   event.preventDefault();
-  calculo()
+  const peso = event.target.querySelector('#peso')
+  const altura = event.target.querySelector('#altura')
 })
 
+function criaP(){
+  const p = document.createElement('p');
+  return p;  
+}
+
 function calculo(msg){
+  const p = criaP
   const peso = document.querySelector('#peso');
   const altura = document.querySelector('#altura');
   const res = document.querySelector('.resultado');
