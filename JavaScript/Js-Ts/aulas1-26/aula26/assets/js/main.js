@@ -20,9 +20,18 @@ form.addEventListener('submit', function(event){
     return
   }
 
-  console.log('Chehuei aqui!');
+  const imc = getImc(peso, altura)
+
+  console.log(imc);
 })
 
+//Função para calcular o IMC
+function getImc(peso, altura){
+  const imc = (peso / (altura/100)) ** 2
+  return imc.toFixed(2)
+}
+
+//Função para criar um paragrafo dentro do HTML
 function criaP(){
   const p = document.createElement('p');
   return p;  
@@ -33,6 +42,8 @@ function setResultado(msg, isValid){
   resultado.innerHTML = '';
 
   const p = criaP();
+  p.innerHTML = msg
+  resultado.appendChild(p)
 }
 
 function calculo(msg){
