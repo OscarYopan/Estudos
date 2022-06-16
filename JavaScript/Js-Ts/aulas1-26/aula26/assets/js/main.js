@@ -4,13 +4,25 @@ const form = document.querySelector('.form')
 //parar de recarregar a página
 form.addEventListener('submit', function(event){
   event.preventDefault();
-  const peso = event.target.querySelector('#peso')
-  const altura = event.target.querySelector('#altura')
+  const inputPeso = event.target.querySelector('#peso')
+  const inputAltura = event.target.querySelector('#altura')
+
+  const peso = Number(inputPeso.value);
+  const altura = Number(inputAltura.value);
+
+  if(!peso){
+    setResultado('Peso Inválido')
+  }
 })
 
 function criaP(){
   const p = document.createElement('p');
   return p;  
+}
+
+function setResultado(msg){
+  const resultado = document.querySelector('.resultado')
+
 }
 
 function calculo(msg){
