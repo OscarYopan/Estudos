@@ -11,8 +11,16 @@ form.addEventListener('submit', function(event){
   const altura = Number(inputAltura.value);
 
   if(!peso){
-    setResultado('Peso Inválido')
+    setResultado('Peso Inválido', false)
+    return
   }
+
+  if(!altura){
+    setResultado('Altura Inválida', false)
+    return
+  }
+
+  console.log('Chehuei aqui!');
 })
 
 function criaP(){
@@ -20,9 +28,11 @@ function criaP(){
   return p;  
 }
 
-function setResultado(msg){
+function setResultado(msg, isValid){
   const resultado = document.querySelector('.resultado')
+  resultado.innerHTML = '';
 
+  const p = criaP();
 }
 
 function calculo(msg){
