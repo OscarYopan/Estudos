@@ -26,8 +26,6 @@ form.addEventListener('submit', function(event){
   const msg = `Seu IMC é: ${imc} - ${nivelImc}.`
 
   setResultado(msg, true)
-
-  console.log(imc, nivelImc);
 })
 
 //Função para calcular o IMC
@@ -41,6 +39,8 @@ function criaP(){
   const p = document.createElement('p');
   return p;  
 }
+
+//Função para adicionar classe no resultado da pagina
 
 function setResultado(msg, isValid){
   const resultado = document.querySelector('.resultado')
@@ -58,6 +58,7 @@ function setResultado(msg, isValid){
   resultado.appendChild(p)
 }
 
+//Identificar o tipó do IMC
 function getNivelImc(imc){
   const nivel = ['Abaixo do peso', 'Peso Normal', 'Sobrepeso',
   'Obesidade Grau 1', 'Obesidade Grau 2', 'Obesidade Grau 3'];
