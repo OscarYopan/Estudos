@@ -21,8 +21,13 @@ form.addEventListener('submit', function(event){
   }
 
   const imc = getImc(peso, altura)
+  const nivelImc = getNivelImc(imc)
 
-  console.log(imc);
+  const msg = `Seu IMC é: ${imc} - ${nivelImc}.`
+
+  setResultado(msg, true)
+
+  console.log(imc, nivelImc);
 })
 
 //Função para calcular o IMC
@@ -42,6 +47,13 @@ function setResultado(msg, isValid){
   resultado.innerHTML = '';
 
   const p = criaP();
+
+  if(isValid){
+    p.classList.add('resultado')
+  }else{
+    p.classList.add('bad')
+  }
+
   p.innerHTML = msg
   resultado.appendChild(p)
 }
