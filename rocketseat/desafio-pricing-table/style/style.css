@@ -21,3 +21,17 @@ html{
   /*Reset default font size*/
   font-size: 62.5%; /*10px*/
 }
+
+body ::before{
+  content: '';
+  background-color: var(--cor2);
+  width: 100vw;
+  height: 50vh;
+
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
