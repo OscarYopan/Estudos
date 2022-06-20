@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 *{
   margin: 0;
@@ -15,11 +16,13 @@ html{
   --cor3: #828799;
   --cor4: #f9fbfc;
 
-  /*Fonts*/
-  --font1: font-family: 'Open Sans', sans-serif;  
 
   /*Reset default font size*/
   font-size: 62.5%; /*10px*/
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
 }
 
 body ::before{
@@ -65,7 +68,6 @@ main{
   border: 2px solid var(--cor3);
   border-radius: 1rem;
 
-  padding: 1rem;
   margin-top: 4rem;
   margin-right: 2rem;
 
@@ -73,9 +75,31 @@ main{
   height: 45rem;
 }
 
-.container h1{
-  background-color: var(--cor1);
-  padding: 2rem;
-  margin: 0;
-  border: none;
+.container p, h2, button{
+  padding-left: 1rem;
 }
+
+.container h2{
+  padding: 1.5rem 1rem;
+  font-size: 3rem;
+}
+
+.container p{
+  padding: 1rem 1rem;
+}
+
+.container button{
+  width: 28rem;
+
+  margin: 1.5rem auto;
+}
+
+.topo{
+  background-color: var(--cor1);
+  padding: 1.5rem 0 1.5rem 1rem;
+  
+  border-radius: 1rem 1rem 0rem 0rem;
+
+  font-weight: 400;
+}
+
