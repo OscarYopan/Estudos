@@ -108,7 +108,7 @@ main{
 }
 
 button::hover{
-  
+  background-color: var(--cor3);
 }
 
 .topo{
