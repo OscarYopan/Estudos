@@ -75,7 +75,7 @@ main{
   height: 45rem;
 }
 
-.container p, h2, button{
+.container p, h2,{
   padding-left: 1rem;
 }
 
@@ -86,12 +86,29 @@ main{
 
 .container p{
   padding: 1rem 1rem;
+  font-weight: 400;
 }
 
 .container button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 28rem;
+  height: 3rem;
+
+  border: 2px solid var(--cor2);
+  border-radius: .5rem;
 
   margin: 1.5rem auto;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+button::hover{
+  
 }
 
 .topo{
@@ -101,5 +118,17 @@ main{
   border-radius: 1rem 1rem 0rem 0rem;
 
   font-weight: 400;
+}
+
+#free button{
+  margin-top: 15rem;
+}
+
+#basico button{
+  background-color: var(--cor2);
+
+  color: white;
+
+  margin-top: 8rem;
 }
 
