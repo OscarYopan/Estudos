@@ -1,3 +1,4 @@
+/*Reset*/
 *{
   margin: 0;
   padding: 0;
@@ -6,6 +7,9 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+/*Default*/
 html{
   font-size: 62.5%;
 }
+
+/*video apartir de 08:00 minutos*/
