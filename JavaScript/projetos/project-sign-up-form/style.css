@@ -12,6 +12,7 @@ html{
   font-size: 62.5%;
 }
 
+/*Container*/
 .container{
   width: 100%;
   height: 100vh;
@@ -21,6 +22,7 @@ html{
   justify-content: center;
 }
 
+/*form wrapper*/
 .form-wrapper{
   width: 100rem;
   height: 70rem;
@@ -33,6 +35,7 @@ html{
   position: relative;
 }
 
+/*banner*/
 .banner{
   position: absolute;
   z-index: 100;
@@ -45,8 +48,17 @@ html{
   width: 30rem; 
 }
 
+.banner h1{
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.banner p{
+  font-size: 2rem;
+}
 
 
+/*green bg*/
 .green-bg{
   width: 40%;
   height: 100%;
@@ -76,4 +88,22 @@ html{
   color: white;
 
   cursor: pointer;
+}
+
+/*sign up form*/
+
+.signup-form{
+  width: 60rem;
+  height: 100%;
+  position: absolute;
+
+  top: 0;
+  left: 40rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 10rem 0;
 }
