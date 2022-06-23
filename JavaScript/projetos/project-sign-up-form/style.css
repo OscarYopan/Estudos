@@ -157,4 +157,27 @@ html{
 
 .input-group i{
   position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.signup-form button{
+  width: 16rem;
+  height: 5rem;
+
+  background-color: #3aaf9f;
+
+  border: none;
+  border-radius: 3rem;
+
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  color: white;
+
+  margin-top: 3rem;
+  cursor: pointer;
 }
