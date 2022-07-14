@@ -18,6 +18,16 @@ const data = new Date(1987, 2, 4, 21, 0, 0, 500) //ano, mes, dia, hora, minuto, 
 console.log(data.toString());
 
 
-const dataString = new Date()
-console.log(dataString.toString());
+const dataString = new Date('1987-03-04 21:00:00:500')
+console.log(dataString.toString()); //ano, mes, dia, hora, minuto, segundo, ms (nao se usa o '0' a esquerda). Usando-se String, metodo mais comum.
 
+//Consguir Diretamente os Dados Date()
+const dataVarios = new Date()
+console.log('Dia:', dataVarios.getDate());
+console.log('Mes:', dataVarios.getMonth() + 1); //começa do '0'
+console.log('Ano:', dataVarios.getFullYear());
+console.log('Hora:', dataVarios.getHours());
+console.log('Minuto:', dataVarios.getMinutes());
+console.log('Segundo:', dataVarios.getSeconds());
+console.log('Mili segundos:', dataVarios.getMilliseconds());
+console.log('Dia da semana:', dataVarios.getDay() + 1); //começa do '0'
