@@ -1,41 +1,39 @@
-@charset "UTF-8";
-
 :root {
-    /* Paleta de cores */
-    --cor: #ffffff;
-    --cor0: #000000;
-    --cor1: #34401A;
-    --cor2: #64732F;
-    --cor3: #CAD959;
-    --cor4: #B4BF5E;
-    --cor5: #252617;
-    /* Fontes */
-    --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* Paleta de cores */
+  --cor: #ffffff;
+  --cor0: #000000;
+  --cor1: #34401A;
+  --cor2: #64732F;
+  --cor3: #CAD959;
+  --cor4: #B4BF5E;
+  --cor5: #252617;
+  /* Fontes */
+  --font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 /* reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* padrão */
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 body {
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .screen {
-    width: 32rem;
-    height: 60rem;
-    border: .2rem solid var(--cor0);
-    border-radius: .5rem;
-    position: relative;
-    background-color: lightgrey;
+  width: 32rem;
+  height: 60rem;
+  border: .2rem solid var(--cor0);
+  border-radius: .5rem;
+  position: relative;
+  background-color: lightgrey;
 }
 .header {
     background-color: var(--cor4);
@@ -45,30 +43,33 @@ button {
     cursor: pointer;
 }
 .screen button i {
-    position: absolute;
-    font-size: 3.5rem;
-    right: 5%;
-    top: 2%;
+  position: absolute;
+  font-size: 3.5rem;
+  right: 5%;
+  top: 2%;
 }
 
 .screen button i:hover {
   color: var(--cor);
 }
 .menu {
-    position: absolute;
-    width: 100%;
-    height: 90%;
-    font-size: 5rem;
-    text-align: center;
-    line-height: 8rem;
-    background-color: var(--cor1);
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  font-size: 5rem;
+  text-align: center;
+  line-height: 8rem;
+  background-color: var(--cor1);
+}
+ul {
+  margin-top: 6rem;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 a {
-    text-decoration: none;
-    color: var(--cor3);
+  text-decoration: none;
+  color: var(--cor3);
 }
 
 a:hover {
@@ -77,6 +78,6 @@ a:hover {
 
 .remove {
   visibility: hidden;
-    z-index: -100;
-    opacity: 0%;
+  z-index: -100;
+  opacity: 0%;
 }
