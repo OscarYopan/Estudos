@@ -7,19 +7,19 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Estou começando a aprendear React JS
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/OscarYopan"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Oscar Yopan Github Perfil
         </a>
       </header>
     </div>
   );
 }
 
-export default App;
+export default App; // exporta a função e não o arquivo inteiro
