@@ -1,0 +1,3 @@
+npx create-react-app . //cria o projeto na pasta atual
+
+npx create-react-app project //cria uma nova pasta com o projeto dentro
