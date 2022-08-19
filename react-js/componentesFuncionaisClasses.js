@@ -1,4 +1,4 @@
-//Componente de função e Sem Estado 'Stateless':
+//-----------Componente de função e Sem Estado 'Stateless':
 
 // function NomeApp() {
 //   return(
@@ -6,7 +6,7 @@
 //   )
 // }
 
-//Componente de Classe e sem Estado 'Stateless':
+//-----------Componente de Classe e sem Estado 'Stateless':
 
 // import { Component } from 'react'
 
