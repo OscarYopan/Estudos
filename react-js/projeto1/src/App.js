@@ -19,7 +19,7 @@ class App extends Component {
   }
   */
 
-  state = { //Constructor de forma faclitada
+  state = { //Constructor de forma reduzida
   name: 'Oscar',
   lastName: 'Yopan',
   age: 35,
