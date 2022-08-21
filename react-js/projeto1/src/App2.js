@@ -1,6 +1,8 @@
 import './App.css';
 import { Component } from 'react';
 
+
+//State com Arrays e Objetos
 class App extends Component {
   state = {
     posts: [
@@ -26,8 +28,16 @@ class App extends Component {
     const { posts } = this.state
 
     return (
-      <div className='App'>
-        <h1>Treino</h1>
+      <div className='App'>        
+        {posts.map(post => (
+          <div key={post.id}>
+            <h1 >{post.title}</h1>
+            <p>{post.body}</p>
+            <p>{post.body}</p>
+            <p>{post.body}</p>
+            <p>{post.body}</p>
+          </div>
+        ))}
       </div>
     );
   }
