@@ -1,10 +1,12 @@
 import './App.css';
 import { Component } from 'react';
 
-
-//State com Arrays e Objetos
 class App extends Component {
+
+  //State com Arrays e Objetos
+  
   state = {
+    counter: 0,
     posts: [
       {
         id: 1,
@@ -23,13 +25,25 @@ class App extends Component {
       },
     ]
   }
+  
+
+  //Lifecicle methods
+  componentDidMount () {
+    const { posts, counter } = this.state
+    posts[0].title = 'Novo Titulo'
+
+    setTimeout(() => {
+      this.setState({ posts, counter: counter +1 })
+    }, 5000)
+  }
 
   render() {
-    const { posts } = this.state
+    const { posts, counter } = this.state
 
     return (
-      <div className='App'>        
-        {posts.map(post => (
+      <div className='App'>   
+        <p>{counter}</p>     
+        {posts.map(post => (          
           <div key={post.id}>
             <h1 >{post.title}</h1>
             <p>{post.body}</p>
