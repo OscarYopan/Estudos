@@ -28,7 +28,16 @@ class App extends Component {
   
 
   //Lifecicle methods
+
   componentDidMount () {
+    this.handleTimeout()
+  }
+
+  componentDidUpdate () {
+    
+  }
+  
+  handleTimeout = () => {
     const { posts, counter } = this.state
     posts[0].title = 'Novo Titulo'
 
