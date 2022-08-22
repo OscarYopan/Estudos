@@ -3,35 +3,38 @@ import { Component } from 'react';
 
 class App extends Component {
 
-  //State com Arrays e Objetos
-  
   state = {
-    counter: 0,
     posts: []
-  } 
+  };
 
-  //Lifecicle methods
+  //Buscando Dados Externos
 
   /*
-  https://pt-br.reactjs.org/docs/react-component.html
+  API's Links:
 
-  https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+  https://jsonplaceholder.typicode.com/
 
-  https://www.w3schools.com/react/react_lifecycle.asp
+  https://jsonplaceholder.typicode.com/posts
+
+  https://jsonplaceholder.typicode.com/photos
+
+  https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API
+
   */
 
-  componentDidMount () { //monta o componente
-    
+  componentDidMount () {
+    this.loadPosts()
   }
 
-  componentDidUpdate () { //atualiza o componente    
-    
+  loadPosts = async () => {
+    const postsResponse = fetch('https://jsonplaceholder.typicode.com/posts')
+
+    const [posts] = await Promise.all([postsResponse])
+
+    const postsJson = await posts.json()
+
+    this.setState({posts: postsJson})
   }
-
-  componentWillUnmount () { //desmonta o componente
-    
-  }  
-
 
   render() {
     const { posts } = this.state
