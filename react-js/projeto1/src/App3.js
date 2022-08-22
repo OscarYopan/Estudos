@@ -26,24 +26,37 @@ class App extends Component {
     ]
   }
   
+  timeoutUpdate = null
 
   //Lifecicle methods
 
-  componentDidMount () {
+  /*
+  https://pt-br.reactjs.org/docs/react-component.html
+
+  https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+  https://www.w3schools.com/react/react_lifecycle.asp
+  */
+
+  componentDidMount () { //monta o componente
     this.handleTimeout()
   }
 
-  componentDidUpdate () {
-    
+  componentDidUpdate () { //atualiza o componente    
+    this.handleTimeout()
+  }
+
+  componentWillUnmount () { //desmonta o componente
+    clearTimeout(this.timeouUpdate)
   }
   
-  handleTimeout = () => {
+  handleTimeout = () => { //Funcao que determina uma ação do componente
     const { posts, counter } = this.state
     posts[0].title = 'Novo Titulo'
 
-    setTimeout(() => {
+    this.timeouUpdate = setTimeout(() => {
       this.setState({ posts, counter: counter +1 })
-    }, 5000)
+    }, 1000)
   }
 
   render() {
