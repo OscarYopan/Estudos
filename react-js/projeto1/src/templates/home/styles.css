@@ -9,3 +9,13 @@
   align-items: flex-end;
   justify-content: center;
 }
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.search-container h1 {
+  margin-bottom: 30px;
+}
