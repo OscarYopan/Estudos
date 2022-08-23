@@ -1,9 +1,11 @@
 import { Component } from 'react'
-import './App4.css'
-import { Posts } from './components/Posts/index'
-import { loadPosts } from './utils/load-posts'
 
-class App extends Component {
+import './styles.css'
+
+import { Posts } from '../../components/Posts/index'
+import { loadPosts } from '../../utils/load-posts'
+
+export class Home extends Component {
   state = {
     posts: []
   }
@@ -27,5 +29,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
