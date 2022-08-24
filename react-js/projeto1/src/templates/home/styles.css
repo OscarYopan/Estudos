@@ -19,3 +19,7 @@
 .search-container h1 {
   margin-bottom: 30px;
 }
+
+.error-search {
+  margin: 15px;
+}
