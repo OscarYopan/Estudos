@@ -63,7 +63,7 @@ export const Home = () => {
       )}      
       
       {filteredPosts.length === 0 && (
-        <p className='error-search'>Não encontramos post com essa palavra!</p>
+        <p className='error-search'>Not found!</p>
       )} 
 
       <div className="button-container">
