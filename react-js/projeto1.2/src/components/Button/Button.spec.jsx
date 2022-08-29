@@ -36,4 +36,10 @@ describe('<Button />',  () => {
     const button = screen.getByRole('button', { name: /load more/i })
     expect(button).toBeEnabled()
   })
+
+  it('shoud match snapshot', () => {
+    const { container } = render(<Button text='load more' disabled={false} />)
+    
+    expect(container.firstChild).toMatchSnapshot()
+  })
 })
