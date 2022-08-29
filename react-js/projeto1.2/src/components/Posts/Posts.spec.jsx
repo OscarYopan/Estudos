@@ -36,4 +36,10 @@ describe('<Posts />', () => {
 
     expect(screen.getByRole('img', { name: /Title Three/i })).toHaveAttribute('src', 'img/img3.png')
   })
+
+  it('should match snapshot', () => {
+    const {container} = render(<Posts {...props} />)
+
+    expect(container.firstChild).toMatchSnapshot()
+  })
 })
