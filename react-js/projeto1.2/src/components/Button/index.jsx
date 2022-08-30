@@ -8,7 +8,7 @@ export class Button extends Component {
 
     return (
       <button
-      onClick={ onClick } 
+      onClick={ onClick }
       className='btn'
       disabled={disabled}
       >

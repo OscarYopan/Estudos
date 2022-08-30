@@ -1,29 +1,39 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-    jest: true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended',
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
   ],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    ecmaVersion: 12,
-    sourceType: 'module',
+    "ecmaVersion": 12,
+    "sourceType": "module"
   },
-  plugins: ['react'],
-  settings: {
-    react: {
-      version: 'detect',
-    },
+  "plugins": ["react"],
+  "rules": {
+    /* Essa regra indica que ao invés de erro, se torna apenas um warning */
+    "no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "no-debugger": "warn"
   },
-  rules: {
-    'react/react-in-jsx-scope': 'off',
-  },
-};
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
