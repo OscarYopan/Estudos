@@ -2,7 +2,7 @@ const pessoa = {
   nome: 'Oscar',
   sobrenome: 'Yopan',
   idade: 35,
-  endereço: {
+  endereco: {
     rua: 'Nicolau Garcia',
     numero: 130,
     cidade: 'São José',
@@ -14,14 +14,16 @@ const pessoa = {
 //--//--//--//--//--//
 // Atribuição normal:
 
-const sobrenome = pessoa.sobrenome 
+const snome = pessoa.sobrenome 
 
 console.log(pessoa.nome);
-console.log(sobrenome);
+console.log(snome);
 
 //--//--//--//--//--//
 // Atribuição via desestruturação:
 
-const { idade } = pessoa
+const { nome, sobrenome, endereco: {rua, numero}, ...resto } = pessoa
 
-console.log(idade);
+console.log(nome, sobrenome);
+console.log(rua, numero);
+console.log(resto);
