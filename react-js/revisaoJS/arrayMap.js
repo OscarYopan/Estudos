@@ -15,15 +15,9 @@ const numerosEmDobro = numeros.map((valor) => valor * 2)
 console.log(numerosEmDobro);
 
 
-
-
-
-
-
-
-
-
 //---//---//---//---//
+
+
 const pessoas = [
   { nome: 'Oscar', idade: 35 },
   { nome: 'Amanda', idade: 25},
@@ -32,3 +26,22 @@ const pessoas = [
   { nome: 'Marina', idade: 28},
   { nome: 'Cris', idade: 30}
 ]
+
+//Para cada elemento:
+//retorne uma string com o nome da pessoa
+const nomeLista = pessoas.map(valor => valor.nome)
+console.log(nomeLista);
+
+//Para cada elemento:
+//Remova apenas a chave 'nome' do objeto
+const removeNome = pessoas.map(valor => valor.idade)
+console.log(removeNome);
+
+//Para cada elemento:
+//Adicione uma chave 'id' em cada objeto. No caso o Id vai ser o indice
+const adicionaId = pessoas.map(function(valor, indice) {
+  const novoValor = { ...valor } // feito para cria um novo array e nao alterar o original
+  novoValor.id = indice
+  return novoValor
+})
+console.log(adicionaId);
