@@ -3,6 +3,7 @@
   - Filtra o array, ou seja permite criar filtros;
   - Pode ser usada junto com 'map' e 'reduce'
   - Sempre vai retornar um array com a mesma quantidade de elementos ou menos
+  - return boolean
 */
 
 //retorne os numeros maiores que 10
