@@ -26,4 +26,18 @@ const pessoas = [
 ]
 
 //retorne as pessoas que tem o nome com 5 letras ou mais
-const cincoLetras = pessoas.filter((nome) => )
+const cincoLetras = pessoas.filter((valor) => valor.nome.length > 4)
+
+console.log(cincoLetras);
+
+//retorne as pessoas com mais a 30 anos
+
+const maisVinteCincoAnos = pessoas.filter((valor) => valor.idade > 30)
+
+console.log(maisVinteCincoAnos);
+
+//pessoas curo o nome termina com a letra 'a'
+
+const letraA = pessoas.filter((valor) => valor.nome.toLocaleLowerCase().endsWith('a'))
+
+console.log(letraA);
