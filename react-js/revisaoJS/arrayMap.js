@@ -3,6 +3,7 @@
   - Altera o valor do array;
   - Pode ser usada junto com 'filter' e 'reduce'
   - Sempre vai retornar um array com valores alterados
+  - os dados retornados para a função são: 'objeto' 'indice' e 'array'.
   - return um valor modificado
 */
 
