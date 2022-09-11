@@ -40,12 +40,21 @@ console.log(dobro);
 
 
 const pessoas = [
-  { nome: 'Oscar', idade: 35 },
   { nome: 'Amanda', idade: 25},
   { nome: 'Guto', idade: 32},
   { nome: 'Felipe', idade: 30},
+  { nome: 'Oscar', idade: 35 },
   { nome: 'Marina', idade: 28},
   { nome: 'Cris', idade: 30}
 ]
 
 //retorne a pessoa mais velha
+
+const maisVelha = pessoas.reduce(function(acumulador, valor) {
+  if(acumulador.idade > valor.idade) {
+    return acumulador
+  }
+  return valor
+},/*vazio*/) //ficou vazio para receder os dados do primeiro indice
+
+console.log(maisVelha);
