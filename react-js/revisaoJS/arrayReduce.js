@@ -1,6 +1,8 @@
 //Reduce:
 /*
-  - os dados retornados para a função são: 'acumulador', 'objeto', 'indice' e 'array'.
+  - é utilizado para reduzir um array em um unico elemento;
+  - é possivel ser usado para filtrar e mapear, mas não é o correto;
+  - os dados retornados para a função são: 'acumulador', 'objeto', 'indice' e 'array';
   - o 'acumulador' é opcional, caso não defina será o primeiro indice do array.
 */
 
@@ -17,21 +19,21 @@ console.log(total);
 
 //Retorne um array  com os pares (filter)
 const pares = numeros.reduce(function (acumulador, valor) {
-  if(valor % 2 == 0) {
+  if(valor % 2 === 0) {
     acumulador.push(valor)
   }
   return acumulador
-}, [])
+}, []) //defini meu acumulador para acumular dentro de um array
 
 console.log(pares);
 
 //reorne um array com o dobro dos valores (map)
+const dobro = numeros.reduce(function (acumulador, valor) {
+  acumulador.push(valor * 2)
+  return acumulador
+}, [])
 
-
-
-
-
-
+console.log(dobro);
 
 
 //---//---//---//---//
@@ -46,5 +48,4 @@ const pessoas = [
   { nome: 'Cris', idade: 30}
 ]
 
-//Para cada elemento:
-//retorne uma string com o nome da pessoa
+//retorne a pessoa mais velha
