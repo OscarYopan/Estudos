@@ -3,6 +3,8 @@
   - Metodos que voce pode acessar na classe, se usar o 'new';
   - São basicamento funções que estao dentro da classe;
   - Só é possivel acessar pela classe
+  - nãio tem acesso aos dados da classe;
+  - Essa função poderia esta fora da classe e ser chamada normalmente
 */
 
 class ControleRemoto {
@@ -33,7 +35,6 @@ controle1.aumentarVolume()
 controle1.aumentarVolume()
 controle1.aumentarVolume()
 controle1.aumentarVolume()
-
 console.log(controle1);
 
 //Metodo Statico, funcionando para todos
