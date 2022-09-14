@@ -7,7 +7,7 @@
       - pending (pendente): Estado inicial, que não foi realizada nem rejeitada.
       - fulfilled (realizada): sucesso na operação.
       - rejected (rejeitado): falha na operação.
-  -
+  
   https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise
 */
 
@@ -19,13 +19,41 @@ function numeroAleatorio(min, max) {
 }
 
 function esperaAi(msg, tempo) {
-  setTimeout(() => {
-    console.log(msg);
-  }, tempo)
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(msg)
+    }, tempo)
+  })
 }
 
-esperaAi('Aguarde um momento!', numeroAleatorio(1, 2))
-esperaAi('mais um momento!', numeroAleatorio(1, 2))
-esperaAi('só mais um momento!', numeroAleatorio(1, 2))
-esperaAi('Pronto!', numeroAleatorio(1, 2))
+esperaAi('Conectando!', numeroAleatorio(1, 3))
+  .then(resposta => {
+    console.log(resposta);
+    return esperaAi('Transferindo arquivos!', numeroAleatorio(1, 3))
+  })
+  .then(resposta => {
+    console.log(resposta);
+    return esperaAi('Instalando!', numeroAleatorio(1, 3))
+  })
+  .then(resposta => {
+    console.log(resposta);
+    return esperaAi('Pronto!', numeroAleatorio(1, 3))
+  })
+  .then(resposta => {
+    console.log(resposta);
+  })
+  .catch()
+
+//Abaixo segue um exemplo de como seria fazer na força bruta, e sem controle de ordem de execução, visto que seria executado mesmo antes de finalizar a primeira execução:
+
+// function esperaAi(msg, tempo) {
+//   setTimeout(() => {
+//     console.log(msg);
+//   }, tempo)
+// }
+
+// esperaAi('Aguarde um momento!', numeroAleatorio(1, 2))
+// esperaAi('mais um momento!', numeroAleatorio(1, 2))
+// esperaAi('só mais um momento!', numeroAleatorio(1, 2))
+// esperaAi('Pronto!', numeroAleatorio(1, 2))
 
