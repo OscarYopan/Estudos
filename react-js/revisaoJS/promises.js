@@ -93,17 +93,20 @@ Promise.all(promises)
   })
 */
 
-  //Promisse.race
+//Promisse.race
   /*
-  Promise.race(promises)
-    .then( valor => {
-      console.log(valor);
-    })
-    .catch( erro => {
-      console.log(erro);
-    })
-  */
+Promise.race(promises)
+  .then( valor => {
+    console.log(valor);
+  })
+  .catch( erro => {
+    console.log(erro);
+  })
+*/
 
+
+//Promise.resolve
+/*
 function baixaPagina() {
   const emCache = true;
 
@@ -119,3 +122,21 @@ baixaPagina()
     console.log(dadosPagina);
   })
   .catch(e => console.log(e))
+*/
+
+//Promise.reject
+function baixaPagina() {
+  const emCache = true;
+
+  if(emCache) {
+    return Promise.reject('Pagina em Cache');
+  } else {
+    return esperaAi('Baixei a Pagina', 3000);
+  }
+}
+
+baixaPagina()
+  .then(dadosPagina => {
+    console.log(dadosPagina);
+  })
+  .catch(e => console.log('Errou feio!', e))
