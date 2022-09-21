@@ -28,6 +28,7 @@ function esperaAi(msg, tempo) {
   })
 }
 
+/*
 esperaAi('Conectando!', numeroAleatorio(1, 3))
   .then(resposta => {
     console.log(resposta);
@@ -47,10 +48,11 @@ esperaAi('Conectando!', numeroAleatorio(1, 3))
   .catch(e => { // catch() sempre refe-se a erro
     console.log('ERRO:', e);
   })
+  */
 
   //O JS nao espera a promese terminar para executar o programa
 
-  console.log('Isso será exibido antes de qualquer promise');
+  //console.log('Isso será exibido antes de qualquer promise');
 
 //Abaixo segue um exemplo de como seria fazer na força bruta, e sem controle de ordem de execução, visto que seria executado mesmo antes de finalizar a primeira execução:
 
@@ -65,3 +67,19 @@ esperaAi('Conectando!', numeroAleatorio(1, 3))
 // esperaAi('só mais um momento!', numeroAleatorio(1, 2))
 // esperaAi('Pronto!', numeroAleatorio(1, 2))
 
+//Promisse.all
+const promises = [
+  'primeiro valor',
+  esperaAi('Promise 1', 3000),
+  esperaAi('Promise 2', 500),
+  esperaAi('Promise 3', 1000),
+  'Outro valor'
+]
+
+Promise.all(promises)
+  .then( valor => {
+    console.log(valor);
+  })
+  .catch( erro => {
+    console.log('Errou feio!');
+  })
