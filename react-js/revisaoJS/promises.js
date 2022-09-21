@@ -20,10 +20,14 @@ function numeroAleatorio(min, max) {
 
 function esperaAi(msg, tempo) {
   return new Promise((resolve, reject) => {
-    if (typeof msg !== 'string') reject('Bad Value')
+    if (typeof msg !== 'string') {
+      reject('Bad Value')
+      return
+    }
 
     setTimeout(() => {
       resolve(msg)
+      return
     }, tempo)
   })
 }
@@ -67,19 +71,30 @@ esperaAi('Conectando!', numeroAleatorio(1, 3))
 // esperaAi('só mais um momento!', numeroAleatorio(1, 2))
 // esperaAi('Pronto!', numeroAleatorio(1, 2))
 
-//Promisse.all
+
 const promises = [
-  'primeiro valor',
+  //'primeiro valor',
   esperaAi('Promise 1', 3000),
   esperaAi('Promise 2', 500),
   esperaAi('Promise 3', 1000),
-  'Outro valor'
+  //esperaAi(1000, 1000),
+  //'Outro valor'
 ]
 
+//Promisse.all
 Promise.all(promises)
   .then( valor => {
     console.log(valor);
   })
   .catch( erro => {
-    console.log('Errou feio!');
+    console.log(erro);
   })
+
+  //Promisse.race
+  Promise.race(promises)
+    .then( valor => {
+      console.log(valor);
+    })
+    .catch( erro => {
+      console.log(erro);
+    })
