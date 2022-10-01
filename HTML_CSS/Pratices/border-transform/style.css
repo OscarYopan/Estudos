@@ -15,28 +15,34 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  position: relative;
 }
 
 .container {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, red, purple);
+  background: linear-gradient(to right, #a4a4a4, purple);
   border-radius: 50%;
   height: 150px;
   width: 150px;
-  animation: grow 10s linear infinite;
-  transform-origin: center;
+  animation: grow 5s linear infinite;
 }
 
 @keyframes grow {
-  0% {
-    transform: scale(0);
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }
 
 
 .image {
+  position: absolute;
   background-image: url("https://randomuser.me/api/portraits/women/44.jpg");
   background-size: cover;
   background-color: #a4a4a4;
