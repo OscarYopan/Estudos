@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-html{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 62.5%;
-}
-
 body {
   background-color: #a4a4a4;
   display: flex;
@@ -18,15 +13,15 @@ body {
   position: relative;
 }
 
-.container {
+.border-animation {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to right, #a4a4a4, purple);
+  background: linear-gradient(to right, purple, #a4a4a4, #a4a4a4);
   border-radius: 50%;
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
   animation: grow 5s linear infinite;
 }
 
@@ -40,13 +35,13 @@ body {
   }
 }
 
-
 .image {
   position: absolute;
-  background-image: url("https://randomuser.me/api/portraits/women/44.jpg");
+  background-image: url('https://source.unsplash.com/random');
+  background-position: center center;
   background-size: cover;
   background-color: #a4a4a4;
   border-radius: 50%;
-  height: 140px;
-  width: 140px;
+  height: 240px;
+  width: 240px;
 }
