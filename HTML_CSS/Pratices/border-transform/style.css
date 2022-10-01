@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #a4a4a4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, red, purple);
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  animation: grow 10s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+}
+
+
+.image {
+  background-image: url("https://randomuser.me/api/portraits/women/44.jpg");
+  background-size: cover;
+  background-color: #a4a4a4;
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+}
