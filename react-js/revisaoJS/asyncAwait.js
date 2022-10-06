@@ -6,14 +6,17 @@ function numeroAleatorio(min, max) {
 
 function esperaAi(msg, tempo) {
   return new Promise((resolve, reject) => {
-    if (typeof msg !== 'string') {
-      reject('Bad Value')
-      return
-    }
-
     setTimeout(() => {
-      resolve(msg)
+      if (typeof msg !== 'string ') {
+        reject('Cai no Erro')
+        return
+      }
+
+      resolve(msg.toUpperCase() +  ' - Passei na Promisse');
       return
-    }, tempo)
-  })
+    }, tempo);
+  });
 }
+
+esperaAi('Fase 1', numeroAleatorio(0, 3))
+  .then(valor => console.log(valor);)
