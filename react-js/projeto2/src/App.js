@@ -36,15 +36,12 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className={`App-logo ${reverseClass}`} alt="logo" />
-          <p>Oscar Yopan</p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={() => this.setState({ reverse: !reverse })}
+            type="buttons"
           >
-            Learn React
-          </a>
+            Reverter
+          </button>
         </header>
       </div>
     );
