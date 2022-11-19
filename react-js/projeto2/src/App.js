@@ -21,12 +21,21 @@ import { Component } from 'react';
 //   );
 // }
 
-class app extends Component {
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      reverse: true,
+    };
+  }
+
   render() {
+    const { reverse } = this.state;
+    const reverseClass = reverse ? 'reverse' : '';
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className={`App-logo ${reverseClass}`} alt="logo" />
           <p>Oscar Yopan</p>
           <a
             className="App-link"
