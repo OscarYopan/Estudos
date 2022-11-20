@@ -29,6 +29,10 @@ class App extends Component {
     };
   }
 
+  handleClick() {
+    this.setState({ reverse: !reverse });
+  }
+
   render() {
     const { reverse } = this.state;
     const reverseClass = reverse ? 'reverse' : '';
@@ -36,10 +40,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className={`App-logo ${reverseClass}`} alt="logo" />
-          <button
-            onClick={() => this.setState({ reverse: !reverse })}
-            type="buttons"
-          >
+          <button onClick={this.handleClick} type="buttons">
             Reverter
           </button>
         </header>
