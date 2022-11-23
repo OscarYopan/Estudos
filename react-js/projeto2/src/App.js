@@ -1,26 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
-import { Component } from 'react';
+import { useState } from 'react';
+//import { Component } from 'react';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>Oscar Yopan</p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+function App() {
+  //const { reverse } = this.state;
+  const [reverse, setReverse] = useState(false);
+  const reverseClass = reverse ? 'reverse' : '';
 
+  const handleClick = () => {
+    setReverse(!reverse);
+  };
+
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className={`App-logo ${reverseClass}`} alt="logo" />
+        <button onClick={handleClick} type="button">
+          Reverter
+        </button>
+      </header>
+    </div>
+  );
+}
+
+/*
 class App extends Component {
   constructor(props) {
     super(props);
@@ -52,5 +56,7 @@ class App extends Component {
     );
   }
 }
+
+*/
 
 export default App;
