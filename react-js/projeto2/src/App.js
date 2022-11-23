@@ -24,15 +24,18 @@ import { Component } from 'react';
 class App extends Component {
   constructor(props) {
     super(props);
+
+    this.handleClick.bind(this);
+
     this.state = {
       reverse: false,
     };
   }
 
-  handleClick() {
+  handleClick = () => {
     const { reverse } = this.state;
     this.setState({ reverse: !reverse });
-  }
+  };
 
   render() {
     const { reverse } = this.state;
@@ -41,7 +44,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className={`App-logo ${reverseClass}`} alt="logo" />
-          <button onClick={this.handleClick} type="buttons">
+          <button onClick={this.handleClick} type="button">
             Reverter
           </button>
         </header>
