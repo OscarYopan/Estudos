@@ -30,6 +30,7 @@ class App extends Component {
   }
 
   handleClick() {
+    const { reverse } = this.state;
     this.setState({ reverse: !reverse });
   }
 
