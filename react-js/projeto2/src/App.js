@@ -18,6 +18,9 @@ function App() {
         <img src={logo} className={`App-logo ${reverseClass}`} alt="logo" />
 
         <h2>Contador : {counter}</h2>
+        <h1>
+          Remover<br>assim q possivel</br>
+        </h1>
 
         <button onClick={handleClick} type="button">
           Reverter
