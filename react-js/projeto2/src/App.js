@@ -12,15 +12,16 @@ function App() {
     setCounter(counter + 1);
   };
 
+  // const handleIncrement = () => {
+  //   setCounter(counter + 1);
+  // };
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className={`App-logo ${reverseClass}`} alt="logo" />
 
         <h2>Contador : {counter}</h2>
-        <h1>
-          Remover<br>assim q possivel</br>
-        </h1>
 
         <button onClick={handleClick} type="button">
           Reverter
