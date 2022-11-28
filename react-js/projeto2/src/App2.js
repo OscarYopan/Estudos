@@ -6,6 +6,7 @@
   - 'componentDidMount' = execulta uma vez
     - necessita passar um segundo parametro, um array com dependencias.
     - caso passe um array vazio, executa somente uma vez
+  - com dependencia = executa toda vez que a dependencia muda.
 */
 
 import { useState, useEffect } from 'react';
@@ -24,10 +25,10 @@ function App() {
     console.log('componentDidMount');
   }, []);
 
-  //componentDidMount
+  //com dependencia
   useEffect(() => {
-    console.log('componentDidMount');
-  }, []);
+    console.log('contador mudou para:', counter);
+  }, [counter]);
 
   return (
     <div className="App">
