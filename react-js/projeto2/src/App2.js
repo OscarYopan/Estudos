@@ -26,7 +26,7 @@ function App() {
     console.log('componentDidMount');
     document.querySelector('h1')?.addEventListener('click', eventFn);
 
-    //limpeza
+    //componentWillEmout = limpeza
     return () => {
       document.querySelector('h1')?.removeEventListener('click', eventFn);
     };
