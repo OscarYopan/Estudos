@@ -6,25 +6,25 @@ import P from 'prop-types';
 import { useState } from 'react';
 import './App.css';
 
-button.prototypes = {
-  incrementButton: P.func,
+const Button = ({ incrementButton }) => {
+  return <button onClick={() => incrementButton(10)}>+</button>;
 };
 
-const button = (incrementButton) => {
-  return <button onClick={() => incrementButton(10)}>+</button>;
+Button.propTypes = {
+  incrementButton: P.func,
 };
 
 function App() {
   const [counter, setCounter] = useState(0);
 
-  const incrementCounter = () => {
-    setCounter(counter + 1);
+  const incrementCounter = (num) => {
+    setCounter(counter + num);
   };
 
   return (
     <div className="App">
       <h1>Contador: {counter}</h1>
-      <button onClick={incrementCounter}>+</button>
+      <Button incrementButton={incrementCounter} />
     </div>
   );
 }
