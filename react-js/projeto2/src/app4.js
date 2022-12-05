@@ -1,4 +1,4 @@
-//Hooks - UseMemo>
+//Hooks - UseMemo
 /*
   - Mesma função de 'UseCallBack';
   - Nesse caso ele salva valores;
@@ -6,19 +6,30 @@
   - Recebe um array com dependencias;
   *https://www.udemy.com/course/curso-de-reactjs-nextjs-completo-do-basico-ao-avancado/learn/lecture/24960210?start=15#overview
 */
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
+  const [posts, setPosts] = useState([]);
+
   console.log('Pai foi Renderizado!');
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/posts');
-  });
+    fetch('https://jsonplaceholder.typicode.com/posts')
+      .then((r) => r.json())
+      .then((r) => setPosts(r));
+  }, []);
 
   return (
     <div className="App">
-      <h1>Oi</h1>
+      {posts.map((post) => {
+        return (
+          <div className="post" key={post.id}>
+            <h1>{post.title}</h1>
+            <p>{post.body}</p>
+          </div>
+        );
+      })}
     </div>
   );
 }
