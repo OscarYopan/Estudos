@@ -6,8 +6,26 @@
   - Recebe um array com dependencias;
   *https://www.udemy.com/course/curso-de-reactjs-nextjs-completo-do-basico-ao-avancado/learn/lecture/24960210?start=15#overview
 */
+import P from 'prop-types';
 import { useEffect, useState } from 'react';
 import './App.css';
+
+const post = ({ post }) => {
+  return (
+    <div className="post" key={post.id}>
+      <h1>{post.title}</h1>
+      <p>{post.body}</p>
+    </div>
+  );
+};
+
+Post.propTypes = {
+  post: P.shape({
+    id: P.number,
+    title: P.string,
+    body: P.string,
+  }),
+};
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -26,12 +44,7 @@ function App() {
     <div className="App">
       {posts.length > 0 &&
         posts.map((post) => {
-          return (
-            <div className="post" key={post.id}>
-              <h1>{post.title}</h1>
-              <p>{post.body}</p>
-            </div>
-          );
+          return <Post post={post} key={post.id} />;
         })}
 
       {posts.length <= 0 && <p>Em busca...</p>}
