@@ -6,14 +6,14 @@
 */
 
 import P from 'prop-types';
-import { useCallback, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import './App.css';
 import React from 'react';
 
-const Button = React.memo(function Button({ incrementButton }) {
+const Button = ({ incrementButton }) => {
   console.log('Filho');
   return <button onClick={() => incrementButton(1)}>+</button>;
-});
+};
 
 Button.propTypes = {
   incrementButton: P.func,
@@ -29,10 +29,14 @@ function App() {
 
   console.log('Pai');
 
+  const btn = useMemo(() => {
+    return <Button incrementButton={incrementCounter} />;
+  }, [incrementCounter]);
+
   return (
     <div className="App">
       <h1>Contador: {counter}</h1>
-      <Button incrementButton={incrementCounter} />
+      {btn}
     </div>
   );
 }
