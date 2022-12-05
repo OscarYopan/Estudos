@@ -15,21 +15,26 @@ function App() {
   console.log('Pai foi Renderizado!');
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-      .then((r) => r.json())
-      .then((r) => setPosts(r));
+    setTimeout(function () {
+      fetch('https://jsonplaceholder.typicode.com/posts')
+        .then((r) => r.json())
+        .then((r) => setPosts(r));
+    }, 5000);
   }, []);
 
   return (
     <div className="App">
-      {posts.map((post) => {
-        return (
-          <div className="post" key={post.id}>
-            <h1>{post.title}</h1>
-            <p>{post.body}</p>
-          </div>
-        );
-      })}
+      {posts.length > 0 &&
+        posts.map((post) => {
+          return (
+            <div className="post" key={post.id}>
+              <h1>{post.title}</h1>
+              <p>{post.body}</p>
+            </div>
+          );
+        })}
+
+      {posts.length <= 0 && <p>Em busca...</p>}
     </div>
   );
 }
