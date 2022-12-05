@@ -7,10 +7,11 @@
   *https://www.udemy.com/course/curso-de-reactjs-nextjs-completo-do-basico-ao-avancado/learn/lecture/24960210?start=15#overview
 */
 import P from 'prop-types';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import './App.css';
 
-const post = ({ post }) => {
+const Post = ({ post }) => {
+  console.log('Filho, Renderizou!');
   return (
     <div className="post" key={post.id}>
       <h1>{post.title}</h1>
@@ -29,9 +30,11 @@ Post.propTypes = {
 
 function App() {
   const [posts, setPosts] = useState([]);
+  const [value, setValue] = useState('');
 
   console.log('Pai foi Renderizado!');
 
+  //component did mount
   useEffect(() => {
     setTimeout(function () {
       fetch('https://jsonplaceholder.typicode.com/posts')
@@ -42,10 +45,21 @@ function App() {
 
   return (
     <div className="App">
-      {posts.length > 0 &&
-        posts.map((post) => {
-          return <Post post={post} key={post.id} />;
-        })}
+      <p>
+        <input
+          type="search"
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+        />
+      </p>
+      {useMemo(() => {
+        return (
+          posts.length > 0 &&
+          posts.map((post) => {
+            return <Post post={post} key={post.id} />;
+          })
+        );
+      }, [posts])}
 
       {posts.length <= 0 && <p>Em busca...</p>}
     </div>
