@@ -1,18 +1,18 @@
 //Hooks - UseRef
 /*
   -
-  *https://reactjs.org/docs/hooks-reference.html#useref
-  *https://www.udemy.com/course/curso-de-reactjs-nextjs-completo-do-basico-ao-avancado/learn/lecture/24969452?start=15#content
+  * https://reactjs.org/docs/hooks-reference.html#useref
+  * https://www.udemy.com/course/curso-de-reactjs-nextjs-completo-do-basico-ao-avancado/learn/lecture/24969452?start=15#content
 */
 import P from 'prop-types';
 import { useEffect, useMemo, useState } from 'react';
 import './App.css';
 
-const Post = ({ post }) => {
+const Post = ({ post, handleClick }) => {
   console.log('Filho, Renderizou!');
   return (
     <div className="post" key={post.id}>
-      <h1>{post.title}</h1>
+      <h1 onClick={() => handleClick(post.title)}>{post.title}</h1>
       <p>{post.body}</p>
     </div>
   );
@@ -24,6 +24,7 @@ Post.propTypes = {
     title: P.string,
     body: P.string,
   }),
+  onclick: P.func,
 };
 
 function App() {
@@ -34,12 +35,14 @@ function App() {
 
   //component did mount
   useEffect(() => {
-    setTimeout(function () {
-      fetch('https://jsonplaceholder.typicode.com/posts')
-        .then((r) => r.json())
-        .then((r) => setPosts(r));
-    }, 5000);
+    fetch('https://jsonplaceholder.typicode.com/posts')
+      .then((r) => r.json())
+      .then((r) => setPosts(r));
   }, []);
+
+  const handleClick = (value) => {
+    setValue(value);
+  };
 
   return (
     <div className="App">
@@ -54,7 +57,7 @@ function App() {
         return (
           posts.length > 0 &&
           posts.map((post) => {
-            return <Post post={post} key={post.id} />;
+            return <Post post={post} key={post.id} handleClick={handleclick} />;
           })
         );
       }, [posts])}
