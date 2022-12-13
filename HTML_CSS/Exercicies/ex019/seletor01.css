@@ -1,33 +1,39 @@
-@charset "UTF-8";
 /*
 Tudo que em HTML é "id", em CSS é "#"
 Tudo que em HTML é "Class", em CSs é "."
 */
 
-body{
+body {
   background-color: rgb(209, 247, 235);
   font-family: Arial, Helvetica, sans-serif;
 }
-h1{
+
+h1 {
   color: rgb(19, 61, 47);
 }
-h1#principal{
+
+h1#principal {
   text-align: center;
   background-color: green;
   color: #ffffff;
 }
-h2{
+
+h2 {
   color: rgb(52, 184, 140);
 }
-.basico{
+
+.basico {
   color: rgb(114, 202, 92);
 }
-.intermediario{
+
+.intermediario {
   color: rgb(196, 184, 80);
 }
-.avancado{
+
+.avancado {
   color: rgb(255, 127, 127);
 }
-.principal{
+
+.principal {
   background-color: rgba(231, 241, 82, 0.548);
 }
