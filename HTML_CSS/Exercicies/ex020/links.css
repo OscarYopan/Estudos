@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 /*
   #   - id
   .   - class
@@ -7,31 +5,38 @@
   ::  - Pseido element
   >   - Children
 */
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;  
 }
-h1{
+
+h1 {
   color: brown;
   text-align: center;
 }
-p{
+
+p {
   text-align: justify;  
 }
-a{
+
+a {
   color: black;
   text-decoration-line: none;
 }
-a:visited{
+
+a:visited {
   color: blue;
 }
+
 a:hover{
   text-decoration-line: underline;
   color: black;
 }
-a:active{
+
+a:active {
   color: red;
 }
-a::after{
+
+a::after {
   content: ' [Link]';
   color: darkgray;
   font-weight: normal;
