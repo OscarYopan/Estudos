@@ -1,46 +1,55 @@
 @charset "UTF-8";
 
-*{
+* {
   font-family: Arial, Helvetica, sans-serif;
 }
-  body{background-color: #F9E0AF;
+
+body {background-color: #F9E0AF;
 }
-header{
+
+header {
   background-color: #ffffff;
   padding: 10px;
   margin: 10px auto;
   border-radius: 10px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
 }
-nav{
+
+nav {
   background-color: #006A95;
   padding: 5px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);  
 }
-nav > a{
+
+nav > a {
   color: white;
   text-decoration: none;
   padding: 0px 15px;   
 }
-nav > a:hover{
+
+nav > a:hover {
   color: #FF1400;
 }
-main{
+
+main {
   background-color: #ffffff;
   margin: auto;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
 }
-article{
+
+article {
   background-color: #58ADA0;
   padding: 5px;
   margin: 4px;
 }
-article > aside{
+
+article > aside {
   background-color: #FF5C00;
 }
-footer{
+
+footer {
   background-color: #006A95;
   color: #ffffff; 
   margin: 10px auto;
@@ -49,13 +58,16 @@ footer{
   border-radius: 10px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.315);
 }
-footer > p{
+
+footer > p {
   margin: 0px;
   text-align: center;
 }
-h1{
+
+h1 {
   color: #FF5C00;
 }
-p{
+
+p {
   text-align: justify;
 }
