@@ -1,6 +1,4 @@
-@charset "UTF-8";
-
-h1{
+h1 {
   background-color: aquamarine;
   width: 200px;
   height: 200px;
@@ -29,7 +27,8 @@ h1{
   outline-color: greenyellow;
   outline:  10px dashed orangered; /* short hand outline configuration */
 }
-a{
+
+a {
   background-color: antiquewhite;
   width: 25px;
   height: 20px;
