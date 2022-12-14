@@ -1,6 +1,4 @@
-@charset "UTF-8";
-
-body{
+body {
   height: 100vh;
   /*background-color: darkcyan;
   background-image: url('../imagens/wallpaper002.jpg');
@@ -15,7 +13,8 @@ body{
   background: darkcyan url(../imagens/wallpaper002.jpg) center center no-repeat fixed;
   background-size: cover;
 }
-main{
+
+main {
   background-color: white;
   max-width: 400px;
   padding: 10px;
