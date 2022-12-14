@@ -1,6 +1,4 @@
-@charset "UTF-8";
-
-section#container{
+section#container {
   height: 95vh;
   background-color: blue;
   background-image: url(../imagens/target001.png);
@@ -8,7 +6,8 @@ section#container{
   padding: 10px;
 
 }
-article#conteudo{
+
+article#conteudo {
   height: 200px;
   width: 400px;
   background-color: green;
