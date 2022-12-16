@@ -1,50 +1,58 @@
-@charset "UTF-8";
-
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: darkseagreen;
 }
-header{
+
+header {
   color: white;
   text-align: center;
 }
-main{
+
+main {
   background-color: white;
   max-width: 500px;
   margin: 10px auto;
   padding: 10px;
   border-radius: 10px;
 }
-div{
+
+div {
   border: 3px solid darkseagreen;
   margin: 10px auto;
   border-radius: 10px;
 }
-div#bot{
+
+div#bot {
   text-align: center;
   padding: 5px;
 }
-div input{
+
+div input {
   background-color: lightgray;
 }
-div input#botao{
+
+div input#botao {
   padding: 8px;
   margin: 0px auto;
   border-radius: 5px;
 }
-div p{
+
+div p {
   text-align: justify;
   padding: 5px;
 }
-footer{
+
+footer {
   text-align: center;
   color: white;
 }
-a{
+
+a {
   text-decoration: none;
   color: white;
 }
-a:hover{
+
+a:hover {
   text-decoration: underline;
   color: chocolate;
 }
