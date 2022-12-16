@@ -1,22 +1,24 @@
-@charset "UTF-8";
-
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: aquamarine;
 }
-h1{
+
+h1 {
   text-align: center;
 }
-button{
+
+button {
   background-color: darkcyan;
   color: white;
   padding: 15px;
   margin: auto;
   font-weight: bolder;
 }
-button a{
+
+button a {
   text-decoration: none;
 }
-button a:hover{
+
+button a:hover {
   color: aquamarine;
 }
