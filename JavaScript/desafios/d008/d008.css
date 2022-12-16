@@ -1,15 +1,15 @@
-@charset "UTF-8";
-
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: darkcyan;  
 }
-header{
+
+header {
   margin: 90px 0px 10px 0px;
   color: white;
   text-align: center;
 }
-main{
+
+main {
   background-color: khaki;
   text-align: center;
   min-width: 45vh;
@@ -19,31 +19,38 @@ main{
   border-radius: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.479);
 }
-input{
+
+input {
   padding: 10px;
   font-weight: bold;
   border-radius: 10px;
 }
-footer{
+
+footer {
   text-align: center;
   margin: 0px;
 }
-footer p{
+
+footer p {
   color: white;
 }
-p{
+
+p {
   font-weight: bold;
 }
-div{
+
+div {
   text-align: justify;
   border: 2px solid darkcyan;
   border-radius: 10px;
 }
-a{
+
+a {
   text-decoration: none;
   color: white;
 }
-a:hover{
+
+a:hover {
   text-decoration: underline;
   color: aquamarine;
 }
