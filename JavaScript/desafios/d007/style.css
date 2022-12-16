@@ -1,24 +1,25 @@
-@charset "UTF-8";
-
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: lightblue;
 }
-header{
+
+header {
   background-color: yellowgreen;
   padding: 15px;
   margin: auto;
   text-align: center;
   border-radius: 15px;  
 }
-main{
+
+main {
   background-color: beige;
   padding: 15px;
   margin: auto;
   text-align: center;
   border-radius: 15px;
 }
-input{
+
+input {
   background-color: brown;
   font-size: 1.5em;
   font-weight: bolder;
