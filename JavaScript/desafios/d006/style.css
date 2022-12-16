@@ -1,11 +1,10 @@
-@charset "UTF-8";
-
-body{
+body {
   background-color: peachpuff;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
-header{
+
+header {
   background-color: darkcyan;
   width: 60vh;
   padding: 15px;
@@ -15,7 +14,8 @@ header{
   border-radius: 15px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.74);
 }
-main{
+
+main {
   background-color: lightgreen;
   width: 60vh;
   padding: 15px;
@@ -23,7 +23,8 @@ main{
   border-radius: 15px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.767);
 }
-input{
+
+input {
   padding: 10px;
   border-radius: 10px;
   font-weight: bold;
