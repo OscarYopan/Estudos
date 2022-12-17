@@ -1,7 +1,7 @@
-function parouimpar(n){
-  if(n%2==0){
+function parouimpar(n) {
+  if (n % 2 == 0) {
     return 'Par'
-  }else{
+  } else {
     return 'Impar'
   }
 }
