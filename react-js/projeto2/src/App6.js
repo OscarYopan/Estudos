@@ -6,6 +6,7 @@
   * https://pt-br.reactjs.org/docs/hooks-reference.html#usecontext
 */
 import React from 'react';
+import { useState } from 'react';
 import { useContext } from 'react';
 import './App.css';
 
@@ -21,24 +22,41 @@ const globalContext = React.createContext();
 
 // eslint-disable-next-line
 const Div = ({ children }) => {
-  return (<H1 />), (<Text />);
+  return (
+    <>
+      <H1 />;
+      <Text />
+    </>
+  );
 };
 
 // eslint-disable-next-line
 const H1 = ({ children }) => {
   const theContext = useContext(globalContext);
-  return <h1>{theContext.title}</h1>;
+  const {
+    contextState: { title, counter },
+  } = theContext;
+  return (
+    <h1>
+      {title} - {counter}
+    </h1>
+  );
 };
 
 // eslint-disable-next-line
 const Text = ({ children }) => {
   const theContext = useContext(globalContext);
-  return <p>{theContext.text}</p>;
+  const {
+    contextState: { text },
+  } = theContext;
+  return <p>{text}</p>;
 };
 
 function App() {
+  const [contextState, setConextState] = useState(globalState);
+
   return (
-    <globalContext.Provider value={globalState}>
+    <globalContext.Provider value={{ contextState, setConextState }}>
       <Div />
     </globalContext.Provider>
   );
