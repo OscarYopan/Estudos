@@ -6,11 +6,13 @@
   * https://pt-br.reactjs.org/docs/hooks-reference.html#usecontext
 */
 import React from 'react';
+import { useContext } from 'react';
 import './App.css';
 
 // eslint-disable-next-line
 const globalState = {
   title: 'Titulo do Contexto',
+  text: 'Esse é um texto apenas com a intenção de treinar um hook durante meu estudo de React JS. Espero que eu consiga entender tudo muito bem, para poder pratica-lo bem no futuro e garantir uma boa colocação no mercado de trabalho.',
   counter: 0,
 };
 
@@ -19,14 +21,26 @@ const globalContext = React.createContext();
 
 // eslint-disable-next-line
 const Div = ({ children }) => {
-  return <div className="App">{children}</div>;
+  return (<H1 />), (<Text />);
+};
+
+// eslint-disable-next-line
+const H1 = ({ children }) => {
+  const theContext = useContext(globalContext);
+  return <h1>{theContext.title}</h1>;
+};
+
+// eslint-disable-next-line
+const Text = ({ children }) => {
+  const theContext = useContext(globalContext);
+  return <p>{theContext.text}</p>;
 };
 
 function App() {
   return (
-    <div className="App">
-      <h1>Oi</h1>
-    </div>
+    <globalContext.Provider value={globalState}>
+      <Div />
+    </globalContext.Provider>
   );
 }
 
