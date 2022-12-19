@@ -47,9 +47,17 @@ const H1 = ({ children }) => {
 const Text = ({ children }) => {
   const theContext = useContext(globalContext);
   const {
-    contextState: { text },
+    // eslint-disable-next-line
+    contextState: { text, counter },
+    setConextState,
   } = theContext;
-  return <p>{text}</p>;
+  return (
+    <p
+      onClick={() => setConextState((s) => ({ ...s, counter: s.counter + 1 }))}
+    >
+      {text}
+    </p>
+  );
 };
 
 function App() {
