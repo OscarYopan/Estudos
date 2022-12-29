@@ -1,12 +1,15 @@
+import { useState } from 'react';
 import { createContext } from 'react';
 import { globalState } from './data';
 
-const GlobalContext = createContext();
+export const GlobalContext = createContext();
 
 // eslint-disable-next-line
 export const AppContext = ({ children }) => {
+  const [state, setState] = useState(globalState);
+
   return (
-    <GlobalContext.Provider value={globalState}>
+    <GlobalContext.Provider value={(state, setState)}>
       {children}
     </GlobalContext.Provider>
   );

@@ -1,16 +1,15 @@
 import { useContext } from 'react';
+import { GlobalContext } from '../../contexts/AppContext';
 
 // eslint-disable-next-line
 export const P = () => {
   const theContext = useContext(GlobalContext);
   const {
     contextState: { body, counter },
-    setContextState,
+    setState,
   } = theContext;
   return (
-    <p
-      onClick={() => setContextState((s) => ({ ...s, counter: s.counter + 1 }))}
-    >
+    <p onClick={() => setState((s) => ({ ...s, counter: s.counter + 1 }))}>
       {body} {counter}
     </p>
   );
