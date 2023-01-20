@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <h1>{state.title}</h1>
       <p>{state.body}</p>
-      <h2>Contagem: {state.counter}</h2>
+      <h2>{state.counter}</h2>
       <button onClick={() => dispatch({ type: 'muda' })}>Click</button>
       <button onClick={() => dispatch({ type: 'contar' })}>Contar</button>
     </div>
