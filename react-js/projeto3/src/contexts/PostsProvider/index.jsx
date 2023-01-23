@@ -1,11 +1,19 @@
-import * as types from './types';
+import P from 'prop-types';
+import { useReducer } from 'react';
+import { PostsContext } from './context';
+import { data } from './data';
+import { reducer } from './reducer';
 
-export const loadPosts = async (dispatch) => {
-  dispatch({ type: types.POSTS_LOADING });
+export const PostsProvider = ({ children }) => {
+  const [postsState, postsDispatch] = useReducer(reducer, data);
 
-  const postsRaw = await fetch('https://jsonplaceholder.typicode.com/posts');
-  const posts = await postsRaw.json();
-  console.log('Carreguei os posts');
+  return (
+    <PostsContext.Provider value={{ postsState, postsDispatch }}>
+      {children}
+    </PostsContext.Provider>
+  );
+};
 
-  return () => dispatch({ type: types.POSTS_SUCCESS, payload: posts });
+PostsProvider.propTypes = {
+  children: P.node.isRequired,
 };
