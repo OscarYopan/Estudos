@@ -6,3 +6,27 @@ const useAsync = (asyncFunction, shouldRun) => {
     error: null,
     status: 'idle',
   });
+
+  const run = useCallback(() => {
+    setState({
+      result: null,
+      error: null,
+      status: 'pending',
+    });
+
+    return asyncFunction()
+      .then((response) => {
+        setState({
+          result: response,
+          error: null,
+          status: 'settled',
+        });
+      })
+      .catch((err) => {
+        setState({
+          result: null,
+          error: err,
+          status: 'error',
+        });
+      });
+  }, [asyncFunction]);
