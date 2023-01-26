@@ -52,3 +52,40 @@ const ItWillThrowError = () => {
     </div>
   )
 }
+
+export const Home = () => {
+  return (
+    <div {...s}>
+      <MyErrorBoundary>
+        <ItWillThrowError />
+      </MyErrorBoundary>
+      <MyErrorBoundary>
+        <ItWillThrowError />
+      </MyErrorBoundary>
+      <MyErrorBoundary>
+        <ItWillThrowError />
+      </MyErrorBoundary>
+      <MyErrorBoundary>
+        <ItWillThrowError />
+      </MyErrorBoundary>
+      <MyErrorBoundary>
+        <ItWillThrowError />
+      </MyErrorBoundary>
+      <MyErrorBoundary>
+        <ItWillThrowError />
+      </MyErrorBoundary>
+      <MyErrorBoundary>
+        <ItWillThrowError />
+      </MyErrorBoundary>
+      <MyErrorBoundary>
+        <ItWillThrowError />
+      </MyErrorBoundary>
+      <MyErrorBoundary>
+        <ItWillThrowError />
+      </MyErrorBoundary>
+      <MyErrorBoundary>
+        <ItWillThrowError />
+      </MyErrorBoundary>
+    </div>
+  )
+}
