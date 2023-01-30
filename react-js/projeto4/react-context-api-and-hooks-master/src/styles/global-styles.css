@@ -11,9 +11,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+button {
+  font-size: 16px;
+  margin: 1rem;
+  border-radius: .5rem;
+  padding: .5rem;
+  border: none;
+  background-color: cadetblue;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: .80;
+}
+
+button:active {
+  transform: scale(.98);
 }
