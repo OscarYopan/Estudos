@@ -12,7 +12,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route path="/" component={Home} exact />
-        <Route path="/abc" component={Abc} exact />
+        <Route path="/abc/:slug?/:id?" component={Abc} />
         <CounterContextProvider>
           <Home />
         </CounterContextProvider>
