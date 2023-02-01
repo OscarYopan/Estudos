@@ -11,8 +11,9 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Switch>
-        <Route path="/" component={Home} exact />
-        <Route path="/abc/:slug?/:id?" component={Abc} />
+        <Route path="/abc" component={Abc} />
+        <Route path="/" component={App} exact />
+        <Route path="*" component={Page404} />
         <CounterContextProvider>
           <Home />
         </CounterContextProvider>
