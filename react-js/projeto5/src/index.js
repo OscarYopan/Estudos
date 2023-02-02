@@ -4,11 +4,13 @@ import '../src/styles/index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Home } from './components/home'
 import { About } from './components/about'
+import { Menu } from './components/menu'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <Menu />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
