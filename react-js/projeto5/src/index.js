@@ -6,6 +6,7 @@ import { Home } from './components/home'
 import { About } from './components/about'
 import { Menu } from './components/menu'
 import { Post } from './components/post'
+import { Redirect } from './components/redirect'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -17,6 +18,7 @@ root.render(
         <Route path="/about" element={<About />} />
         <Route path="/post/:id" element={<Post />} />
         <Route path="/post" element={<Post />} />
+        <Route path="/redirect" element={<Redirect />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
