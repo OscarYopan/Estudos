@@ -26,6 +26,7 @@ export const Redirect = () => {
   return (
     <div>
       <h1>Redirect</h1>
+      <p>This is going to be redirect to Home page.</p>
     </div>
   )
 }

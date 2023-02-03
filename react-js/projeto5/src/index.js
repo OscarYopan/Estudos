@@ -7,6 +7,7 @@ import { About } from './components/about'
 import { Menu } from './components/menu'
 import { Post } from './components/post'
 import { Redirect } from './components/redirect'
+import { NotFound } from './components/notFound'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
@@ -19,6 +20,7 @@ root.render(
         <Route path="/post/:id" element={<Post />} />
         <Route path="/post" element={<Post />} />
         <Route path="/redirect" element={<Redirect />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
