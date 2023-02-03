@@ -1,5 +1,5 @@
 import './style.css'
-import { useParams, useSearchParams } from 'react-router-dom'
+import { Outlet, useParams, useSearchParams } from 'react-router-dom'
 
 export const Post = () => {
   const params = useParams()
@@ -11,6 +11,7 @@ export const Post = () => {
     <div>
       <h1>Post{id}</h1>
       <div className='post'></div>
+      < Outlet/>
     </div>
   )
 }
