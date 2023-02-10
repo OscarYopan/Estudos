@@ -1,8 +1,10 @@
-import { render, screen } from '@testing-library/react';
-import App from './index';
+import { renderTheme } from '../../styles/reder-theme';
+import Home from './index';
+import { screen } from '@testing-library/react';
+
 
 test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  renderTheme(<Home />);
+  const headingContainer = screen.getByRole('heading', { name: 'Hello' })
+    .parentElement;
 });
