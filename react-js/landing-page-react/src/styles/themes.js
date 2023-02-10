@@ -9,5 +9,12 @@ export const theme = {
 
   fonts: {},
 
-  spacig: {}
+  spacig: {
+    margin: {
+      marginTop: '4rem',
+      marginBotton: '4rem',
+      marginLeft: '2rem',
+      marginRigth: '2rem'
+    }
+  }
 }
