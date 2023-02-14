@@ -7,7 +7,12 @@ export const theme = {
     color5: '#A69068'
   },
 
-  fonts: {},
+  fonts: {
+    family: {
+      default: "'Open Sans', sans-serif",
+      secondary: "'Montserrat', sans-serif"
+    }
+  },
 
   spacig: {
     margin: {
