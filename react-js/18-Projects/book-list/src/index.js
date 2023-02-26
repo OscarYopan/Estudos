@@ -1,33 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { Book } from './components/Book/book'
+import { Booklist } from './components/BookList/booklist'
 
-// Nest Components
 function App() {
   return (
     <div className="App">
-      <Hello />
-      <Botao />
-    </div>
-  )
-}
-
-const Hello = () => {
-  return (
-    <div className="exemploName">
-      <h1>Hello World!</h1>
-      <ul>
-        <li>First</li>
-        <li>Second</li>
-      </ul>
-      <input type="text" />
-    </div>
-  )
-}
-
-const Botao = () => {
-  return (
-    <div className="Botao">
-      <h3>Novo Mundo!</h3>
+      <Booklist />
+      <Book />
     </div>
   )
 }
@@ -36,4 +16,4 @@ export default App
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
-root.render(<Hello />)
+root.render(<App />)
