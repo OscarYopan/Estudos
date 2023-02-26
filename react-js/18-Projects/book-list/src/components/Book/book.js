@@ -1,9 +1,14 @@
 import React from 'react'
+import { Image } from '../Image/image'
+import { Title } from '../Title/title'
+import { Author } from '../Author/author'
 
 export const Book = () => {
   return (
     <div className="book">
-      <h2>Mornig!</h2>
+      <Image />
+      <Title />
+      <Author />
     </div>
   )
 }
