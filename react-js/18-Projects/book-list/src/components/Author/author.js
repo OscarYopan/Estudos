@@ -3,7 +3,7 @@ import React from 'react'
 export const Author = () => {
   return (
     <div className="Author">
-      <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+      <h4>Lloyd Devereux Richards</h4>
     </div>
   )
 }

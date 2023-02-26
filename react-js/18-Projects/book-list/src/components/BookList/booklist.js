@@ -5,6 +5,9 @@ export const Booklist = () => {
   return (
     <div className="booklist">
       <Book />
+      <Book />
+      <Book />
+      <Book />
     </div>
   )
 }
