@@ -1,8 +1,9 @@
 import React from 'react'
+import './title.css'
 
 export const Title = () => {
   return (
-    <div className="Tile">
+    <div className="title">
       <h1>Stone Maidens</h1>
     </div>
   )
