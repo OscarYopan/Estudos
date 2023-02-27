@@ -1,4 +1,5 @@
 import React from 'react'
+import './book.css'
 import { Image } from '../Image/image'
 import { Title } from '../Title/title'
 import { Author } from '../Author/author'
