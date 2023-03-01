@@ -9,7 +9,6 @@ export const Booklist = () => {
       <Book />
       <Book />
       <Book />
-      <Book />
     </div>
   )
 }
