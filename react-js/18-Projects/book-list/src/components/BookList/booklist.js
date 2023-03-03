@@ -12,8 +12,16 @@ export const Booklist = () => {
         title={firstBook.title}
         image={firstBook.image}
       />
-      <Book />
-      <Book />
+      <Book
+        author={secondBook.author}
+        title={secondBook.title}
+        image={secondBook.image}
+      />
+      <Book
+        author={threeBook.author}
+        title={threeBook.title}
+        image={threeBook.image}
+      />
     </div>
   )
 }
