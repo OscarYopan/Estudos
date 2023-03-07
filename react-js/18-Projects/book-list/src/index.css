@@ -16,22 +16,6 @@ body {
   }
 }
 
-.author h4 {
-  font-size: .6rem;
-}
-
-.book {
-  background-color: #fff;
-  border-radius: 1rem;
-  padding: 2rem;
-  text-align: center;
-}
-
-.book img {
-  width: 100%;
-  object-fit: cover;
-}
-
 .booklist {
   width: 90vw;
   max-width: 1170px ;
@@ -40,7 +24,24 @@ body {
   gap: 2rem;
 } 
 
-.title h1{
+.book {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: .6rem;
+}
+
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+h1{
   font-size: 1rem;
   margin-top: 1rem;
 }

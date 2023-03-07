@@ -41,38 +41,12 @@ const Booklist = () => {
 const Book = () => {
   return (
     <div className="book">
-      <Image />
-      <Title />
-      <Author />
-    </div>
-  )
-}
-
-const Image = props => {
-  return (
-    <div className="image">
       <img
         src="https://images-na.ssl-images-amazon.com/images/I/61E29imvhEL._AC_UL600_SR600,400_.jpg"
         alt="Stone Maidens"
       />
-    </div>
-  )
-}
-
-const Title = () => {
-  const bookTitle = 'Stone Maidens'
-  return (
-    <div className="title">
-      <h1>{bookTitle}</h1>
-    </div>
-  )
-}
-
-const Author = () => {
-  const authorBook = 'Lloyd Devereux Richards'
-  return (
-    <div className="author">
-      <h4 style={{ color: '#617d98' }}>{authorBook}</h4>
+      <h1 style={{ color: '#617d98' }}>Title</h1>
+      <h4>Autor Book</h4>
     </div>
   )
 }
