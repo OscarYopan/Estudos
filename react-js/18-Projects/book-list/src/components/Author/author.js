@@ -1,7 +1,7 @@
-import React from 'react'
-import './author.css'
+// import React from 'react'
+// import './author.css'
 
-const authorBook = 'Lloyd Devereux Richards'
+// const authorBook = 'Lloyd Devereux Richards'
 
 // export const Author = () => {
 //   return (
