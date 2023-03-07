@@ -47,8 +47,8 @@ const author = 'Autor Book'
 const Book = () => {
   return (
     <div className="book">
-      <img src={img} alt="Stone Maidens" />
-      <h1 style={{ color: '#617d98' }}>{title}</h1>
+      <img src={img} alt={title} />
+      <h1>{title}</h1>
       <h4>{author}</h4>
     </div>
   )
