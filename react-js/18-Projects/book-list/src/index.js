@@ -38,15 +38,18 @@ const Booklist = () => {
   )
 }
 
+const img =
+  'https://images-na.ssl-images-amazon.com/images/I/61E29imvhEL._AC_UL600_SR600,400_.jpg'
+
+const title = 'Book Title'
+const author = 'Autor Book'
+
 const Book = () => {
   return (
     <div className="book">
-      <img
-        src="https://images-na.ssl-images-amazon.com/images/I/61E29imvhEL._AC_UL600_SR600,400_.jpg"
-        alt="Stone Maidens"
-      />
-      <h1 style={{ color: '#617d98' }}>Title</h1>
-      <h4>Autor Book</h4>
+      <img src={img} alt="Stone Maidens" />
+      <h1 style={{ color: '#617d98' }}>{title}</h1>
+      <h4>{author}</h4>
     </div>
   )
 }
