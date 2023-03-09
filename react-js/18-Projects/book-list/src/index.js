@@ -44,12 +44,15 @@ const img =
 const title = 'Book Title'
 const author = 'Autor Book'
 
-const Book = () => {
+const Book = props => {
+  console.log(props)
   return (
     <div className="book">
       <img src={img} alt={title} />
       <h1>{title}</h1>
       <h4>{author}</h4>
+      <p>{props.title}</p>
+      <p>{props.author}</p>
     </div>
   )
 }
