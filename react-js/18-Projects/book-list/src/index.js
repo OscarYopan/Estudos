@@ -40,11 +40,12 @@ const Booklist = () => {
 
 const Book = props => {
   console.log(props)
+  const { image, title, author } = props //desestructuring
   return (
     <div className="book">
-      <img src={props.image} alt={props.title} />
-      <h1>{props.title}</h1>
-      <h4>{props.author}</h4>
+      <img src={image} alt={title} />
+      <h1>{title}</h1>
+      <h4>{author}</h4>
     </div>
   )
 }
