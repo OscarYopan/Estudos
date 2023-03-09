@@ -47,3 +47,24 @@ img {
   width: 100%;
   object-fit: cover;
 }
+
+p {
+  margin-top: .5rem;
+  font-size: .7rem;
+}
+
+button {
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  border-radius: .2rem;
+  background-color: aquamarine;
+}
+
+button:hover {
+  background-color: aqua;
+}
+
+button:active {
+  transform: scale(.98);
+}
