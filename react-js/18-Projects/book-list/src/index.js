@@ -16,6 +16,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(<App />)
 
+//parameters
+const someFun = (param1, param2) => {
+  console.log(param1, param2)
+}
+
+//arguments
+someFun('job', 'developer')
+
 const Booklist = () => {
   return (
     <div className="booklist">
