@@ -19,21 +19,9 @@ root.render(<App />)
 const Booklist = () => {
   return (
     <div className="booklist">
-      <Book
-        author={firstBook.author}
-        title={firstBook.title}
-        image={firstBook.image}
-      />
-      <Book
-        author={secondBook.author}
-        title={secondBook.title}
-        image={secondBook.image}
-      />
-      <Book
-        author={threeBook.author}
-        title={threeBook.title}
-        image={threeBook.image}
-      />
+      <Book author={author} title={title} image={img} />
+      <Book author={author} title={title} image={img} />
+      <Book author={author} title={title} image={img} />
     </div>
   )
 }
@@ -51,8 +39,6 @@ const Book = props => {
       <img src={img} alt={title} />
       <h1>{title}</h1>
       <h4>{author}</h4>
-      <p>{props.title}</p>
-      <p>{props.author}</p>
     </div>
   )
 }
