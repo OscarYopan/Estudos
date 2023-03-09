@@ -19,26 +19,32 @@ root.render(<App />)
 const Booklist = () => {
   return (
     <div className="booklist">
-      <Book author={author} title={title} image={img} />
-      <Book author={author} title={title} image={img} />
-      <Book author={author} title={title} image={img} />
+      <Book
+        author={firstBook.author}
+        title={firstBook.title}
+        image={firstBook.image}
+      />
+      <Book
+        author={secondBook.author}
+        title={secondBook.title}
+        image={secondBook.image}
+      />
+      <Book
+        author={threeBook.author}
+        title={threeBook.title}
+        image={threeBook.image}
+      />
     </div>
   )
 }
-
-const img =
-  'https://images-na.ssl-images-amazon.com/images/I/61E29imvhEL._AC_UL600_SR600,400_.jpg'
-
-const title = 'Book Title'
-const author = 'Autor Book'
 
 const Book = props => {
   console.log(props)
   return (
     <div className="book">
-      <img src={img} alt={title} />
-      <h1>{title}</h1>
-      <h4>{author}</h4>
+      <img src={props.image} alt={props.title} />
+      <h1>{props.title}</h1>
+      <h4>{props.author}</h4>
     </div>
   )
 }
