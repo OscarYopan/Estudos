@@ -38,9 +38,7 @@ const Booklist = () => {
   )
 }
 
-const Book = props => {
-  console.log(props)
-  const { image, title, author } = props //desestructuring
+const Book = ({ image, title, author }) => {
   return (
     <div className="book">
       <img src={image} alt={title} />
