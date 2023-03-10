@@ -16,24 +16,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(<App />)
 
+const names = ['Oscar', 'Amanda', 'Duda']
+
 const Booklist = () => {
   return (
     <div className="booklist">
-      <Book
-        author={firstBook.author}
-        title={firstBook.title}
-        image={firstBook.image}
-      />
-      <Book
-        author={secondBook.author}
-        title={secondBook.title}
-        image={secondBook.image}
-      />
-      <Book
-        author={threeBook.author}
-        title={threeBook.title}
-        image={threeBook.image}
-      />
+      {console.log(books)}
+      {names};
     </div>
   )
 }
