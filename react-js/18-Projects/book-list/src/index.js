@@ -17,7 +17,18 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<App />)
 
 const Booklist = () => {
-  return <div className="booklist"></div>
+  return (
+    <div className="booklist">
+      {books.map(book => {
+        console.log(book)
+        return (
+          <div>
+            <h1>{book.title}</h1>
+          </div>
+        )
+      })}
+    </div>
+  )
 }
 
 const Book = props => {
