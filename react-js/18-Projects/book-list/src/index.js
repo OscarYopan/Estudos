@@ -17,12 +17,18 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<App />)
 
 const names = ['Oscar', 'Amanda', 'Duda']
+const namesMap = names.map(name => {
+  console.log(name)
+  return <h1>{name}</h1>
+})
+
+console.log(namesMap)
 
 const Booklist = () => {
   return (
     <div className="booklist">
       {console.log(books)}
-      {names};
+      {namesMap};
     </div>
   )
 }
