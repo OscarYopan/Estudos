@@ -37,9 +37,7 @@ const Book = props => {
       <h4>{author}</h4>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
-        voluptatum repudiandae harum placeat eligendi fuga atque asperiores
-        delectus aliquid vel error excepturi autem, ad non nobis iusto,
-        corporis, a odit.
+        voluptatum repudiandae.
       </p>
       <button>Add to Cart!</button>
     </div>
