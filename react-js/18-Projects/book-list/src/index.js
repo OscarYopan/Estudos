@@ -20,14 +20,14 @@ const Booklist = () => {
   return (
     <div className="booklist">
       {books.map(book => {
-        return <Book book={book} key={book.id} />
+        return <Book {...book} key={book.id} />
       })}
     </div>
   )
 }
 
 const Book = props => {
-  const { image, title, author } = props.book
+  const { image, title, author } = props
   console.log(props)
   return (
     <div className="book">
