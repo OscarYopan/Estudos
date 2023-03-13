@@ -29,7 +29,6 @@ const Booklist = () => {
 
 const Book = props => {
   const { image, title, author } = props
-  console.log(props)
   return (
     <div className="book">
       <img src={image} alt={title} />
@@ -86,13 +85,13 @@ const EventExemples = () => {
     alert('Button Clicked!')
   }
 
-  const handleFormSubmission = () => {
-    alert('Form Submited!')
+  const handleFormSubmission = e => {
+    e.preventDefault()
+    console.log('Form Submited!')
   }
 
   return (
-    <div onSubmit={handleFormSubmission}>
-      <h1>Events</h1>
+    <form onSubmit={handleFormSubmission}>
       <h2>Typical Form</h2>
       <input
         type="text"
@@ -101,6 +100,6 @@ const EventExemples = () => {
         style={{ margin: '1rem', padding: '.5rem' }}
       />
       <button onClick={handleButtonClick}>Click!</button>
-    </div>
+    </form>
   )
 }
