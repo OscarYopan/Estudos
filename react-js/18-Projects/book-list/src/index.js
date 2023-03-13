@@ -19,7 +19,7 @@ root.render(<App />)
 const Booklist = () => {
   return (
     <div className="booklist">
-      <eventExemples />
+      <EventExemples />
       {books.map(book => {
         return <Book {...book} key={book.id} />
       })}
@@ -75,6 +75,25 @@ function consoleMessage() {
   console.log('Button Clicked!')
 }
 
-const eventExemples = () => {
-  return <h1>New Book</h1>
+const EventExemples = () => {
+  const handleFormInput = () => {
+    console.log('Input have been chenged!')
+  }
+
+  const handleButtonClick = () => {
+    alert('Handle Button Click!')
+  }
+  return (
+    <div>
+      <h1>Events</h1>
+      <h2>Typical Form</h2>
+      <input
+        type="text"
+        name="exemplo"
+        onChange={handleFormInput}
+        style={{ margin: '1rem', padding: '.5rem' }}
+      />
+      <button onClick={handleButtonClick}>Click!</button>
+    </div>
+  )
 }
