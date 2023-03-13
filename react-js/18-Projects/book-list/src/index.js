@@ -76,15 +76,22 @@ function consoleMessage() {
 }
 
 const EventExemples = () => {
-  const handleFormInput = () => {
-    console.log('Input have been chenged!')
+  const handleFormInput = e => {
+    console.log(e.target)
+    console.log(e.target.name)
+    console.log(e.target.value)
   }
 
   const handleButtonClick = () => {
-    alert('Handle Button Click!')
+    alert('Button Clicked!')
   }
+
+  const handleFormSubmission = () => {
+    alert('Form Submited!')
+  }
+
   return (
-    <div>
+    <div onSubmit={handleFormSubmission}>
       <h1>Events</h1>
       <h2>Typical Form</h2>
       <input
