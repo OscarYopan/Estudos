@@ -19,6 +19,7 @@ root.render(<App />)
 const Booklist = () => {
   return (
     <div className="booklist">
+      <eventExemples />
       {books.map(book => {
         return <Book {...book} key={book.id} />
       })}
@@ -41,7 +42,7 @@ const Book = props => {
         molestiae sint voluptate incidunt tempore laborum eaque? Beatae iusto
         totam earum dignissimos nihil at fugiat.
       </p>
-      <button>Add to Cart!</button>
+      <button onClick={consoleMessage}>Add to Cart!</button>
     </div>
   )
 }
@@ -69,3 +70,11 @@ const books = [
     id: 3
   }
 ]
+
+function consoleMessage() {
+  console.log('Button Clicked!')
+}
+
+const eventExemples = () => {
+  return <h1>New Book</h1>
+}
