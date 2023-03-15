@@ -28,6 +28,9 @@ const Booklist = () => {
 
 const Book = props => {
   const { image, title, author } = props
+  const displayTitle = () => {
+    console.log(title)
+  }
   return (
     <div className="book">
       <img src={image} alt={title} />
@@ -40,7 +43,7 @@ const Book = props => {
         molestiae sint voluptate incidunt tempore laborum eaque? Beatae iusto
         totam earum dignissimos nihil at fugiat.
       </p>
-      <button onClick={consoleMessage}>Add to Cart!</button>
+      <button onClick={displayTitle}>Add to Cart!</button>
     </div>
   )
 }
