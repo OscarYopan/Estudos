@@ -19,7 +19,6 @@ root.render(<App />)
 const Booklist = () => {
   return (
     <div className="booklist">
-      <EventExemples />
       {books.map(book => {
         return <Book {...book} key={book.id} />
       })}
@@ -69,36 +68,3 @@ const books = [
     id: 3
   }
 ]
-
-function consoleMessage() {
-  console.log('Button Clicked!')
-}
-
-const EventExemples = () => {
-  return (
-    <form>
-      <h2>Typical Form</h2>
-      <input
-        type="text"
-        name="exemplo"
-        onChange={e => {
-          console.log(e.target.value)
-        }}
-        style={{ margin: '1rem', padding: '.5rem' }}
-      />
-      <button
-        type="submit"
-        onClick={() => {
-          console.log('Submit Clicked')
-        }}
-      >
-        Submmit
-      </button>
-      <div>
-        <button onClick={() => console.log('Button Clicked')} type="button">
-          Click!
-        </button>
-      </div>
-    </form>
-  )
-}
