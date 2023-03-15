@@ -75,35 +75,27 @@ function consoleMessage() {
 }
 
 const EventExemples = () => {
-  const handleFormInput = e => {
-    console.log(e.target)
-    console.log(e.target.name)
-    console.log(e.target.value)
-  }
-
-  const handleButtonClick = () => {
-    alert('Button Clicked!')
-  }
-
-  const handleFormSubmission = e => {
-    e.preventDefault()
-    console.log('Form Submited!')
-  }
-
   return (
     <form>
       <h2>Typical Form</h2>
       <input
         type="text"
         name="exemplo"
-        onChange={handleFormInput}
+        onChange={e => {
+          console.log(e.target.value)
+        }}
         style={{ margin: '1rem', padding: '.5rem' }}
       />
-      <button type="submit" onClick={handleFormSubmission}>
+      <button
+        type="submit"
+        onClick={() => {
+          console.log('Submit Clicked')
+        }}
+      >
         Submmit
       </button>
       <div>
-        <button onClick={handleButtonClick} type="button">
+        <button onClick={() => console.log('Button Clicked')} type="button">
           Click!
         </button>
       </div>
