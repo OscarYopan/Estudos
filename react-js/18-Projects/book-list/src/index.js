@@ -17,21 +17,17 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<App />)
 
 const Booklist = () => {
-  const someValue = 'Shake Shake'
-  const displayValue = () => {
-    console.log(someValue)
-  }
   return (
     <div className="booklist">
       {books.map(book => {
-        return <Book {...book} key={book.id} displayValue={displayValue} />
+        return <Book {...book} key={book.id} />
       })}
     </div>
   )
 }
 
 const Book = props => {
-  const { image, title, author, displayValue } = props
+  const { image, title, author } = props
   return (
     <div className="book">
       <img src={image} alt={title} />
@@ -44,7 +40,7 @@ const Book = props => {
         molestiae sint voluptate incidunt tempore laborum eaque? Beatae iusto
         totam earum dignissimos nihil at fugiat.
       </p>
-      <button onClick={displayValue}>Add to Cart!</button>
+      <button onClick={}>Add to Cart!</button>
     </div>
   )
 }
