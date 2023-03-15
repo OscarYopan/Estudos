@@ -99,7 +99,7 @@ const EventExemples = () => {
         onChange={handleFormInput}
         style={{ margin: '1rem', padding: '.5rem' }}
       />
-      <button type="submit" onSubmit={handleFormSubmission}>
+      <button type="submit" onClick={handleFormSubmission}>
         Submmit
       </button>
       <div>
