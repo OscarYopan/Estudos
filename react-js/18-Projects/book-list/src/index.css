@@ -80,3 +80,9 @@ button:active {
   border-radius: 0 10% 60% 0;
   color: #fff;
 }
+
+.logo h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #222;
+}
