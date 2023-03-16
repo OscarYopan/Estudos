@@ -27,7 +27,7 @@ const Booklist = () => {
 }
 
 const Book = props => {
-  const { image, title, author } = props
+  const { image, title, author, getBook } = props
   return (
     <div className="book">
       <img src={image} alt={title} />
@@ -40,31 +40,7 @@ const Book = props => {
         molestiae sint voluptate incidunt tempore laborum eaque? Beatae iusto
         totam earum dignissimos nihil at fugiat.
       </p>
-      <button>Add to Cart!</button>
+      <button onClick={getSingleBook}>Add to Cart!</button>
     </div>
   )
 }
-
-const books = [
-  {
-    author: 'Ron DeSantis',
-    title: 'The Courage to Be Free',
-    image:
-      'https://images-na.ssl-images-amazon.com/images/I/81QOUISS7VL._AC_UL600_SR600,400_.jpg',
-    id: 1
-  },
-  {
-    author: 'James Clear',
-    title: 'Atomic Habits',
-    image:
-      'https://images-na.ssl-images-amazon.com/images/I/81bGKUa1e0L._AC_UL600_SR600,400_.jpg',
-    id: 2
-  },
-  {
-    author: 'Andy Elkerton',
-    title: 'How to Catch a Leprechaun',
-    image:
-      'https://images-na.ssl-images-amazon.com/images/I/81hSK0bkkFL._AC_UL600_SR600,400_.jpg',
-    id: 3
-  }
-]
