@@ -34,6 +34,9 @@ const Booklist = () => {
 
 const Book = props => {
   const { image, title, author, getBook, id } = props
+  const getSingleBook = () => {
+    getBook(id)
+  }
   return (
     <div className="book">
       <img src={image} alt={title} />
@@ -46,7 +49,7 @@ const Book = props => {
         molestiae sint voluptate incidunt tempore laborum eaque? Beatae iusto
         totam earum dignissimos nihil at fugiat.
       </p>
-      <button onClick={getBook(id)}>Add to Cart!</button>
+      <button onClick={getSingleBook}>Add to Cart!</button>
     </div>
   )
 }
