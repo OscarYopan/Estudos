@@ -17,26 +17,17 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<App />)
 
 const Booklist = () => {
-  const getBook = id => {
-    const book = books.find(book => {
-      book.id === id
-    })
-    console.log(book)
-  }
   return (
     <div className="booklist">
       {books.map(book => {
-        return <Book {...book} key={book.id} getBook={getBook} />
+        return <Book {...book} key={book.id} />
       })}
     </div>
   )
 }
 
 const Book = props => {
-  const { image, title, author, getBook, id } = props
-  const getSingleBook = () => {
-    getBook(id)
-  }
+  const { image, title, author } = props
   return (
     <div className="book">
       <img src={image} alt={title} />
@@ -49,7 +40,7 @@ const Book = props => {
         molestiae sint voluptate incidunt tempore laborum eaque? Beatae iusto
         totam earum dignissimos nihil at fugiat.
       </p>
-      <button onClick={getSingleBook}>Add to Cart!</button>
+      <button>Add to Cart!</button>
     </div>
   )
 }
