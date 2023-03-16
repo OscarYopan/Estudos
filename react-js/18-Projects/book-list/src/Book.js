@@ -1,9 +1,10 @@
 import React from 'react'
 
 export const Book = props => {
-  const { image, title, author } = props
+  const { image, title, author, id } = props
   return (
     <div className="book">
+      <div className="rank-number"># {id} </div>
       <img src={image} alt={title} />
       <h1>{title}</h1>
       <h4>{author}</h4>

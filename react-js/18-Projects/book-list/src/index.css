@@ -30,6 +30,7 @@ body {
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
+  position: relative;
 }
 
 h1{
@@ -68,4 +69,14 @@ button:hover {
 
 button:active {
   transform: scale(.98);
+}
+
+.rank-number {
+  padding: .3rem .6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #617d98;
+  border-radius: 0 10% 60% 0;
+  color: #fff;
 }
