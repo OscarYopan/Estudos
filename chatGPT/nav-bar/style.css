@@ -1,86 +1,3 @@
-nav {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.nav-header {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.nav-title {
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.nav-menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.nav-item {
-  margin: 0 10px;
-}
-
-.nav-item a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-@media only screen and (max-width: 768px) {
-  .nav-menu {
-    display: none;
-  }
-
-  .nav-toggle {
-    display: block;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-
-  .nav-toggle:focus {
-    outline: none;
-  }
-
-  .hamburger {
-    display: block;
-    width: 30px;
-    height: 2px;
-    background-color: #fff;
-    margin: 6px auto;
-  }
-
-  .nav-menu.active {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background-color: #333;
-    padding: 10px;
-    z-index: 1;
-  }
-
-  .nav-menu.active .nav-item {
-    margin: 10px 0;
-  }
-}
-
 /* Base styles for the navigation bar */
 nav {
   background-color: #333;
@@ -192,17 +109,13 @@ nav {
   }
 
   .nav-menu {
-    display: none;
-  }
-
-  .nav-menu.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 60px;
     left: 0;
     right: 0;
     background-color: #333;
-    padding: 10px;
-    z-index: 1;
+    padding: 10px
   }
 }
