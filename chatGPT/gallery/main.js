@@ -1,15 +1,13 @@
 const gallery = document.getElementById('gallery')
+const apiKey = '@oscaracois'
 
-const images = [
-  'image1.jpg',
-  'image2.jpg',
-  'image3.jpg',
-  'image4.jpg',
-  'image5.jpg'
-]
-
-for (let i = 0; i < images.length; i++) {
-  const img = document.createElement('img')
-  img.src = images[i]
-  gallery.appendChild(img)
-}
+fetch(`https://api.unsplash.com/photos/random?client_id=${apiKey}`)
+  .then(response => response.json())
+  .then(data => {
+    const img = document.createElement('img')
+    img.src = data.urls.regular
+    gallery.appendChild(img)
+  })
+  .catch(error => {
+    console.log(error)
+  })
