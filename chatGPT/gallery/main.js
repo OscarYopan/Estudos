@@ -1,11 +1,9 @@
 const gallery = document.getElementById('gallery')
-const apiKey = '@oscaracois'
 
-fetch(`https://api.unsplash.com/photos/random?client_id=${apiKey}`)
-  .then(response => response.json())
-  .then(data => {
+fetch('https://picsum.photos/200')
+  .then(response => {
     const img = document.createElement('img')
-    img.src = data.urls.regular
+    img.src = response.url
     gallery.appendChild(img)
   })
   .catch(error => {
