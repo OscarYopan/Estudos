@@ -20,13 +20,13 @@ root.render(<App />)
 
 const Booklist = () => {
   return (
-    <div className="booklist">
-      <div className="logo">
-        <h1>Amazon Best Sellers</h1>
+    <div>
+      <h1 className="pageName">Amazon Best Sellers</h1>
+      <div className="booklist">
+        {books.map(book => {
+          return <Book {...book} key={book.id} />
+        })}
       </div>
-      {books.map(book => {
-        return <Book {...book} key={book.id} />
-      })}
     </div>
   )
 }
