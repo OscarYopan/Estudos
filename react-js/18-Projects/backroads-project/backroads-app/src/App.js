@@ -1,13 +1,15 @@
 function App() {
-  return <body>    <nav class="navbar">
-  <div className="nav-center">
+  return (
+  <div>    
+    <nav className="navbar">
+    <div className="nav-center">
     <div className="nav-header">
       <img src="./images/logo.svg" className="nav-logo" alt="backroads" />
       <button type="button" className="nav-toggle" id="nav-toggle">
         <i className="fas fa-bars"></i>
       </button>
     </div>
-    {<!-- left this comment on purpose -->}
+    {/* {<!-- left this comment on purpose -->} */}
     <ul className="nav-links" id="nav-links">
       <li>
         <a href="#home" className="nav-link"> home </a>
@@ -28,17 +30,17 @@ function App() {
 
     <ul className="nav-icons">
       <li>
-        <a href="https://www.twitter.com" target="_blank" className="nav-icon"
+        <a href="https://www.twitter.com" target="_blank" className="nav-icon" rel="noreferrer"
           ><i className="fab fa-facebook"></i
         ></a>
       </li>
       <li>
-        <a href="https://www.twitter.com" target="_blank" className="nav-icon"
+        <a href="https://www.twitter.com" target="_blank" className="nav-icon" rel="noreferrer"
           ><i className="fab fa-twitter"></i
         ></a>
       </li>
       <li>
-        <a href="https://www.twitter.com" target="_blank" className="nav-icon"
+        <a href="https://www.twitter.com" target="_blank" className="nav-icon" rel="noreferrer"
           ><i className="fab fa-squarespace"></i
         ></a>
       </li>
@@ -66,7 +68,7 @@ function App() {
     <div className="about-img">
       <img
         src="./images/about.jpeg"
-        class="about-photo"
+        className="about-photo"
         alt="awesome beach"
       />
     </div>
@@ -132,7 +134,7 @@ function App() {
     <h2>featured <span>tours</span></h2>
   </div>
 
-  <div class="section-center featured-center">
+  <div className="section-center featured-center">
     <article className="tour-card">
       <div className="tour-img-container">
         <img src="./images/tour-1.jpeg" className="tour-img" alt="" />
@@ -242,17 +244,17 @@ function App() {
   </ul>
   <ul className="footer-icons">
     <li>
-      <a href="https://www.twitter.com" target="_blank" className="footer-icon"
+      <a href="https://www.twitter.com" target="_blank" className="footer-icon" rel="noreferrer"
         ><i className="fab fa-facebook"></i
       ></a>
     </li>
     <li>
-      <a href="https://www.twitter.com" target="_blank" className="footer-icon"
+      <a href="https://www.twitter.com" target="_blank" className="footer-icon" rel="noreferrer"
         ><i className="fab fa-twitter"></i
       ></a>
     </li>
     <li>
-      <a href="https://www.twitter.com" target="_blank" className="footer-icon"
+      <a href="https://www.twitter.com" target="_blank" className="footer-icon" rel="noreferrer"
         ><i className="fab fa-squarespace"></i
       ></a>
     </li>
@@ -261,7 +263,9 @@ function App() {
     copyright &copy; Backroads travel tours company
     <span id="date"></span> all rights reserved
   </p>
-</footer></body>
+</footer>
+</div>
+)
 }
 
 export default App
