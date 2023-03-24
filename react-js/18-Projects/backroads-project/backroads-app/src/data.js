@@ -10,9 +10,3 @@ export const socialLinks = [
   { id: 2, href: 'https://twitter.com', icon: 'fab fa-twitter' },
   { id: 3, href: 'https://twitter.com', icon: 'fab fa-squarespace' }
 ]
-
-export const titleSections = [
-  { id: 1, title: 'about', subTitle: 'us' },
-  { id: 2, title: 'our', subTitle: 'services' },
-  { id: 3, title: 'featured', subTitle: 'tours' }
-]
