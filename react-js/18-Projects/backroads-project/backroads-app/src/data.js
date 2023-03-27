@@ -46,7 +46,7 @@ export const toursData = [
     info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque    vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
     location: 'china',
     duration: '6 days',
-    localization: 2100
+    value: 2100
   },
   {
     id: 2,
@@ -56,7 +56,7 @@ export const toursData = [
     info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque    vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
     location: 'indonesia',
     duration: '11 days',
-    localization: 1400
+    value: 1400
   },
   {
     id: 3,
@@ -66,7 +66,7 @@ export const toursData = [
     info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque    vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
     location: 'hong kong',
     duration: '8 days',
-    localization: 5000
+    value: 5000
   },
   {
     id: 4,
@@ -76,6 +76,6 @@ export const toursData = [
     info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque    vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
     location: 'kenya',
     duration: '20 days',
-    localization: 3300
+    value: 3300
   }
 ]

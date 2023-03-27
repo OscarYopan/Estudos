@@ -1,5 +1,6 @@
 import React from 'react'
 import { Title } from './Title'
+import { toursData } from '../data'
 
 export const Tours = () => {
   return (
@@ -7,32 +8,38 @@ export const Tours = () => {
       <Title name="featured" subTitle="tours" />
 
       <div className="section-center featured-center">
-        <article className="tour-card">
-          <div className="tour-img-container">
-            <img src="./images/tour-1.jpeg" className="tour-img" alt="" />
-            <p className="tour-date">august 26th, 2020</p>
-          </div>
-          <div className="tour-info">
-            <div className="tour-title">
-              <h4>Tibet Adventure</h4>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
-              vitae tempore voluptatum maxime reprehenderit eum quod
-              exercitationem fugit, qui corporis.
-            </p>
-            <div className="tour-footer">
-              <p>
-                <span>
-                  <i className="fas fa-map"></i>
-                </span>{' '}
-                china
-              </p>
-              <p>6 days</p>
-              <p>from $2100</p>
-            </div>
-          </div>
-        </article>
+        {toursData.map(tour => {
+          const { id, image, date, title, info, location, duration, value } =
+            tour
+          return (
+            <article className="tour-card">
+              <div className="tour-img-container">
+                <img src="./images/tour-1.jpeg" className="tour-img" alt="" />
+                <p className="tour-date">august 26th, 2020</p>
+              </div>
+              <div className="tour-info">
+                <div className="tour-title">
+                  <h4>Tibet Adventure</h4>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Cumque vitae tempore voluptatum maxime reprehenderit eum quod
+                  exercitationem fugit, qui corporis.
+                </p>
+                <div className="tour-footer">
+                  <p>
+                    <span>
+                      <i className="fas fa-map"></i>
+                    </span>{' '}
+                    china
+                  </p>
+                  <p>6 days</p>
+                  <p>from $2100</p>
+                </div>
+              </div>
+            </article>
+          )
+        })}
 
         <article className="tour-card">
           <div className="tour-img-container">
