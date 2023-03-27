@@ -15,7 +15,7 @@ export const Services = () => {
             <h4 className="service-title">saving money</h4>
             <p className="service-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores, officia.
+              Asperiores, official.
             </p>
           </div>
         </article>
