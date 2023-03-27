@@ -31,3 +31,42 @@ export const servicesData = [
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, officia.'
   }
 ]
+
+export const toursData = [
+  {
+    id: 1,
+    date: '',
+    title: '',
+    info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque    vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
+    location: '',
+    duration: '',
+    localization: 2100
+  },
+  {
+    id: 2,
+    date: '',
+    title: '',
+    info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque    vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
+    location: '',
+    duration: '',
+    localization: 2100
+  },
+  {
+    id: 3,
+    date: '',
+    title: '',
+    info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque    vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
+    location: '',
+    duration: '',
+    localization: 2100
+  },
+  {
+    id: 4,
+    date: '',
+    title: '',
+    info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque    vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
+    location: '',
+    duration: '',
+    localization: 2100
+  }
+]
