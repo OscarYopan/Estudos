@@ -5,7 +5,7 @@ import { Pagelinks } from './Pagelinks'
 export const Footer = () => {
   return (
     <footer className="section footer">
-      <Pagelinks parentCLass="footer-links" itemClass="footer-link" />
+      <Pagelinks parentClass="footer-links" itemClass="footer-link" />
 
       <ul className="footer-icons">
         {socialLinks.map(social => {
