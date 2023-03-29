@@ -15,18 +15,8 @@ export const Footer = () => {
             </li>
           )
         })}
-
-        <li>
-          <a href="#services" className="footer-link">
-            services
-          </a>
-        </li>
-        <li>
-          <a href="#featured" className="footer-link">
-            featured
-          </a>
-        </li>
       </ul>
+
       <ul className="footer-icons">
         <li>
           <a
