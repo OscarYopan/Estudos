@@ -1,19 +1,21 @@
 import React from 'react'
+import { pageLinks, socialLinks } from '../data'
 
 export const Footer = () => {
   return (
     <footer className="section footer">
       <ul className="footer-links">
-        <li>
-          <a href="#home" className="footer-link">
-            home
-          </a>
-        </li>
-        <li>
-          <a href="#about" className="footer-link">
-            about
-          </a>
-        </li>
+        {pageLinks.map(link => {
+          const { id, href, text } = link
+          return (
+            <li key={id}>
+              <a href={href} className="footer-link">
+                {text}
+              </a>
+            </li>
+          )
+        })}
+
         <li>
           <a href="#services" className="footer-link">
             services
