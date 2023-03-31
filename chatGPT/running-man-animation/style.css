@@ -4,9 +4,8 @@
   left: 0;
   width: 100px;
   height: 100px;
-  background: url('man.png') no-repeat;
-  background-size: contain;
-  animation: run 1s steps(6) infinite;
+  background: #FFD700;
+  animation: run 10s steps(6) infinite;
 }
 
 .road {
@@ -16,7 +15,7 @@
   width: 100%;
   height: 10px;
   background: gray;
-  animation: road-move 1s linear infinite;
+  animation: road-move 10s linear infinite;
 }
 
 @keyframes run {
