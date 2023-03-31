@@ -46,6 +46,18 @@
   animation: car-move 10s linear infinite;
 }
 
+.rocket {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  width: 100px;
+  height: 300px;
+  background: linear-gradient(to bottom, #FFFFFF, #CCCCCC);
+  border-radius: 50px;
+  animation: rocket-move 10s linear infinite;
+  animation-delay: 5s;
+}
+
 @keyframes run {
   from { background-position: 0 0; }
   to { background-position: -600px 0; }
@@ -59,4 +71,13 @@
 @keyframes car-move {
   from { left: 100%; }
   to { left: -100%; }
+}
+
+@keyframes rocket-move {
+  from {
+    transform: translate(-50%, 0%);
+  }
+  to {
+    transform: translate(-50%, -1000%);
+  }
 }
