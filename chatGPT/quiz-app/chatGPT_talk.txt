@@ -230,3 +230,146 @@ function displayResults() {
 As you can see, it simply displays the score, the number of correct answers, and the number of incorrect answers. The conditional statement at the bottom checks if the user answered at least 7 questions correctly and displays a winning message if they did, or a losing message if they didn't.
 
 In addition, the restartButton is displayed with an event listener that resets all the variables to their initial values and hides the restart button while displaying the start button again so that the user can play the quiz again.
+
+**Oscar Yopán
+introduce a pretty style to this aplication
+
+**ChatGPT
+Sure! Here's an example of how you can style the quiz application using CSS:
+
+HTML:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Open Trivia Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Open Trivia Quiz</h1>
+      <div id="quiz-container">
+        <p id="question"></p>
+        <div id="options"></div>
+        <button id="submit-button">Submit</button>
+      </div>
+      <button id="start-button">Start Quiz</button>
+      <button id="restart-button">Restart Quiz</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+CSS:
+
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+#quiz-container {
+  display: none;
+}
+
+#question {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.option {
+  margin-bottom: 10px;
+}
+
+#submit-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit-button:hover {
+  background-color: #0d47a1;
+}
+
+#start-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#start-button:hover {
+  background-color: #0d47a1;
+}
+
+#restart-button {
+  display: none;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#restart-button:hover {
+  background-color: #0d47a1;
+}
+
+#results {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-align: left;
+}
+
+#results p {
+  margin-bottom: 10px;
+}
+
+#results .win {
+  color: green;
+}
+
+#results .lose {
+  color: red;
+}
+
+
+This CSS code applies some basic styling to the HTML elements used in the quiz application. It adds a background color to the body, sets the font family to Arial, and centers the container on the page.
+
+The container has a max-width
