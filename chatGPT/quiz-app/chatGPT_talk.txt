@@ -1,7 +1,7 @@
-Oscar Yopán:
+**Oscar Yopán:
 using an API, create a quiz application, which 10 questions. Each question must contain 4 answer options, 3 incorrect and 1 correct. At the end of the quiz, show an animation that shows the number of questions answered correctly and incorrectly, and if 7 or more questions are answered correctly, declare the winning player, if less than 7 questions are answered correctly, declare the losing player.
 
-ChatGPT:
+**ChatGPT:
 As an AI language model, I do not have the capability to directly create applications, but I can provide you with a general approach to creating a quiz application that meets your requirements.
 
 To create the quiz application, you will need to use an API to retrieve questions and answer options. There are several APIs available that can provide you with this information, such as the Open Trivia Database API, which provides a large collection of trivia questions.
@@ -14,11 +14,10 @@ Finally, you can check if the user has answered 7 or more questions correctly. I
 
 Remember to also include a restart button or option to allow the user to play the quiz again if they wish.
 
-Oscar Yopán
+**Oscar Yopán
 Using Open Trivia Database API create a quiz aplication
 
-ChatGPT
-
+**ChatGPT:
 As an AI language model, I can provide you with a general approach to creating a quiz application using the Open Trivia Database API.
 
     Register for an API key: First, you will need to register for an API key on the Open Trivia Database website.
@@ -50,3 +49,148 @@ As an AI language model, I can provide you with a general approach to creating a
 In this example, we are fetching 10 easy-level questions from the "General Knowledge" category with multiple choice answers. The data.results object returned contains an array of question objects, each with the question, the correct answer, and an array of incorrect answers.
 
 You can then use this data to create your quiz application.
+
+**Oscar Yopán:
+Create an HTML file with a button to start the quiz, and a container to display the quiz questions and options.
+
+**ChatGPT:
+Sure! Here's an example HTML file with a button to start the quiz, and a container to display the quiz questions and options:
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>Quiz Application</title>
+      </head>
+      <body>
+        <h1>Welcome to the Quiz Application</h1>
+        <button id="start-button">Start Quiz</button>
+        <div id="quiz-container"></div>
+        
+        <script src="quiz.js"></script>
+      </body>
+    </html>
+
+In this HTML file, we have created a button with an ID of "start-button" that the user can click to start the quiz. We have also created a container with an ID of "quiz-container" where the quiz questions and options will be displayed.
+
+The JavaScript file that handles the quiz functionality is linked in the HTML file using the <script> tag. You will need to create this file separately and write the code for the quiz functionality.
+
+**Oscar Yopán:
+    Create an HTML file with a button to start the quiz, and a container to display the quiz questions and options.
+
+    Use JavaScript to fetch questions from the API and display them on the screen. For example, you can use the Fetch API to make a GET request to the API and get the questions and options data in JSON format.
+
+    Use JavaScript to randomize the questions and their answer options, and display them on the screen. You can create a function that shuffles the options to prevent the correct answer from always appearing in the same position.
+
+    Use JavaScript to keep track of the user's score and the number of questions answered correctly or incorrectly.
+
+    When the user has answered all the questions, display an animation that shows the number of questions answered correctly and incorrectly, and declare the winning or losing player as per the requirement.
+
+    Add a restart button to allow the user to play the quiz again.
+
+
+**ChatGPT:
+Sure, here's an example JavaScript code that demonstrates the steps you outlined:
+
+const apiUrl = 'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple';
+const startButton = document.getElementById('start-button');
+const quizContainer = document.getElementById('quiz-container');
+const restartButton = document.createElement('button');
+restartButton.textContent = 'Restart Quiz';
+restartButton.style.display = 'none';
+quizContainer.appendChild(restartButton);
+
+let currentQuestion = 0;
+let score = 0;
+let correctAnswers = 0;
+let incorrectAnswers = 0;
+
+startButton.addEventListener('click', startQuiz);
+
+function startQuiz() {
+  startButton.style.display = 'none';
+  getQuestions();
+}
+
+async function getQuestions() {
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    const questions = data.results;
+    shuffle(questions);
+    displayQuestion(questions[currentQuestion]);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+function displayQuestion(question) {
+  quizContainer.innerHTML = `
+    <h2>${question.question}</h2>
+    <div class="options-container">
+      ${shuffle([...question.incorrect_answers, question.correct_answer]).map(option => `
+        <button class="option">${option}</button>
+      `).join('')}
+    </div>
+  `;
+  const options = document.querySelectorAll('.option');
+  options.forEach(option => {
+    option.addEventListener('click', () => {
+      if (option.textContent === question.correct_answer) {
+        option.style.backgroundColor = 'green';
+        score += 10;
+        correctAnswers++;
+      } else {
+        option.style.backgroundColor = 'red';
+        score -= 5;
+        incorrectAnswers++;
+      }
+      currentQuestion++;
+      if (currentQuestion < 10) {
+        setTimeout(() => {
+          displayQuestion(questions[currentQuestion]);
+        }, 1000);
+      } else {
+        displayResults();
+      }
+    });
+  });
+}
+
+function displayResults() {
+  quizContainer.innerHTML = `
+    <h2>Quiz Results</h2>
+    <p>Score: ${score}</p>
+    <p>Correct Answers: ${correctAnswers}</p>
+    <p>Incorrect Answers: ${incorrectAnswers}</p>
+  `;
+  if (correctAnswers >= 7) {
+    quizContainer.innerHTML += '<p>You Won!</p>';
+  } else {
+    quizContainer.innerHTML += '<p>You Lost!</p>';
+  }
+  restartButton.style.display = 'block';
+  restartButton.addEventListener('click', () => {
+    currentQuestion = 0;
+    score = 0;
+    correctAnswers = 0;
+    incorrectAnswers = 0;
+    restartButton.style.display = 'none';
+    startButton.style.display = 'block';
+  });
+}
+
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+
+In this code, we have created a constant variable apiUrl that stores the API endpoint for getting questions from the Open Trivia Database API. We have also created a variable startButton and quizContainer to reference the corresponding HTML elements. We have also created a restartButton element that will be displayed at the end of the quiz to allow the user to play again.
+
+We have also created variables to keep track of the current question, the user's score, and the number of correct and incorrect answers. We have added an event listener to the start button to initiate the quiz.
+
+When the
