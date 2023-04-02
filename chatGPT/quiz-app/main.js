@@ -1,0 +1,7 @@
+fetch(
+  'https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple'
+)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data.results)
+  })

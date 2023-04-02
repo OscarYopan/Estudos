@@ -39,4 +39,14 @@ As an AI language model, I can provide you with a general approach to creating a
 
         Add a restart button to allow the user to play the quiz again.
 
-Here is some sample code in JavaScript to fetch questions from the Open Trivia Database API:
+              Here is some sample code in JavaScript to fetch questions from the Open Trivia Database API:
+
+              fetch('https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple')
+                  .then(response => response.json())
+                  .then(data => {
+                      console.log(data.results);
+                  });
+
+In this example, we are fetching 10 easy-level questions from the "General Knowledge" category with multiple choice answers. The data.results object returned contains an array of question objects, each with the question, the correct answer, and an array of incorrect answers.
+
+You can then use this data to create your quiz application.
