@@ -194,3 +194,39 @@ In this code, we have created a constant variable apiUrl that stores the API end
 We have also created variables to keep track of the current question, the user's score, and the number of correct and incorrect answers. We have added an event listener to the start button to initiate the quiz.
 
 When the
+
+**Oscar Yopán
+After answering the question, make the application generate a new question, repeat this until you reach 10 questions. After show a screen that indicates how many questions were answered correctly and how many were answered incorrectly
+
+**ChatGPT
+The JavaScript code I provided earlier already has the functionality to generate new questions and keep track of the number of correct and incorrect answers. When the user answers a question, it checks if the answer is correct or not, increments the score accordingly, and moves on to the next question until it reaches the last question. Once all questions are answered, it calls the displayResults() function to display the quiz results.
+
+Here's the updated version of the displayResults() function that shows how many questions were answered correctly and incorrectly:
+
+function displayResults() {
+  quizContainer.innerHTML = `
+    <h2>Quiz Results</h2>
+    <p>Score: ${score}</p>
+    <p>Correct Answers: ${correctAnswers}</p>
+    <p>Incorrect Answers: ${incorrectAnswers}</p>
+  `;
+  if (correctAnswers >= 7) {
+    quizContainer.innerHTML += '<p>You Won!</p>';
+  } else {
+    quizContainer.innerHTML += '<p>You Lost!</p>';
+  }
+  restartButton.style.display = 'block';
+  restartButton.addEventListener('click', () => {
+    currentQuestion = 0;
+    score = 0;
+    correctAnswers = 0;
+    incorrectAnswers = 0;
+    restartButton.style.display = 'none';
+    startButton.style.display = 'block';
+  });
+}
+
+
+As you can see, it simply displays the score, the number of correct answers, and the number of incorrect answers. The conditional statement at the bottom checks if the user answered at least 7 questions correctly and displays a winning message if they did, or a losing message if they didn't.
+
+In addition, the restartButton is displayed with an event listener that resets all the variables to their initial values and hides the restart button while displaying the start button again so that the user can play the quiz again.
