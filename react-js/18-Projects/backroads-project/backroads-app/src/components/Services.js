@@ -1,6 +1,7 @@
 import React from 'react'
 import { Title } from './Title'
 import { servicesData } from '../data'
+import { Service } from './Service'
 
 export const Services = () => {
   return (
@@ -9,10 +10,7 @@ export const Services = () => {
 
       <div className="section-center services-center">
         {servicesData.map(service => {
-          const  = service
-          return (
-
-          )
+          return <Service key={service.id} {...service} />
         })}
       </div>
     </section>

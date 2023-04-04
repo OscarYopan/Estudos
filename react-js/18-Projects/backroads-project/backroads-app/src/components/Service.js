@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Service = ({ id, icon, title, text }) => {
+export const Service = ({ icon, title, text }) => {
   return (
     <article className="service">
       <span className="service-icon">
