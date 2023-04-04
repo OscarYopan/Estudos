@@ -1,6 +1,7 @@
 import React from 'react'
 import { socialLinks } from '../data'
 import { Pagelinks } from './Pagelinks'
+import { SocialLinks } from './SocialLinks'
 
 export const Footer = () => {
   return (
@@ -9,18 +10,12 @@ export const Footer = () => {
 
       <ul className="footer-icons">
         {socialLinks.map(social => {
-          const { id, href, icon } = social
           return (
-            <li key={id}>
-              <a
-                href={href}
-                target="_blank"
-                className="footer-icon"
-                rel="noreferrer"
-              >
-                <i className={icon}></i>
-              </a>
-            </li>
+            <SocialLinks
+              key={social.id}
+              {...social}
+              socialClass="footer-icon"
+            />
           )
         })}
       </ul>
