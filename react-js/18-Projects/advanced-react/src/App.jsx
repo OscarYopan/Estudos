@@ -1,9 +1,9 @@
-import Starter from './tutorial/07-useRef/starter/01-useRef-basics'
+import ErrorExample from './error-example';
 
 function App() {
   return (
     <div className='container'>
-      <Starter />
+      <ErrorExample />
     </div>
   );
 }
