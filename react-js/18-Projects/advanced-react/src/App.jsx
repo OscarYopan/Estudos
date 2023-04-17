@@ -1,9 +1,9 @@
-import ErrorExample from './error-example';
+import UseStateEx from './useState';
 
 function App() {
   return (
     <div className='container'>
-      <ErrorExample />
+      <UseStateEx />
     </div>
   );
 }
