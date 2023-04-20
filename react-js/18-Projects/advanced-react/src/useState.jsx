@@ -4,14 +4,10 @@ import { data } from "./data";
 const UseStateEx = () => {
   const [people, setPeople] = useState(data)
   
-  function removeItem() {
-    console.log('Remove Clicked');
-  }
-
-  const clearAllItems = () => {
-    console.log('Clear All Clicked');
-    setPeople([])
-  }
+  const removeItem = (id) => {
+    let newPeople = people.filter((person) => person.id !== id);
+    setPeople(newPeople);
+  };
 
   return (
     <div>
