@@ -1,14 +1,19 @@
 import { useState } from "react";
-import data from './data'
+import { data } from "./data";
 
 const UseStateEx = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <h1>UseState Array Exemple</h1>
       <ul>
         {data.map( list => {
           return (
-            <li key={list.id}>{list.name}</li>
+            <div>
+              <li key={list.id} {...list}>
+                <h5>{list.name}</h5>
+              </li>
+              <button className="btn">Remove</button>
+            </div>
           )
         })}
       </ul>
