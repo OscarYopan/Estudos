@@ -2,30 +2,34 @@ import { useState } from "react";
 import { data } from "./data";
 
 const UseStateEx = () => {
-  const [peaple, setPeaple] = useState(data)
+  const [peaple, setPeople] = useState(data)
   
   function removeItem() {
-
+    console.log('Remove Clicked');
   }
 
-  function clearAllItems() {
-    
+  const clearAllItems = () => {
+    console.log('Clear All Clicked');
+    setPeople([])
   }
 
   return (
     <div>
       <h1>UseState Array Exemple</h1>
       <ul>
-        {data.map( list => {
+        {data.map( person => {
+          const { id, name } = person;
           return (
-              <li key={list.id} {...list}>
-                <h5>{list.name}</h5>
-                <button>Remove</button>
+              <li key={id} style={{marginTop: '1rem'}}>
+                <h5>{name}</h5>
+                <button className="btn" onClick={removeItem}>Remove</button>
               </li>
           )
         })}
       </ul>
-      <button className="btn">Clear All</button>
+      <button className="btn" style={{marginTop: '2rem'}} onClick={clearAllItems}>
+        Clear All Items
+      </button>
     </div>
    )
 };
