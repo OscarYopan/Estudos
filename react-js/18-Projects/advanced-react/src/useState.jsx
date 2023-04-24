@@ -17,9 +17,9 @@ const UseStateEx = () => {
   return (
     <div>
       <h2>UseState Object Example</h2>
-      <h4><strong>Who:</strong> {name}</h4>
-      <h4><strong>Age:</strong> {age}</h4>
-      <h4><strong>Hobby:</strong> {hobby}</h4>
+      <h4><strong>Who:</strong> {person.name}</h4>
+      <h4><strong>Age:</strong> {person.age}</h4>
+      <h4><strong>Hobby:</strong> {person.hobby}</h4>
       <button className="btn" onClick={displayPerson}>Next</button>
     </div>
    )
