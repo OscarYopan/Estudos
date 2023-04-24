@@ -4,7 +4,10 @@ const UseStateEx = () => {
   const [value, setValue] = useState(0)
 
   const handleClick = () => {
-    value = setValue(value + 1)
+    setValue((currentState) => {
+      const newState = currentState + 1
+      return newState
+    })
   }
 
   return (
