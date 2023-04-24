@@ -1,10 +1,14 @@
 import { useState } from "react";
-import { data } from "./data";
+import { people } from "./data";
 
 const UseStateEx = () => {
+  const [name, setName] = useState('Oscar')
+  const [age, setAge] = useState(36)
+  const [hobby, setHobby] = useState('Gaming')
+
   return (
     <div>
-      <h1>UseState Oject Example</h1>
+      <h2>UseState Object Example</h2>
     </div>
    )
 };
