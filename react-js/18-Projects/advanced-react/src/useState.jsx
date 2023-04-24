@@ -1,14 +1,18 @@
 import { useState } from "react";
 
 const UseStateEx = () => {
-  const [name, setName] = useState('Oscar')
-  const [age, setAge] = useState(36)
-  const [hobby, setHobby] = useState('Playing Games')
+  const [person, setPerson] = useState({
+    name: 'Oscar',
+    age: 36,
+    hobby: 'Playing Games'
+  })
 
   const displayPerson = () => {
-    setName('Amanda')
-    setAge(26)
-    setHobby('Swiming on the beach')
+    setPerson({
+      name: 'Amanda', 
+      age: 26, 
+      hobby: 'Go to the beach.'
+    })
   }
   return (
     <div>
