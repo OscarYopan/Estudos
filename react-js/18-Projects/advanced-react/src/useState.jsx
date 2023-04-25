@@ -4,10 +4,10 @@ const UseStateEx = () => {
   const [value, setValue] = useState(0)
 
   const handleClick = () => {
-    setValue((currentState) => {
-      const newState = currentState + 1
-      return newState
-    })
+    setTimeout(() => {
+     console.log('Times out');
+     setValue(value + 1)
+    }, 3000);
   }
 
   return (
