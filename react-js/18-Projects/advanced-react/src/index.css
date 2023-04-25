@@ -138,6 +138,7 @@ ul {
   transition: var(--transition);
   text-transform: capitalize;
   display: inline-block;
+  font-size: 20px;
 }
 .btn:hover {
   background: var(--primary-700);
@@ -153,6 +154,10 @@ ul {
 }
 .btn-block {
   width: 100%;
+}
+
+.btn:active {
+  transform: scale(0.98);
 }
 
 /* alerts */
