@@ -6,7 +6,9 @@ const UseStateEx = () => {
   const handleClick = () => {
     setTimeout(() => {
      console.log('Times out');
-     setValue(value + 1)
+     setValue((currentValue) => {
+      return currentValue + 1
+     })
     }, 3000);
   }
 
