@@ -33,5 +33,12 @@ export const data = [
     age: 29,
     image:
       'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg'
+  },
+  {
+    id: 6,
+    name: 'Cody Ghakpo',
+    age: 23,
+    image:
+      'https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=699&q=80'
   }
 ]
