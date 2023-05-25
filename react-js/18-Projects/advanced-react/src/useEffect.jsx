@@ -1,3 +1,5 @@
+//https://react.dev/reference/react/useEffect
+
 import React, { useState } from 'react'
 
 export const UseEffectEx = () => {
@@ -5,6 +7,8 @@ export const UseEffectEx = () => {
 
   const sayHello = () => {
     console.log('Hello Budy');
+    // be carefull, you will have infinite loop
+    setValue(value + 1)
   }
   sayHello()
 
