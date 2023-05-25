@@ -1,9 +1,10 @@
-import UseStateEx from './useState';
+import { UseEffectEx } from "./useEffect";
+
 
 function App() {
   return (
     <div className='container'>
-      <UseStateEx />
+      <UseEffectEx />
     </div>
   );
 }
