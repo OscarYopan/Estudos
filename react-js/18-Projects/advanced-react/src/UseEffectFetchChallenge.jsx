@@ -1,19 +1,14 @@
 import React, {useState, useEffect} from 'react'
 
+const url = 'https://api.github.com/users';
+
 export const UseEffectFetchChallengeEx = () => {
-  const url = 'https://api.github.com/users';
-
-  const fetchApi = () => {
-    const data = url.map()
-    console.log(data);
-  }
-
-  fetchApi()
-
   const [users, setUsers] = useState([])
 
   useEffect(() => {
-    console.log('Use Effect');
+    fetch('http://exemplo.com/usuario')
+    .then(T => T.json())
+    .then(console.log)
   }, [])
 
   return (
