@@ -1,10 +1,10 @@
-import { UseEffectEx } from "./useEffect";
+import { UseEffectFetchChallengeEx } from "./UseEffectFetchChallenge";
 
 
 function App() {
   return (
     <div className='container'>
-      <UseEffectEx />
+      <UseEffectFetchChallengeEx/>
     </div>
   );
 }
