@@ -21,9 +21,23 @@ export const UseEffectFetchChallengeEx = () => {
 
   return (
     <div className='fetch-challenge'>
-      <h1>UseEffect Fetch Challenge</h1>
+      <h2>UseEffect Fetch Challenge</h2>
       <section>
         <h3>Github Users</h3>
+        <ul className="users">
+          {users.map((user) => {
+            const {id, login, avatar_url, html_url, } = user
+            return (
+              <li key={id}>
+                <img src={avatar_url} alt={login} />
+                <div>
+                  <h5>{login}</h5>
+                  <a href={html_url} target='_blank'>profile</a>
+                </div>
+              </li>
+            )
+          })}
+        </ul>
       </section>
     </div>
   )
