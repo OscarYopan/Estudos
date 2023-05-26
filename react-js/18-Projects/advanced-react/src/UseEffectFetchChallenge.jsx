@@ -10,6 +10,12 @@ export const UseEffectFetchChallengeEx = () => {
 
   fetchApi()
 
+  const [users, setUsers] = useState([])
+
+  useEffect(() => {
+    console.log('Use Effect');
+  }, [])
+
   return (
     <div className='fetch-challenge'>
       <h1>UseEffect Fetch Challenge</h1>
