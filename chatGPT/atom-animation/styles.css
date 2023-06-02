@@ -4,6 +4,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: darkgray;
 }
 
 .circle {
@@ -14,7 +15,7 @@ html, body {
   border-radius: 50%;
 }
 
-.orbit {
+.orbit-1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -23,14 +24,77 @@ html, body {
   height: 20px;
   background-color: red;
   border-radius: 50%;
-  animation: orbit 5s linear infinite;
+  animation: orbit-xy 3s linear infinite;
 }
 
-@keyframes orbit {
+@keyframes orbit-xy {
   0% {
     transform: rotate(0deg) translateX(200px) rotate(0deg);
   }
   100% {
     transform: rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+
+.orbit-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+  animation: orbit-z 3s linear infinite;
+}
+
+@keyframes orbit-z {
+  0% {
+    transform: rotate(0deg) translateY(200px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateY(200px) rotate(-360deg);
+  }
+}
+
+.orbit-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 50%;
+  animation: orbit-3r 3s linear infinite;
+}
+
+@keyframes orbit-3r {
+  0% {
+    transform: rotate(0deg) translateX(-200px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(-200px) rotate(-360deg);
+  }
+}
+
+.orbit-4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  width: 20px;
+  height: 20px;
+  background-color: hotpink;
+  border-radius: 50%;
+  animation: orbit-4r 3s linear infinite;
+}
+
+@keyframes orbit-4r {
+  0% {
+    transform: rotate(0deg) translateY(-200px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateY(-200px) rotate(-360deg);
   }
 }
