@@ -1,0 +1,14 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 50%;
+}
