@@ -40,34 +40,43 @@ width: var(--atom-size);
 height: var(--atom-size);
 animation: 8s atom infinite cubic-bezier(1, .25, 0, .75);
 }
+
 @keyframes atom{
-0% {    
-  transform: rotate(0deg) scale(1); 
-}
-12.5% { 
-  transform: rotate(-45deg) scale(.9); 
-}
-25% {   
-  transform: rotate(-90deg) scale(1); 
-}
-37.5% { 
-  transform: rotate(-135deg) scale(.9); 
-}
-50% {   
-  transform: rotate(-180deg) scale(1); 
-}
-62.5% { 
-  transform: rotate(-225deg) scale(.9); 
-}
-75% {   
-  transform: rotate(-270deg) scale(1); 
-}
-87.5% { 
-  transform: rotate(-315deg) scale(.9); 
-}
-100% {  
-  transform: rotate(-360deg) scale(1); 
-}
+  0% {    
+    transform: rotate(0deg) scale(1); 
+  }
+
+  12.5% { 
+    transform: rotate(-45deg) scale(.9); 
+  }
+
+  25% {   
+    transform: rotate(-90deg) scale(1); 
+  }
+
+  37.5% { 
+    transform: rotate(-135deg) scale(.9); 
+  }
+
+  50% {   
+    transform: rotate(-180deg) scale(1); 
+  }
+
+  62.5% { 
+    transform: rotate(-225deg) scale(.9); 
+  }
+
+  75% {   
+    transform: rotate(-270deg) scale(1); 
+  }
+
+  87.5% { 
+    transform: rotate(-315deg) scale(.9); 
+  }
+
+  100% {  
+    transform: rotate(-360deg) scale(1); 
+  }
 }
 
 /* Nucleus */
@@ -173,61 +182,71 @@ animation: 8s atom infinite cubic-bezier(1, .25, 0, .75);
   animation: calc(var(--electron-speed-omega) * 2) electron infinite ease-in-out; 
   background: #2EB67D;
 }
+
 @keyframes electron {
   0% {
-      left: calc(var(--electron-size) / -1);
-      transform: scale(1);
+    left: calc(var(--electron-size) / -1);
+    transform: scale(1);
   }
+
   12.5% {
-      top: 100%;
-      transform: scale(1.5);
+    top: 100%;
+    transform: scale(1.5);
   }
+
   25% {
-      left: 100%;
-      transform: scale(1);
+    left: 100%;
+    transform: scale(1);
   }
+
   37.5% {
-      top: 0%;
-      transform: scale(.25);
+    top: 0%;
+    transform: scale(.25);
   }
+
   50% {
-      left: calc(var(--electron-size) / -1);
-      transform: scale(1);
+    left: calc(var(--electron-size) / -1);
+    transform: scale(1);
   }
+
   62.5% {
-      top: 100%;
-      transform: scale(1.5);
+    top: 100%;
+    transform: scale(1.5);
   }
+
   75% {
-      left: 100%;
-      transform: scale(1);
+    left: 100%;
+    transform: scale(1);
   }
+
   87.5% {
       top: 0%;
       transform: scale(.25);
   }
+
   100% {
-      left: calc(var(--electron-size) / -1);
-      transform: scale(1);
+    left: calc(var(--electron-size) / -1);
+    transform: scale(1);
   }
 }
 
 @keyframes fadeInAnimation {
-0% {
-  opacity: 0;
-}
-100% {
-  opacity: 1;
-}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .disappear {
-animation: vanish 1s forwards;
+  animation: vanish 1s forwards;
 }
 
 @keyframes vanish {
-100% {
-  opacity: 1;
-  visibility: hidden;
-}
+  100% {
+    opacity: 1;
+    visibility: hidden;
+  }
 }
