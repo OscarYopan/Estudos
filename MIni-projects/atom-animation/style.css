@@ -29,11 +29,20 @@ body {
 }
 
 .nucleos {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   background-color: var(--color1);
   border-radius: 50%;
   position: absolute;
+  animation: 3s nucleus infinite cubic-bezier(.65, 0, .35, 1);
+}
+
+@keyframes nucleus {
+  0% { transform: scale(1); }
+  25% { transform: scale(.9); }
+  50% { transform: scale(1); }
+  75% { transform: scale(.85); }
+  100% { transform: scale(1); }
 }
 
 .orbit {
