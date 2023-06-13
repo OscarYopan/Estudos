@@ -54,64 +54,39 @@ body {
 }
 
 #orbit-1 {
-  /* top: 20%;
-  left: 50%; */
+  top: 20%;
+  left: 50%;
   background: var(--color2);
-  animation: rotation1 6s linear infinite;
+  animation: rotation1 2s linear infinite;
 }
 
 @keyframes rotation1 {
   0% {
-    left: calc(10px/ -1);
-    transform: scale(1);
-  }
-
-  12.5% {
-    top: 100%;
-    transform: scale(1.5);
+    transform: translate(0px, 0px);
   }
 
   25% {
-    left: 100%;
-    transform: scale(1);
-  }
-
-  37.5% {
-    top: 0%;
-    transform: scale(.25);
+    transform: translate(100px, 190px);
   }
 
   50% {
-    left: calc(10px/ -1);
-    transform: scale(1);
-  }
-
-  62.5% {
-    top: 100%;
-    transform: scale(1.5);
+    transform: translate(0px, 380px);
   }
 
   75% {
-    left: 100%;
-    transform: scale(1);
-  }
-
-  87.5% {
-    top: 0%;
-    transform: scale(.25);
+    transform: translate(-100px, 190px);
   }
 
   100% {
-    left: calc(10px/ -1);
-    transform: scale(1);
+    transform: translate(0px, 0px);
   }
 }
 
 #orbit-2 {
-  /* top: 50%;
-  left: 35%; */
+  top: 50%;
+  left: 35%;
   background-color: var(--color4);
-  animation: rotation1 7s linear infinite;
+  animation: rotation2 2s linear infinite;
 }
 
 @keyframes rotation2 {
@@ -137,10 +112,10 @@ body {
 }
 
 #orbit-3 {
-  /* bottom: 20%;
-  left: 50%; */
+  bottom: 20%;
+  left: 50%;
   background: lightblue;
-  animation: rotation1 8s linear infinite;
+  animation: rotation3 2s linear infinite;
 }
 
 @keyframes rotation3 {
@@ -167,10 +142,10 @@ body {
 
 
 #orbit-4 {
-  /* top: 50%;
-  right: 35%; */
+  top: 50%;
+  right: 35%;
   background: yellowgreen;
-  animation: rotation1 9s linear infinite;
+  animation: rotation4 2s linear infinite;
 }
 
 @keyframes rotation4 {
