@@ -54,8 +54,8 @@ body {
 }
 
 #orbit-1 {
-  top: 20%;
-  left: 50%;
+  /* top: 20%;
+  left: 50%; */
   background: var(--color2);
   animation: rotation1 6s linear infinite;
 }
