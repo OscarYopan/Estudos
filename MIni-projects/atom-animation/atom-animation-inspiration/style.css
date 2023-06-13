@@ -1,7 +1,7 @@
 :root {
   --atom-size: 400px;
   --atom-color-hex: #0d00ff;
-  --atom-color-rgb: #fff;
+  --atom-color-rgb: 217,217,217;
   --nucleus-size: calc(var(--atom-size) / 5);
   --electron-color-hex: #36C5F0;
   --electron-size : calc(var(--atom-size) / 25);
@@ -150,7 +150,7 @@ height: var(--atom-size);
 
   12.5% {
     top: 100%;
-    transform: scale(1);
+    transform: scale(1.5);
   }
 
   25% {
@@ -160,7 +160,7 @@ height: var(--atom-size);
 
   37.5% {
     top: 0%;
-    transform: scale(1);
+    transform: scale(.25);
   }
 
   50% {
@@ -170,7 +170,7 @@ height: var(--atom-size);
 
   62.5% {
     top: 100%;
-    transform: scale(1);
+    transform: scale(1.5);
   }
 
   75% {
@@ -180,7 +180,7 @@ height: var(--atom-size);
 
   87.5% {
     top: 0%;
-    transform: scale(1);
+    transform: scale(.25);
   }
 
   100% {
