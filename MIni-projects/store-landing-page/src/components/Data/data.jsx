@@ -3,3 +3,5 @@ export const data = () => {
     <div>data</div>
   )
 }
+
+//https://fakestoreapi.com/docs
