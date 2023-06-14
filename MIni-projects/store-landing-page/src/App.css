@@ -5,10 +5,8 @@
   text-align: center;
 }
 
-:root {
-  --color1: #7C05F2;
-  --color2: #0583F2;
-  --color3: #0597F2;
-  --color4: #05F240;
-  --color5: #F2B705;
+body {
+  background-color: azure;
+  width: 100%;
+  height: 100%;
 }
