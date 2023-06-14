@@ -21,12 +21,22 @@ input {
   width: 400px;
 }
 
+i {
+  margin: 0 10px;
+  color: #fff;
+}
+
+svg {
+  color: #fff;
+}
+
 button {
   background-color: transparent;
-  border-radius: none;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
 }
 
 button:hover {
