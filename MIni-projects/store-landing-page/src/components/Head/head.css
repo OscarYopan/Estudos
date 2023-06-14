@@ -18,9 +18,17 @@
 
 input {
   height: 40px;
-  width: 500px;
+  width: 400px;
 }
 
 button {
+  background-color: transparent;
   border-radius: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
