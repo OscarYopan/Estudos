@@ -1,5 +1,5 @@
 .head-container {
-  background: linear-gradient(var(--color3), var(--color2));
+  background-color: var(--color3);
   width: 100%;
   height: 20%;
   position: absolute;
@@ -48,7 +48,9 @@
 input {
   height: 40px;
   width: 400px;
-  border-radius: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
 }
 
 i {
@@ -82,7 +84,7 @@ button i {
 }
 
 .account-container {
-  width: 250px;
+  max-width: 250px;
   display: flex;
   align-items: center;
   justify-content: space-between;
