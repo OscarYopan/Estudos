@@ -8,7 +8,9 @@ export const Head = () => {
       </div>
       <div className='search-box'>
         <input type="text" name="search" id="serach" placeholder='Search...'/>
-        <button><i className="fa-solid fa-magnifying-glass"></i></button>
+        <button>
+          <i className="fa-solid fa-magnifying-glass"></i>
+        </button>
       </div>
       <div className='account-container'>
         <div className='account'>
@@ -17,17 +19,19 @@ export const Head = () => {
             <span>Account</span>
           </button>
         </div>
-        <div className='favorites'>
-          <button className='btn'>
-            <i className="fa-solid fa-heart"></i>
-            <span>Favorites</span>
-          </button>
+        <div className='my-choice'>
+          <div className='favorites'>
+            <button className='btn'>
+              <i className="fa-solid fa-heart"></i>
+              {/* <span>Favorites</span> */}
+            </button>
+          </div>
+          <div className='buy-cart'>
+            <button className='btn'>
+              <i className="fa-solid fa-cart-shopping"></i>
+              {/* <span>Cart</span> */}
+            </button>
         </div>
-        <div className='buy-cart'>
-          <button className='btn'>
-            <i className="fa-solid fa-cart-shopping"></i>
-            <span>Cart</span>
-          </button>
         </div>
       </div>
     </div>
