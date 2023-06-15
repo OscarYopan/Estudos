@@ -28,7 +28,6 @@
 
 .logo a:hover {
   color: var(--color1);
-  transform: scale(1.2);
 }
 
 .logo i {
