@@ -7,18 +7,29 @@
   top: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0 2rem;
 }
 
 .logo {
   color: var(--color1);
-  font-size: 30px;
+  font-size: 40px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--color5);
+}
+
+.logo a:hover {
+  color: var(--color5);
+  transform: scale(1.2);
 }
 
 input {
   height: 40px;
   width: 400px;
+  padding: 5px;
 }
 
 i {
@@ -37,8 +48,15 @@ button {
   align-items: center;
   justify-content: center;
   color: #fff;
+  cursor: pointer;
 }
 
 button:hover {
   transform: scale(1.1);
+}
+
+.account-container {
+  width: 250px;
+  display: flex;
+  align-items: center;
 }
