@@ -7,7 +7,7 @@
   top: 0;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 0 2rem;
 }
 
@@ -19,11 +19,27 @@
 .logo a {
   text-decoration: none;
   color: var(--color5);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .logo a:hover {
   color: var(--color5);
   transform: scale(1.2);
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-box button {
+  position: absolute;
+  top: 25%;
+  right: 0;
+}
+
+.search-box i {
+  color: var(--color2);
+  font-size: 20px;
 }
 
 input {
@@ -56,7 +72,12 @@ button:hover {
 }
 
 .account-container {
-  width: 250px;
+  width: 300px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.account-container i {
+  font-size: 20px;
 }
