@@ -13,10 +13,8 @@
   margin-right: 30px;
   padding: 5px 10px;
   cursor: pointer;
-  border: 2px solid var(--color4);
 }
 
 .menu li:hover {
   color: var(--color2);
-  border: 2px solid var(--color5);
 }
