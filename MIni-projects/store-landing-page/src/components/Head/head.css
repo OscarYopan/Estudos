@@ -1,6 +1,6 @@
 .head-container {
   background-color: var(--color3);
-  width: 100%;
+  width: 100vw;
   height: 20%;
   position: absolute;
   left: 0;
@@ -20,7 +20,7 @@
 }
 
 .logo a {
-  font-size: 60px;
+  font-size: 40px;
   text-decoration: none;
   color: var(--color1);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

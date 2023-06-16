@@ -1,0 +1,15 @@
+.nav {
+  height: 10%;
+  width: 100vw;
+  background-color: var(--color4);
+  padding: 10px 20px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  list-style-type: none;
+  margin-right: 30px;
+}
