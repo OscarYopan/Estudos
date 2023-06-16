@@ -13,6 +13,10 @@
 
 .menu li {
   list-style-type: none;
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
   margin-right: 30px;
   padding: 5px 10px;
   cursor: pointer;

@@ -64,6 +64,10 @@ i {
   color: #fff;
 }
 
+i:hover {
+  border: 2px solid var(--color5);
+}
+
 svg {
   color: #fff;
 }
@@ -81,6 +85,7 @@ button {
 
 button:hover {
   transform: scale(1.1);
+  color: var(--color4);
 }
 
 button i {
