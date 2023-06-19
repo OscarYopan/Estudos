@@ -13,18 +13,26 @@
 }
 
 .banner-container .arrow i {
-  position: fixed;
-  background-color: #fff;
+  position: absolute;
+  background-color: #ffffff60;
   top: 50%;
-  padding: 20px;
-  color: var(--color5);
-  font-size: 30px;
+  transform: translateY(-50%);
+  padding: 10px;
+  color: var(--color1);
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.fa-left {
+.banner-container .arrow i.fa-arrow-left {
   left: 20px;
 }
 
-.fa-right {
+.banner-container .arrow i.fa-arrow-right {
   right: 20px;
+}
+
+.banner-container .arrow i:hover {
+  background-color: #fff;
 }

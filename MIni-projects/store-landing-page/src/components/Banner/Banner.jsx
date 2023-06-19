@@ -4,12 +4,12 @@ import './banner.css'
 export const Banner = () => {
   return (
     <div className='banner-container'>
-      <button className='arrow'>
-        <i className="fa-solid fa-left"></i>
-      </button>
-      <button className='arrow'>
-        <i className="fa-solid fa-right"></i>
-      </button>
+      <div className='arrow'>
+        <i className="fa-solid fa-arrow-left"></i>
+      </div>
+      <div className='arrow'>
+        <i className="fa-solid fa-arrow-right"></i>
+      </div>
     </div>
   )
 }
