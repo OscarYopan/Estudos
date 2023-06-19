@@ -1,11 +1,11 @@
 .banner-container {
-  background: url('../../assets/images/banner_prov.jpg');
+  background: url('../../assets/images/pexels-karolina-grabowska-5632386.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #222;
   width: 100%;
-  height: 400px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
