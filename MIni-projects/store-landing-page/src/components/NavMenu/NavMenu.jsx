@@ -10,6 +10,7 @@ export const NavMenu = () => {
         <li>Toys</li>
         <li>Home</li>
         <li>Pet</li>
+        <li>Automotive</li>
       </ul>
     </div>
   )
