@@ -1,18 +1,19 @@
 // import { bannerImages } from '../Data/data'
-import './banner.css'
+// import './banner.css'
+import banner1 from '../../assets/images/banner_01.jpg'
 
-export const Banner = () => {
-  return (
-    <div className='banner-container'>
-      <div className='arrow'>
-        <i className="fa-solid fa-arrow-left"></i>
-      </div>
-      <div className='arrow'>
-        <i className="fa-solid fa-arrow-right"></i>
-      </div>
-    </div>
-  )
-}
+// export const Banner = () => {
+//   return (
+//     <div className='banner-container'>
+//       <div className='arrow'>
+//         <i className="fa-solid fa-arrow-left"></i>
+//       </div>
+//       <div className='arrow'>
+//         <i className="fa-solid fa-arrow-right"></i>
+//       </div>
+//     </div>
+//   )
+// }
 
 import React, { useRef, useState } from "react";
 // Import Swiper React components
@@ -23,12 +24,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import "./styles.css";
+import "./swiper.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-export default function App() {
+export const Banner = () => {
   return (
     <>
       <Swiper
@@ -45,7 +46,7 @@ export default function App() {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>{banner1}</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
