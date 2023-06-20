@@ -8,7 +8,7 @@ export const Head = () => {
         <a href="#">FakeStore</a>
       </div>
       <div className='search-box'>
-        <input type="text" name="search" id="serach" placeholder='Search...'/>
+        <input type="text" name="search" id="search" placeholder='Search...'/>
         <button>
           <i className="fa-solid fa-magnifying-glass"></i>
         </button>
