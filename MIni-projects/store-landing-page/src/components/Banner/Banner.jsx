@@ -1,19 +1,10 @@
-// import { bannerImages } from '../Data/data'
-// import './banner.css'
-import banner1 from '../../assets/images/banner_01.jpg'
-
-// export const Banner = () => {
-//   return (
-//     <div className='banner-container'>
-//       <div className='arrow'>
-//         <i className="fa-solid fa-arrow-left"></i>
-//       </div>
-//       <div className='arrow'>
-//         <i className="fa-solid fa-arrow-right"></i>
-//       </div>
-//     </div>
-//   )
-// }
+import banner1 from '../../assets/images/banner_04.webp'
+import banner2 from '../../assets/images/banner_05.webp'
+import banner3 from '../../assets/images/banner_06.webp'
+import banner4 from '../../assets/images/banner_07.webp'
+import banner5 from '../../assets/images/banner_08.webp'
+import banner6 from '../../assets/images/banner_09.webp'
+import banner7 from '../../assets/images/banner_10.webp'
 
 import React, { useRef, useState } from "react";
 // Import Swiper React components
@@ -46,15 +37,13 @@ export const Banner = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>{banner1}</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide><img src={banner1} alt="Banner 01" /></SwiperSlide>
+        <SwiperSlide><img src={banner2} alt="Banner 02" /></SwiperSlide>
+        <SwiperSlide><img src={banner3} alt="Banner 03" /></SwiperSlide>
+        <SwiperSlide><img src={banner4} alt="Banner 04" /></SwiperSlide>
+        <SwiperSlide><img src={banner5} alt="Banner 05" /></SwiperSlide>
+        <SwiperSlide><img src={banner6} alt="Banner 06" /></SwiperSlide>
+        <SwiperSlide><img src={banner7} alt="Banner 07" /></SwiperSlide>
       </Swiper>
     </>
   );
