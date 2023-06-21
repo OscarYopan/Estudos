@@ -1,9 +1,11 @@
+import depGames from '../../assets/images/dep-games.png'
+
 export const Departments = () => {
   return (
     <div className="departments">
-      <div className="department">
-        <h2 className="department-title">{title}</h2>
-        <img src={link} alt={title} />
+      <div className="games-dep">
+        <h2 className="department-title"><h2>Games</h2></h2>
+        <img src={depGames} alt="Games Department" />
       </div>
     </div>
   )

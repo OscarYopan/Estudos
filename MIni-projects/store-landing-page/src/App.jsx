@@ -1,4 +1,5 @@
 import { Banner } from './components/Banner/Banner'
+import { Departments } from './components/Departments/Departments'
 import { Head } from './components/Head/Head'
 import { NavMenu } from './components/NavMenu/NavMenu'
 
@@ -9,6 +10,7 @@ function App() {
       <Head />
       <NavMenu />
       <Banner/>
+      <Departments />
     </div>
   )
 }
