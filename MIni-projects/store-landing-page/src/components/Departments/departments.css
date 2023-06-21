@@ -1,0 +1,22 @@
+.departments {
+  background-color: #444;
+  height: 300px;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.departments h2 {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.department {
+  height: 200px;
+  width: 180px;
+  background-color: var(--color3);
+  /* background-image: url('../../assets/images/dep-games.png'); */
+}

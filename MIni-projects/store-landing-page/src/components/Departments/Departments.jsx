@@ -1,11 +1,24 @@
+
+import './departments.css'
 import depGames from '../../assets/images/dep-games.png'
 
 export const Departments = () => {
   return (
     <div className="departments">
-      <div className="games-dep">
+      <div className="department games-dep">
         <h2 className="department-title"><h2>Games</h2></h2>
-        <img src={depGames} alt="Games Department" />
+      </div>
+
+      <div className="department computer-dep">
+        <h2 className="department-title"><h2>Games</h2></h2>
+      </div>
+
+      <div className="department eletronic-dep">
+        <h2 className="department-title"><h2>Games</h2></h2>
+      </div>
+
+      <div className="department toys-dep">
+        <h2 className="department-title"><h2>Games</h2></h2>
       </div>
     </div>
   )
