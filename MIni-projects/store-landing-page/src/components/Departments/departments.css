@@ -1,5 +1,5 @@
 .departments {
-  background-color: #444;
+  background-color: var(--color2);
   width: 100%;
   padding: 40px;
   display: flex;
