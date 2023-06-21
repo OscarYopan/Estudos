@@ -1,22 +1,30 @@
 .departments {
   background-color: #444;
-  height: 300px;
   width: 100%;
   padding: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
 }
 
 .departments h2 {
   color: #fff;
   text-align: center;
-  padding: 10px;
+  margin: 20px 0;
+  font-size: 20px;
 }
 
 .department {
   height: 200px;
   width: 180px;
   background-color: var(--color3);
-  /* background-image: url('../../assets/images/dep-games.png'); */
+  margin: 10px;
+}
+
+#games-dep {
+  background-image: url('../../assets/images/dep-games.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
