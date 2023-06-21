@@ -3,10 +3,12 @@ import './head.css'
 export const Head = () => {
   return (
     <div className="head-container">
+      
       <div className='logo'>
         <i className="fa-sharp fa-solid fa-bag-shopping"></i>
         <a href="#">FakeStore</a>
       </div>
+
       <div className='search-box'>
         <input type="text" name="search" id="search" placeholder='Search...'/>
         <button>
