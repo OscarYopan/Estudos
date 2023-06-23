@@ -13,7 +13,7 @@
   --color5: #F2B705;
 
   /* ******* optional color palet ********** */
-  
+
   --option10: #F72585;
   --option11: #B5179E;
   --option12: #7209B7;
@@ -81,17 +81,4 @@ body {
 .app {
   height: 100%;
   width: 100%;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
