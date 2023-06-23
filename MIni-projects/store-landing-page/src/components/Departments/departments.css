@@ -33,21 +33,21 @@
 }
 
 #eletronic-dep {
-  background-image: url('../../assets/images/dep-games.png');
+  background-image: url('../../assets/images/dep=computer.png');
   background-color: var(--color4);
 }
 
 #toys-dep {
-  background-image: url('../../assets/images/dep-games.png');
+  background-image: url('../../assets/images/dep-toys.png');
   background-color: var(--color5);
 }
 
 #home-dep {
-  background-image: url('../../assets/images/dep-games.png');
+  background-image: url('../../assets/images/dep-home.png');
   background-color: var(--color1);
 }
 
 #pet-dep {
-  background-image: url('../../assets/images/dep-games.png');
+  background-image: url('../../assets/images/dep-pet.png');
   background-color: var(--color4);
 }
