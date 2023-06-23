@@ -25,6 +25,11 @@
   background-size: contain;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.department:hover {
+  transform: scale(1.1);
 }
 
 #games-dep {
