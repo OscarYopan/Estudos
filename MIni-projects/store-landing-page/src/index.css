@@ -11,6 +11,19 @@
   --color3: #0597F2;
   --color4: #05F240;
   --color5: #F2B705;
+
+  /* optional color palet */
+  --option10: #F72585;
+  --option11: #B5179E;
+  --option12: #7209B7;
+  --option13: #560BAD;
+  --option14: #480CA8;
+  --option15: #3A0CA3;
+  --option16: #3F37C9;
+  --option17: #4361EE;
+  --option18: #4895EF;
+  --option19: #4CC9F0;
+
 }
 
 body {

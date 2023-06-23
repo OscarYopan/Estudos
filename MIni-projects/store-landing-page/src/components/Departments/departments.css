@@ -23,6 +23,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  border: none;
+  border-radius: 5px;
 }
 
 #games-dep {
