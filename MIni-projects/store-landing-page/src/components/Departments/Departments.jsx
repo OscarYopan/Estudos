@@ -16,7 +16,7 @@ export const Departments = () => {
         <h2 className="department-title">Toys</h2>
       </div>
 
-      <div className="department" id='toys-dep'>
+      <div className="department" id='home-dep'>
         <h2 className="department-title">Home</h2>
       </div>
 

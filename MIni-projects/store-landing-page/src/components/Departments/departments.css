@@ -27,9 +27,25 @@
 
 #games-dep {
   background-image: url('../../assets/images/dep-games.png');
-
+  background-color: var(--color1);
 }
 
 #eletronic-dep {
   background-image: url('../../assets/images/dep-games.png');
+  background-color: var(--color4);
+}
+
+#toys-dep {
+  background-image: url('../../assets/images/dep-games.png');
+  background-color: var(--color5);
+}
+
+#home-dep {
+  background-image: url('../../assets/images/dep-games.png');
+  background-color: var(--color1);
+}
+
+#pet-dep {
+  background-image: url('../../assets/images/dep-games.png');
+  background-color: var(--color4);
 }
