@@ -1,6 +1,5 @@
 
 import './departments.css'
-import depGames from '../../assets/images/dep-games.png'
 
 export const Departments = () => {
   return (
