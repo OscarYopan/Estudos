@@ -8,8 +8,12 @@ export const Departments = () => {
         <h2 className="department-title">Games</h2>
       </div>
 
-      <div className="department" id='eletronic-dep'>
+      <div className="department" id='computer-dep'>
         <h2 className="department-title">Computer</h2>
+      </div>
+
+      <div className="department" id='eletronic-dep'>
+        <h2 className="department-title">Games</h2>
       </div>
 
       <div className="department" id='toys-dep'>

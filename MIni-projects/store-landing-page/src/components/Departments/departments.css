@@ -5,13 +5,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 }
 
 .departments h2 {
   color: #fff;
   text-align: center;
-  margin: 20px 0;
+  margin: 15px 0;
   font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .department {
@@ -41,6 +43,11 @@
   background-color: var(--color4);
 }
 
+#computer-dep {
+  background-image: url('../../assets/images/dep=computer.png');
+  background-color: var(--option10);
+}
+
 #toys-dep {
   background-image: url('../../assets/images/dep-toys.png');
   background-color: var(--color5);
@@ -53,5 +60,5 @@
 
 #pet-dep {
   background-image: url('../../assets/images/dep-pet.png');
-  background-color: var(--color4);
+  background-color: var(--vivid-sky-blue);
 }
