@@ -4,8 +4,7 @@
   padding: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-direction: row;
+  justify-content: center;
 }
 
 .departments h2 {
@@ -17,7 +16,7 @@
 
 .department {
   height: 200px;
-  width: 180px;
+  min-width: 180px;
   background-color: var(--color3);
   margin: 10px;
   background-position: center;
