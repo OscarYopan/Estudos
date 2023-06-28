@@ -33,6 +33,10 @@
   transform: scale(1.1);
 }
 
+.department:active {
+  opacity: 50%;
+}
+
 #games-dep {
   background-image: url('../../assets/images/dep-games.png');
   background-color: var(--color1);

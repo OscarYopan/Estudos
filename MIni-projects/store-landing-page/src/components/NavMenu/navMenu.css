@@ -26,4 +26,5 @@
 
 .menu li:hover {
   color: #fff;
+  background-color: var(--color2);
 }
