@@ -4,7 +4,7 @@ export const Head = () => {
   return (
     <div className="head-container">
       <div className='logo'>
-        <i className="fa-sharp fa-solid fa-bag-shopping"></i>
+        {/* <i className="fa-sharp fa-solid fa-bag-shopping"></i> */}
         <a href="#">Shopping</a>
       </div>
       
