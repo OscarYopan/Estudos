@@ -16,8 +16,6 @@
 }
 
 .logo {
-  /* background-color: var(--color5); */
-  border-radius: 54% 46% 35% 65% / 31% 50% 50% 69%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,7 +26,7 @@
   font-size: 40px;
   font-weight: bolder;
   text-decoration: none;
-  color: var(--option11);
+  color: #fff;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -47,11 +45,11 @@
 
 .search-box input {
   height: 40px;
-  min-width: 500px;
+  min-width: 450px;
   border: none;
   border-radius: 10px 0 0 10px;
   padding: 5px 10px;
-  font-size: 16px;  
+  font-size: 16px;
 }
 
 .search-box button {
@@ -86,7 +84,7 @@
   justify-content: center;
   color: #fff;
   cursor: pointer;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .btn:hover {
@@ -113,7 +111,7 @@
 
 .account-container i {
   font-size: 20px;
-  height: 40px;  
+  height: 40px;
   width: 40px;
 }
 
