@@ -13,7 +13,7 @@ export const Departments = () => {
       </div>
 
       <div className="department" id='eletronic-dep'>
-        <h2 className="department-title">Games</h2>
+        <h2 className="department-title">Eletronic</h2>
       </div>
 
       <div className="department" id='toys-dep'>

@@ -43,7 +43,7 @@
 }
 
 #eletronic-dep {
-  background-image: url('../../assets/images/dep=computer.png');
+  background-image: url('../../assets/images/dep-eletronic.png');
   background-color: var(--color4);
 }
 
@@ -59,7 +59,7 @@
 
 #home-dep {
   background-image: url('../../assets/images/dep-home.png');
-  background-color: var(--color1);
+  background-color: var(--murrey);
 }
 
 #pet-dep {
