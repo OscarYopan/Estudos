@@ -16,6 +16,8 @@
   cursor: pointer;
   margin: 10px 0;
   background-color: var(--color3);
+  display: flex;
+  padding: 10px;
 }
 
 .cart-container h2 {
@@ -24,4 +26,10 @@
 
 .cart-container p {
   font-size: 12px;
+}
+
+.cart-container img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
 }
