@@ -30,7 +30,7 @@ export const Cart = () => {
         </div>
         <div className="cart-information">
           <h2 className="title">Xbox Series X</h2>
-          <p className="price">$ 99.00</p>
+          <p className="price">$ 399.90</p>
         </div>
       </li>
       <span><a href="#">See more ...</a></span>
