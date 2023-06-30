@@ -3,7 +3,7 @@ import cart01 from '../../assets/images/cart_img_01.png'
 import cart02 from '../../assets/images/cart_img_02.png'
 import cart03 from '../../assets/images/cart_img_03.png'
 
-export const Cart = () => {
+export const Cart = () => {  
   return (
     <div className="cart-container">
       <li>

@@ -3,6 +3,11 @@ import './head.css'
 import { Cart } from '../Cart/Cart'
 
 export const Head = () => {
+  function displayOn () {
+    //function to tutn on cart-menu
+  }
+
+
   return (
     <div className="head-container">
       <div className='logo'>
@@ -30,7 +35,7 @@ export const Head = () => {
         </div>
 
         <div className='buy-cart' id='buyCart'>
-          <button className='btn' onClick={Cart}>
+          <button className='btn' onClick={displayOn}> 
             <i className="fa-solid fa-cart-shopping"></i>
             <Cart />
           </button>
