@@ -1,0 +1,6 @@
+.cart-container {
+  background-color: var(--color1);
+  height: 200px;
+  width: 150px;
+  position: absolute;
+}

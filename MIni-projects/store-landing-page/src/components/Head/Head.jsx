@@ -1,5 +1,7 @@
 import './head.css'
 
+import { Cart } from '../Cart/Cart'
+
 export const Head = () => {
   return (
     <div className="head-container">
@@ -28,12 +30,13 @@ export const Head = () => {
         </div>
 
         <div className='buy-cart'>
-          <button className='btn'>
+          <button className='btn' onClick={Cart}>
             <i className="fa-solid fa-cart-shopping"></i>
           </button>
         </div>
 
       </div>
+      <Cart />
     </div>
   )
 }

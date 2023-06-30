@@ -1,6 +1,6 @@
 export const Cart = () => {
   return (
-    <div>
+    <div className="cart-container">
       <li>
         <div className="cart"></div>
         <h2 className="title">Xiaomi Stick TV 4K</h2>
@@ -8,13 +8,13 @@ export const Cart = () => {
       </li>
       <li>
         <div className="cart"></div>
-        <h2 className="title"></h2>
-        <p className="price"></p>
+        <h2 className="title">Produt Name</h2>
+        <p className="price">$ 1.99</p>
       </li>
       <li>
         <div className="cart"></div>
-        <h2 className="title"></h2>
-        <p className="price"></p>
+        <h2 className="title">Produt Name</h2>
+        <p className="price">$ 1.99</p>
       </li>
     </div>
   )
