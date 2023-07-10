@@ -3,8 +3,8 @@ import './head.css'
 import { Cart } from '../Cart/Cart'
 
 export const Head = () => {
-  function displayOn () {
-    //function to tutn on cart-menu
+  function openCart() {
+    console.log('Car Open');
   }
 
 
@@ -35,7 +35,7 @@ export const Head = () => {
         </div>
 
         <div className='buy-cart' id='buyCart'>
-          <button className='btn' onClick={displayOn}> 
+          <button className='btn' onClick={openCart}> 
             <i className="fa-solid fa-cart-shopping"></i>
             <Cart />
           </button>
