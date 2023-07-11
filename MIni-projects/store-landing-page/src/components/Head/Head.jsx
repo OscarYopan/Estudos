@@ -37,11 +37,11 @@ export const Head = () => {
         <div className='buy-cart' id='buyCart'>
           <button className='btn' onClick={openCart}> 
             <i className="fa-solid fa-cart-shopping"></i>
-            <Cart />
           </button>
         </div>
 
       </div>
+      <Cart />
     </div>
   )
 }
