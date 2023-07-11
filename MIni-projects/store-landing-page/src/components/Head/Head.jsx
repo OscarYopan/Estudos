@@ -3,13 +3,10 @@ import './head.css'
 import { Cart } from '../Cart/Cart'
 
 export const Head = () => {
+
+
   function openCart() {
     console.log('Car Open');
-    return (
-      <div>
-        <Cart />
-      </div>
-    )
   }
 
 
@@ -39,14 +36,14 @@ export const Head = () => {
           </button>
         </div>
 
-        <div className='buy-cart' id='buyCart'>
-          <button className='btn' onClick={openCart}> 
+        <div className='buy-cart' id='buyCart' onClick={openCart}>
+          <button className='btn'> 
             <i className="fa-solid fa-cart-shopping"></i>
           </button>
         </div>
-
+        
       </div>
-      
+      <Cart />      
     </div>
   )
 }
