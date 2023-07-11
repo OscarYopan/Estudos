@@ -1,7 +1,7 @@
 .cart-container {
   background-color: var(--color1);
   max-height: 500px;
-  width: 400px;
+  width: 350px;
   position: absolute;
   right: 150px;
   top: 80px;

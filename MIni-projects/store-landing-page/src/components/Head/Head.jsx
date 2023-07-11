@@ -5,6 +5,11 @@ import { Cart } from '../Cart/Cart'
 export const Head = () => {
   function openCart() {
     console.log('Car Open');
+    return (
+      <div>
+        <Cart />
+      </div>
+    )
   }
 
 
@@ -41,7 +46,7 @@ export const Head = () => {
         </div>
 
       </div>
-      <Cart />
+      
     </div>
   )
 }
