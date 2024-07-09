@@ -1,0 +1,22 @@
+Notas do Curso de MySQL - Curso em Video
+
+Fichas -> Pastas -> Arquivos (Antigamente)
+
+Arquivos -> Tabelas -> Registros
+
+Arquivos de Acesso sequendial - Ex: Filmes
+Arquivos de Acesso Direto - Ex: HD
+
+
+Estrutura do Bando de Dados:
+
+- Base de Dados
+- Sistema Gerenciador
+- Linguagem de exploração
+- Programas Adicionais
+
+
+Modelo Relacionau
+
+SQL(Structured Query Language)
+
