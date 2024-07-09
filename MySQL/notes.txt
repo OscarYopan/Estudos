@@ -1,5 +1,8 @@
 Notas do Curso de MySQL - Curso em Video
 
+=========
+Aula 03
+
 Fichas -> Pastas -> Arquivos (Antigamente)
 
 Arquivos -> Tabelas -> Registros
@@ -25,6 +28,8 @@ Todas regulamentas por orgãos reguladores e padronizadores. Ex Oracle, IBM, Mic
 
 
 ------------
+Aula 02
+
 MySQL
 
 DDL - Comandos de definição;
@@ -37,4 +42,20 @@ Como Instalar o MySQL:
 
 Siga os passos indicados pelo site abaixo:
 https://marketplace.visualstudio.com/items?itemName=Oracle.mysql-shell-for-vs-code
+
+
+================
+
+Aula 03
+
+Comandos Basicos:
+
+CREATE DATABASE nomex;
+CREATE TABLE nomex ();
+
+Tipos Primitivos:
+ - numeros
+    - Inteiro
+    - Rel
+    - Logico
 
