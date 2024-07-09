@@ -1,6 +1,7 @@
 Notas do Curso de MySQL - Curso em Video
 
-=========
+------------------------------------------------------------------------------------------
+
 Aula 01 - O que é um Banco de Dados
 
 Fichas -> Pastas -> Arquivos (Antigamente)
@@ -27,7 +28,8 @@ Existem Varia Linguegem de Estrutura sequencial que usam seus proprios servidore
 Todas regulamentas por orgãos reguladores e padronizadores. Ex Oracle, IBM, MicrosoftSQL e MySQL
 
 
-------------
+------------------------------------------------------------------------------------------
+
 Aula 02 - Instalando o MySQL
 
 MySQL
@@ -44,7 +46,7 @@ Siga os passos indicados pelo site abaixo:
 https://marketplace.visualstudio.com/items?itemName=Oracle.mysql-shell-for-vs-code
 
 
-================
+------------------------------------------------------------------------------------------
 
 Aula 03 - Criando o Primeiro Bando de dados
 
@@ -72,7 +74,7 @@ Tipos Primitivos:
 
 - Espacial (Geometry, Point, Polygon, MultPolygon)
 
----------
+------------------------------------------------------------------------------------------
 
 Aula 04 - Melhorando a Estrutura do Banco de Dados
 
@@ -97,4 +99,36 @@ ex final da aula:
         nacionalidade varchar(20) default 'Brazil',
         primary key(id)
     )default charset = utf8;
+}
+
+------------------------------------------------------------------------------------------
+
+Aula 05 - Inserindo Dados na Tabela (insert into)
+
+comando Formato:
+
+{
+    use pessoas; 
+
+    insert into pessoas
+    (id, nome, nascimento, sexo, peso, altura, nacionalidade)
+    values
+    (default, 'Godofredo', '1987-01-02', 'M', '78.51', '1.83', 'Brasil');
+}
+
+se colocar em ordem os valores pode-se colocar os valores diretamente como abaixo:
+
+{
+    insert into pessoas values
+    (default, 'Esther', '1997-05-12', 'F', '69.51', '1.67', 'Irlanda');
+}
+
+para se colocar multiplos valores:
+
+{
+    insert into pessoas values
+    (default, 'Lizandra', '1998-07-12', 'F', '62.51', '1.57', 'Brasil'),
+    (default, 'Duda', '1998-07-12', 'F', '62.51', '1.57', 'Irlanda'),
+    (default, 'Daniele', '1998-07-12', 'F', '62.51', '1.57', 'Irlanda'),
+    (default, 'Heloisa', '1998-07-12', 'F', '62.51', '1.57', 'Portugal');
 }
