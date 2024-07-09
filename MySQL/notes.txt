@@ -1,4 +1,6 @@
-Notas do Curso de MySQL - Curso em Video
+------------------------------------------------------------------------------------------
+
+                        Notas do Curso de MySQL - Curso em Video
 
 ------------------------------------------------------------------------------------------
 
@@ -131,4 +133,52 @@ para se colocar multiplos valores:
     (default, 'Duda', '1998-07-12', 'F', '62.51', '1.57', 'Irlanda'),
     (default, 'Daniele', '1998-07-12', 'F', '62.51', '1.57', 'Irlanda'),
     (default, 'Heloisa', '1998-07-12', 'F', '62.51', '1.57', 'Portugal');
+}
+
+------------------------------------------------------------------------------------------
+
+Aula 06 - Alterando a Estrutura da Tabela (ALter Table e Drop Table)
+
+estrutura Basica 'Alter Table':
+
+{
+    use cadastro;
+
+    alter table pessoas
+    add column profissao varchar(15);
+}
+
+remover coluna:
+
+{
+    alter table pessoas
+    drop column profissao;
+}
+
+adicionar coluna e definir posição da coluna na tabela:
+
+{
+    alter table pessoas
+    add column profissao varchar(10) after nome;
+}
+
+se quiser colocar a coluna por primeiro:
+
+{
+    alter table pessoas
+    add column profissao varchar(10) after first;
+}
+
+para mudar algo na coluna:
+
+{
+    alter table pessoas
+    modify column profissao varchar(20);
+}
+
+para mudar o nome da coluna:
+
+{
+    alter table pessoas
+    change profissao prof(20) not null default '';
 }
