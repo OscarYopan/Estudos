@@ -18,5 +18,23 @@ Estrutura do Bando de Dados:
 
 Modelo Relacionau
 
-SQL(Structured Query Language)
+SQL - Structured Query Language (Linguagem de Consulta Estruturada)
+
+Existem Varia Linguegem de Estrutura sequencial que usam seus proprios servidores. 
+Todas regulamentas por orgãos reguladores e padronizadores. Ex Oracle, IBM, MicrosoftSQL e MySQL
+
+
+------------
+MySQL
+
+DDL - Comandos de definição;
+DML - Manipulação de dados;
+DQL - Solicitações;
+DCL - COntrole;
+DTL - Transações.
+
+Como Instalar o MySQL:
+
+Siga os passos indicados pelo site abaixo:
+https://marketplace.visualstudio.com/items?itemName=Oracle.mysql-shell-for-vs-code
 
