@@ -50,12 +50,28 @@ Aula 03
 
 Comandos Basicos:
 
-CREATE DATABASE nomex;
-CREATE TABLE nomex ();
+CREATE DATABASE nomex; *cria uma nova base de dados
+CREATE TABLE nomex (); * cria uma nova tabela
+use nomex; 
+describe nomex; *mostra o conteudo
+drop DATABASE nomex; *remove uma base de dados
 
 Tipos Primitivos:
  - numeros
-    - Inteiro
-    - Rel
-    - Logico
+    - Inteiro (TinyInt, SmallInt, Int, MediumInt, BigInt)
+    - Rel (Decimal, Float, Double, Real)
+    - Logico (Bit, Boolean)
 
+- Data/Tempo (Date, DateTime, TimeStamp, Time, Year)
+
+- Literal
+    - Caractere (Char, Varchar)
+    - Texto (TinyText, Text, MediumText, LongText)
+    - Binario (TinyBlob, Blob, MedimBlob, LongBlob)
+    - Coleção (Enum, Set)
+
+- Espacial (Geometry, Point, Polygon, MultPolygon)
+
+---------
+
+Aula 04
