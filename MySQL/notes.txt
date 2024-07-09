@@ -1,7 +1,7 @@
 Notas do Curso de MySQL - Curso em Video
 
 =========
-Aula 03
+Aula 01 - O que é um Banco de Dados
 
 Fichas -> Pastas -> Arquivos (Antigamente)
 
@@ -28,7 +28,7 @@ Todas regulamentas por orgãos reguladores e padronizadores. Ex Oracle, IBM, Mic
 
 
 ------------
-Aula 02
+Aula 02 - Instalando o MySQL
 
 MySQL
 
@@ -46,7 +46,7 @@ https://marketplace.visualstudio.com/items?itemName=Oracle.mysql-shell-for-vs-co
 
 ================
 
-Aula 03
+Aula 03 - Criando o Primeiro Bando de dados
 
 Comandos Basicos:
 
@@ -74,7 +74,7 @@ Tipos Primitivos:
 
 ---------
 
-Aula 04
+Aula 04 - Melhorando a Estrutura do Banco de Dados
 
 Parametros
 
