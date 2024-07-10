@@ -226,3 +226,24 @@ se quiser apagar uma tabela:
 
     drop table if exist provisorio;
 }
+
+
+------------------------------------------------------------------------------------------
+
+Aula 07 - Manipulando Linhas/Registros (Update, Delete e Truncate)
+
+Para fazer uma mudança em uma linha/registro:
+
+{
+    update cursos
+    set ano = '2022' 
+    where id = '6';
+}
+
+se quiser alterar mais de uma informação na mesma linha/registro:
+
+{
+    update cursos
+    set totalaulas = '75', ano = '2020'
+    where id = '6';
+}
