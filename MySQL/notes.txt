@@ -319,3 +319,9 @@ vamos deletar o banco de dados para recupera-lo depois:
 {
     drop database cadastro;
 }
+
+agora necessita-se importar novamente a copia de Segurança:
+
+server -> data import -> navegue ateh o arquivo da copia -> digite o nome da database no campo 'default target schemas'
+
+
