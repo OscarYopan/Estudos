@@ -317,5 +317,5 @@ server -> data export -> selecione 'nomedobanco' -> certifique que todas as tabe
 vamos deletar o banco de dados para recupera-lo depois:
 
 {
-    
+    drop database cadastro;
 }
