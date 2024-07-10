@@ -247,3 +247,36 @@ se quiser alterar mais de uma informação na mesma linha/registro:
     set totalaulas = '75', ano = '2020'
     where id = '6';
 }
+
+se quiser garantir que só uma linha/registro seja modificada:
+
+{
+    update cursos
+    set totalaulas = '75', ano = '2020'
+    where id = '6'
+    limit 1;
+}
+
+para mudar varias/todas linhas ao mesmo dado: 
+OBS: Cuidado Para Não causar danos irreversiveis em seu banco de dados!
+
+{
+    update cursos
+    set ano = 2020
+    where ano = 2023;
+}
+
+para apagar uma linha/registro:
+
+{
+    delete from cursos
+    where id = '10';
+}
+
+para apagar mais de uma linha/registro usando algum dado igual:
+
+{
+    delete from cursos
+    where descricao = 'Artes'
+    limit 2;
+}
