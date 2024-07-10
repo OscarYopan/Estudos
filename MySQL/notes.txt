@@ -280,3 +280,13 @@ para apagar mais de uma linha/registro usando algum dado igual:
     where descricao = 'Artes'
     limit 2;
 }
+
+para apagar todas as linhas/registros:
+OBS: Cuidado para nao causar uma tragedia no banco de dados, mantenha sempre um back-up!
+
+{
+    truncate table cursos;
+}
+
+repare que fora escluidos todos as linhas/registros da tabela, mas a estrutura da tabela foi mantida.
+
