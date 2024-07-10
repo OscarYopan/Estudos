@@ -59,6 +59,7 @@ CREATE TABLE nomex (); * cria uma nova tabela
 use nomex; 
 describe nomex; *mostra o conteudo
 drop DATABASE nomex; *remove uma base de dados
+sele
 
 Tipos Primitivos:
  - numeros
@@ -180,5 +181,48 @@ para mudar o nome da coluna:
 
 {
     alter table pessoas
-    change profissao prof(20) not null default '';
+    change profissao prof varchar(20) not null default 'Desempregado';
+}
+
+mudar nome da tabela:
+
+{
+    alter table pessoas
+    rename to clientes;
+}
+
+criar uma nova tabela:
+
+{
+    create table if not exists cursos (
+        nome varchar(30) not null unique,
+        descricao text,
+        carga int unsigned,
+        ano year default '2016'
+    ) default charset = utf8mb4;
+
+    alter table cursos
+    add column id int first;
+
+    alter table cursos
+    add primary key (id);
+}
+
+se quiser apagar uma tabela:
+
+{
+    create table if not exists provisorio;
+
+    create table if not exists provisorio (
+    id int,
+    nome varchar(30),
+    idade int
+    );
+
+    insert into provisorio value
+    ('1', 'Oscar', '37'),
+    ('2', 'Amanda', '27'),
+    ('3', 'Ana', '31');
+
+    drop table if exist provisorio;
 }
