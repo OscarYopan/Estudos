@@ -219,7 +219,7 @@ se quiser apagar uma tabela:
     idade int
     );
 
-    insert into provisorio value
+    insert into provisorio values
     ('1', 'Oscar', '37'),
     ('2', 'Amanda', '27'),
     ('3', 'Ana', '31');
@@ -235,6 +235,20 @@ Aula 07 - Manipulando Linhas/Registros (Update, Delete e Truncate)
 Para fazer uma mudança em uma linha/registro:
 
 {
+    use cadastro;
+
+    insert into cursos values
+    ('1', 'Engenharia', 'Exatas', '600', '200', '2020'),
+    ('2', 'Administracao', 'Humanas', '400', '150', '2021'),
+    ('3', 'Letras', 'Humanas', '400', '150', '2022'),
+    ('4', 'Pefagogia', 'Humanas', '400', '150', '2023'),
+    ('5', 'Marketing', 'Humanas', '400', '150', '2020'),
+    ('6', 'Publicidade', 'Humanas', '400', '150', '2021'),
+    ('7', 'Terapias', 'Profissionalizante', '100', '25', '2022'),
+    ('8', 'Culinaria', 'Profissionalizante', '200', '50', '2023'),
+    ('9', 'Enfermagem', 'Saude', '600', '200', '2020'),
+    ('10', 'Nutricao', 'Saude', '400', '175', '2021');
+
     update cursos
     set ano = '2022' 
     where id = '6';
@@ -290,3 +304,18 @@ OBS: Cuidado para nao causar uma tragedia no banco de dados, mantenha sempre um 
 
 repare que fora escluidos todos as linhas/registros da tabela, mas a estrutura da tabela foi mantida.
 
+------------------------------------------------------------------------------------------
+
+Aula 08 - Gerenciando copias de Segurança MySQL
+
+Para Criar sua copia de seguranã no WorkBanck do MySQL siga os passos abaixo:
+
+server -> data export -> selecione 'nomedobanco' -> certifique que todas as tabelas estao selecionadas
+
+-> em 'dumb ....' selecione a opção desejada -> selecione demais opções de acordo com a necessidade
+
+vamos deletar o banco de dados para recupera-lo depois:
+
+{
+    
+}
