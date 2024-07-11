@@ -370,3 +370,57 @@ se quiser fazer em ordem descrescente:
     select * from gafanhotos
     order by nome desc;
 } 
+
+para selecionar colunas especificas:
+
+{
+    select nome, sexo, altura from gafanhotos
+    order by nome;
+}
+
+nesse caso voce alterar a ordem das colunas:
+
+{
+    select sexo, altura, nome from gafanhotos
+    order by sexo, altura;
+}
+
+para filtrar linhas especificas:
+
+{
+    select * from cursos
+    where ano = '2016'
+    order by idcurso;
+}
+
+voce pode usar mais comando comparativos ( >, <, =, <=, >=, !=, etc...)para filtrar:
+
+{
+    select nome, carga, totaulas, ano from cursos
+    Where carga >= 30
+    order by carga, totaulas;
+}
+
+para definir um filtro com intervalo definido:
+
+{
+    select nome, carga, totaulas, ano from cursos
+    where ano between 2014 and 2016
+    order by ano, carga, totaulas;
+}
+
+para filtrar usando valores especificos:
+
+{
+    select nome, carga, totaulas, ano from cursos
+    where ano in (2015, 2017)
+    Order by ano, nome;
+}
+
+pode ainda definir um filtre logio:
+
+{
+    select nome, carga, ano from cursos
+    where ano > 2015 < 2019
+    order by ano, name;
+}
