@@ -324,4 +324,10 @@ agora necessita-se importar novamente a copia de Segurança:
 
 server -> data import -> navegue ateh o arquivo da copia -> digite o nome da database no campo 'default target schemas'
 
+------------------------------------------------------------------------------------------
 
+Aula 09 - PHPmyAdmin (parte 1)
+
+vc pode usar os mesmo comando aprendidos anteriormenta para manipular o banco de daos através do console(prompt de comandos)
+
+outr boa opção é usar
