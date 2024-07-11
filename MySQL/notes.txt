@@ -448,5 +448,39 @@ OBS: o caractere '%' tem significa: nenhum ou varios valores
 a posição do caractere '%' faz toda diferença:
 
 {
-    
+    select * from cursos
+    where nome like '%A'
+    order by idcurso;
+}
+
+{
+    select * from cursos
+    where nome like '%A%'
+    order by idcurso;
+}
+
+se quiser sem nada dessa semelhança:
+
+{
+    select * from cursos
+    where nome not like '%A%'
+    order by idcurso;
+}
+
+caso queira que tenha um caractere no comeõ e no final:
+
+{
+    select * from cursos
+    where nome like 'ph%p_'
+    order by idcurso;
+}
+
+OBS: o caractere '_' obriga que tenha pelo menos um algorismo, e sua posição faz toda diferença.
+
+
+caso queira fazer um filtro que demonstre quantas variedades tem distintas:
+
+{
+    select distinct nacionalidade from gafanhotos
+    order by nacionalidade;
 }
