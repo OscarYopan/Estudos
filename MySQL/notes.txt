@@ -478,9 +478,62 @@ caso queira que tenha um caractere no comeõ e no final:
 OBS: o caractere '_' obriga que tenha pelo menos um algorismo, e sua posição faz toda diferença.
 
 
-caso queira fazer um filtro que demonstre quantas variedades tem distintas:
+caso queira fazer um filtro que distingua a variedade:
 
 {
     select distinct nacionalidade from gafanhotos
     order by nacionalidade;
 }
+
+para fazer uma contagem:
+
+{
+    select count(distinct nacionalidade) from gafanhotos;
+}
+
+para saber qual é o maior ou o menor:
+obs: Nesse caso ele soh vai mostrar o primeiro, para mostrar todos precisa usar agrupamento.
+
+{
+    select max(carga) from cursos;
+}
+
+{
+    select min(carga) from cursos;
+}
+
+para fazer um somatorio do total dos valores da tabela:
+
+{
+    select sum(carga) from cursos
+    where ano = '2016';
+}
+
+para tirar a media dos valores de uma tabela:
+
+{
+    select avg(carga) from cursos
+    where ano = '2016';
+}
+
+------------------------------------------------------------------------------------------
+
+Exercios:
+
+1 - Seleciona uma Lista com o nome de todas as gafanhotas.
+
+2 - Uma Lista com os dados de todos aqueles que nasceram entre 1/jan/2000 e 31/12/2015.
+
+3 - Uma Lista com o nome de todos os homem que trabalham como programadores.
+
+4 - Uma lista com os dados de todas as mulheres que nasceram no Brasil e que tem seu nome iniciado com a letra J.
+
+5 - Uma lista com o nome e nacionalidade de todos os homens que tem silva no nome, nao nasceram no Brasil e pesam menos de 100kg.
+
+6 - Qual é a maior altura entre gafanhotos homens que moram no Brasil?
+
+7 - Qual é a media de peso dos gafanhotos cadastrados?
+
+8 - Qual é o meno peso entre as mulheres que nasceram fora do Brasil entre 01/jan/1990 e 31/12/2000?
+
+9 - Quantas mulheres tem mais de 1.90m de altura?
