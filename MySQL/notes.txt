@@ -59,7 +59,7 @@ CREATE TABLE nomex (); * cria uma nova tabela
 use nomex; 
 describe nomex; *mostra o conteudo
 drop DATABASE nomex; *remove uma base de dados
-sele
+select * from nomex;
 
 Tipos Primitivos:
  - numeros
@@ -348,3 +348,25 @@ da mesma maneira para visualizar os comandos utilizados para criar uma Base de d
 Exercios
 
 - Faça o Dowloand no site.
+
+------------------------------------------------------------------------------------------
+
+Aula 11 - SELECT (parte 1)
+
+se quiser ordenar a tabela conforme algum parametro especifico:
+
+{
+    use cadastro;
+
+    select * from gafanhotos;
+
+    select * from gafanhotos
+    order by nome;
+}
+
+se quiser fazer em ordem descrescente:
+
+{
+    select * from gafanhotos
+    order by nome desc;
+} 
