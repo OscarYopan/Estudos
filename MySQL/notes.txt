@@ -417,10 +417,36 @@ para filtrar usando valores especificos:
     Order by ano, nome;
 }
 
-pode ainda definir um filtre logio:
+pode ainda definir um filtre logico (and, or, etc...) pode usar mais de um filtro:
 
 {
-    select nome, carga, ano from cursos
-    where ano > 2015 < 2019
-    order by ano, name;
+    select nome, carga, totaulas from cursos
+    where carga > 35 and totaulas < 30
+    order by ano, nome;
+}
+
+{
+    select nome, carga, totaulas from cursos
+    where carga > 35 or totaulas < 30
+    order by ano, nome;
+}
+
+------------------------------------------------------------------------------------------
+
+Aula 11 - SELECT (parte 2)
+
+Para Filtrar registros semelhantes:
+
+{
+    select * from cursos
+    where nome like 'P%'
+    order by idcurso;
+}
+
+OBS: o caractere '%' tem significa: nenhum ou varios valores
+
+a posição do caractere '%' faz toda diferença:
+
+{
+    
 }
