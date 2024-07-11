@@ -326,8 +326,25 @@ server -> data import -> navegue ateh o arquivo da copia -> digite o nome da dat
 
 ------------------------------------------------------------------------------------------
 
-Aula 09 - PHPmyAdmin (parte 1)
-
+Aula 09 - PHPmyAdmin
 vc pode usar os mesmo comando aprendidos anteriormenta para manipular o banco de daos através do console(prompt de comandos)
 
 outr boa opção é usar
+
+para viasuliazar os comando utilizado para criar uma table:
+
+{
+    show create table nomex;
+}
+
+da mesma maneira para visualizar os comandos utilizados para criar uma Base de dados:
+
+{
+    show creat database nomex;
+}
+
+------------------------------------------------------------------------------------------
+
+Exercios
+
+- Faça o Dowloand no site.
