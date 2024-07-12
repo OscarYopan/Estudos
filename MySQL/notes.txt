@@ -612,6 +612,39 @@ para agrupar por registros iguais:
         order by carga;
     }
 
-Para
+Para no agrupamento saber quantos registros de cada grupo:
 
+    {
+        select carga, count(*)from cursos
+        group by carga
+        order by carga;
+    }
 
+    {
+        select carga, count(nome)from cursos
+        where totaulas = 30
+        group by carga
+        order by carga;
+    }
+
+para selecionar o que agrupar:
+
+    {
+        select ano, count(*) from cursos
+        group by ano
+        having count(ano) >= 5
+        order by count(*) desc;
+    }
+
+pode usar um select dentro de outro select:
+
+    {
+        select carga, count(*) from cursos
+        where ano > 2015
+        group by carga
+        having carga > (select avg(carga) from cursos);
+    }
+
+------------------------------------------------------------------------------------------
+
+Exercios:
