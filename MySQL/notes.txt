@@ -467,7 +467,7 @@ se quiser sem nada dessa semelhança:
     order by idcurso;
 }
 
-caso queira que tenha um caractere no comeõ e no final:
+caso queira que tenha um caractere no começo e no final:
 
 {
     select * from cursos
@@ -522,11 +522,39 @@ Exercios:
 
 1 - Seleciona uma Lista com o nome de todas as gafanhotas.
 
+    resposta:
+    {
+        select nome, sexo from gafanhotos
+        where sexo = 'F'
+        Order by nome;
+    }
+
 2 - Uma Lista com os dados de todos aqueles que nasceram entre 1/jan/2000 e 31/12/2015.
+    
+    resposta:
+    {
+        select nome, nascimento from gafanhotos
+        where nascimento >= '2000-01-01' and nascimento <= '2015-12-31'
+        order by nascimento;
+    }
 
 3 - Uma Lista com o nome de todos os homem que trabalham como programadores.
 
+    resposta:
+    {
+        select nome, profissao from gafanhotos
+        where profissao = 'programador'
+        order by nome;
+    }
+
 4 - Uma lista com os dados de todas as mulheres que nasceram no Brasil e que tem seu nome iniciado com a letra J.
+
+    resposta:
+    {
+        select nome, nacionalidade from gafanhotos
+        where nacionalidade = 'Brasil' and nome like 'J%'
+        order by nome;
+    }
 
 5 - Uma lista com o nome e nacionalidade de todos os homens que tem silva no nome, nao nasceram no Brasil e pesam menos de 100kg.
 
