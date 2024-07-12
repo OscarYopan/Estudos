@@ -771,8 +771,9 @@ para atualizar a chave estrageira de muitos registros:
         where idcurso = '12';
     }
 
-JOIN  é usada para combinar linhas de duas ou mais tabelas, 
-com base em uma coluna relacionada entre eles:
+'JOIN'  é usada para combinar linhas de duas ou mais tabelas, 
+com base em uma coluna relacionada entre eles: 
+OBS: Inner Join só leva em considrações os registros com relações, lemrando que 'Join' é o mesmo que 'Inner Join'
 
     {
         select gafanhotos.nome, cursos.nome, cursos.ano from gafanhotos join cursos
@@ -787,3 +788,22 @@ para facilitar pode-se definir abraviações:
         on c.idcurso = g.cursopreferido
         order by g.nome;
     }
+
+'outer join' leva em consieração tambem os registros que não rem relaçoes, 'left' e 'right' servem para dar
+ preferencia a uma ou outra tabela.
+
+    {
+        select g.nome, c.nome, c.ano from gafanhotos as g left outer join cursos as c
+        on c.idcurso = g.cursopreferido
+    }
+
+    {
+        select g.nome, c.nome, c.ano from gafanhotos as g right outer join cursos as c
+        on c.idcurso = g.cursopreferido;
+    }
+
+
+------------------------------------------------------------------------------------------
+
+Aula 16 - INNER JOIN com varias Tabelas
+
