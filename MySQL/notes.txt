@@ -648,3 +648,14 @@ pode usar um select dentro de outro select:
 ------------------------------------------------------------------------------------------
 
 Exercios:
+
+1 - Uma Lista com a profissao dos gafanhotos e ses respectivos quantitativos.
+
+2 - Quantos ga.. homens e quantas mulheres nasceram após 01-01-205?
+
+3 - Uma Lista com os ga... que nasceram fora do Brasil, mostrando o pais de origem e o total de pessoas
+ nascidas lá. Só nos interessam os paises que tiverem de 3 gafanhotos com essa nacionalidade.
+
+4 - Uma Lista agrupada pela altura dos gafanhotos, mostrando quantas pessoas pesam mais de 100kg
+ e que estao acima da media de altura de todos os cadastros.
+
