@@ -85,24 +85,27 @@ Parametros
 
 Constraints: 
 default character set utf8 *Permitir o uso de Caracteres especiais
-default collate utf8_general_ci;
+
+    {
+        default collate utf8_general_ci;
+    }
 
 ex final da aula:
 
-{
-    use cadastro;
+    {
+        use cadastro;
 
-    create table pessoas (
-        id int not null auto_increment,
-        nome varchar(30) not null,
-        nascimento date,
-        sexo enum ('M', 'F'),
-        peso decimal (5,2),
-        altura decimal(3,2),
-        nacionalidade varchar(20) default 'Brazil',
-        primary key(id)
-    )default charset = utf8;
-}
+        create table pessoas (
+            id int not null auto_increment,
+            nome varchar(30) not null,
+            nascimento date,
+            sexo enum ('M', 'F'),
+            peso decimal (5,2),
+            altura decimal(3,2),
+            nacionalidade varchar(20) default 'Brazil',
+            primary key(id)
+        )default charset = utf8;
+    }
 
 ------------------------------------------------------------------------------------------
 
@@ -110,31 +113,31 @@ Aula 05 - Inserindo Dados na Tabela (insert into)
 
 comando Formato:
 
-{
-    use pessoas; 
+    {
+        use pessoas; 
 
-    insert into pessoas
-    (id, nome, nascimento, sexo, peso, altura, nacionalidade)
-    values
-    (default, 'Godofredo', '1987-01-02', 'M', '78.51', '1.83', 'Brasil');
-}
+        insert into pessoas
+        (id, nome, nascimento, sexo, peso, altura, nacionalidade)
+        values
+        (default, 'Godofredo', '1987-01-02', 'M', '78.51', '1.83', 'Brasil');
+    }
 
 se colocar em ordem os valores pode-se colocar os valores diretamente como abaixo:
 
-{
-    insert into pessoas values
-    (default, 'Esther', '1997-05-12', 'F', '69.51', '1.67', 'Irlanda');
-}
+    {
+        insert into pessoas values
+        (default, 'Esther', '1997-05-12', 'F', '69.51', '1.67', 'Irlanda');
+    }
 
 para se colocar multiplos valores:
 
-{
-    insert into pessoas values
-    (default, 'Lizandra', '1998-07-12', 'F', '62.51', '1.57', 'Brasil'),
-    (default, 'Duda', '1998-07-12', 'F', '62.51', '1.57', 'Irlanda'),
-    (default, 'Daniele', '1998-07-12', 'F', '62.51', '1.57', 'Irlanda'),
-    (default, 'Heloisa', '1998-07-12', 'F', '62.51', '1.57', 'Portugal');
-}
+    {
+        insert into pessoas values
+        (default, 'Lizandra', '1998-07-12', 'F', '62.51', '1.57', 'Brasil'),
+        (default, 'Duda', '1998-07-12', 'F', '62.51', '1.57', 'Irlanda'),
+        (default, 'Daniele', '1998-07-12', 'F', '62.51', '1.57', 'Irlanda'),
+        (default, 'Heloisa', '1998-07-12', 'F', '62.51', '1.57', 'Portugal');
+    }
 
 ------------------------------------------------------------------------------------------
 
@@ -142,90 +145,90 @@ Aula 06 - Alterando a Estrutura da Tabela (ALter Table e Drop Table)
 
 estrutura Basica 'Alter Table':
 
-{
-    use cadastro;
+    {
+        use cadastro;
 
-    alter table pessoas
-    add column profissao varchar(15);
-}
+        alter table pessoas
+        add column profissao varchar(15);
+    }
 
 remover coluna:
 
-{
-    alter table pessoas
-    drop column profissao;
-}
+    {
+        alter table pessoas
+        drop column profissao;
+    }
 
 adicionar coluna e definir posição da coluna na tabela:
 
-{
-    alter table pessoas
-    add column profissao varchar(10) after nome;
-}
+    {
+        alter table pessoas
+        add column profissao varchar(10) after nome;
+    }
 
 se quiser colocar a coluna por primeiro:
 
-{
-    alter table pessoas
-    add column profissao varchar(10) after first;
-}
+    {
+        alter table pessoas
+        add column profissao varchar(10) after first;
+    }
 
 para mudar algo na coluna:
 
-{
-    alter table pessoas
-    modify column profissao varchar(20);
-}
+    {
+        alter table pessoas
+        modify column profissao varchar(20);
+    }
 
 para mudar o nome da coluna:
 
-{
-    alter table pessoas
-    change profissao prof varchar(20) not null default 'Desempregado';
-}
+    {
+        alter table pessoas
+        change profissao prof varchar(20) not null default 'Desempregado';
+    }
 
 mudar nome da tabela:
 
-{
-    alter table pessoas
-    rename to clientes;
-}
+    {
+        alter table pessoas
+        rename to clientes;
+    }
 
 criar uma nova tabela:
 
-{
-    create table if not exists cursos (
-        nome varchar(30) not null unique,
-        descricao text,
-        carga int unsigned,
-        ano year default '2016'
-    ) default charset = utf8mb4;
+    {
+        create table if not exists cursos (
+            nome varchar(30) not null unique,
+            descricao text,
+            carga int unsigned,
+            ano year default '2016'
+        ) default charset = utf8mb4;
 
-    alter table cursos
-    add column id int first;
+        alter table cursos
+        add column id int first;
 
-    alter table cursos
-    add primary key (id);
-}
+        alter table cursos
+        add primary key (id);
+    }
 
 se quiser apagar uma tabela:
 
-{
-    create table if not exists provisorio;
+    {
+        create table if not exists provisorio;
 
-    create table if not exists provisorio (
-    id int,
-    nome varchar(30),
-    idade int
-    );
+        create table if not exists provisorio (
+        id int,
+        nome varchar(30),
+        idade int
+        );
 
-    insert into provisorio values
-    ('1', 'Oscar', '37'),
-    ('2', 'Amanda', '27'),
-    ('3', 'Ana', '31');
+        insert into provisorio values
+        ('1', 'Oscar', '37'),
+        ('2', 'Amanda', '27'),
+        ('3', 'Ana', '31');
 
-    drop table if exist provisorio;
-}
+        drop table if exist provisorio;
+    }
 
 
 ------------------------------------------------------------------------------------------
@@ -234,75 +237,75 @@ Aula 07 - Manipulando Linhas/Registros (Update, Delete e Truncate)
 
 Para fazer uma mudança em uma linha/registro:
 
-{
-    use cadastro;
+    {
+        use cadastro;
 
-    insert into cursos values
-    ('1', 'Engenharia', 'Exatas', '600', '200', '2020'),
-    ('2', 'Administracao', 'Humanas', '400', '150', '2021'),
-    ('3', 'Letras', 'Humanas', '400', '150', '2022'),
-    ('4', 'Pefagogia', 'Humanas', '400', '150', '2023'),
-    ('5', 'Marketing', 'Humanas', '400', '150', '2020'),
-    ('6', 'Publicidade', 'Humanas', '400', '150', '2021'),
-    ('7', 'Terapias', 'Profissionalizante', '100', '25', '2022'),
-    ('8', 'Culinaria', 'Profissionalizante', '200', '50', '2023'),
-    ('9', 'Enfermagem', 'Saude', '600', '200', '2020'),
-    ('10', 'Nutricao', 'Saude', '400', '175', '2021');
+        insert into cursos values
+        ('1', 'Engenharia', 'Exatas', '600', '200', '2020'),
+        ('2', 'Administracao', 'Humanas', '400', '150', '2021'),
+        ('3', 'Letras', 'Humanas', '400', '150', '2022'),
+        ('4', 'Pefagogia', 'Humanas', '400', '150', '2023'),
+        ('5', 'Marketing', 'Humanas', '400', '150', '2020'),
+        ('6', 'Publicidade', 'Humanas', '400', '150', '2021'),
+        ('7', 'Terapias', 'Profissionalizante', '100', '25', '2022'),
+        ('8', 'Culinaria', 'Profissionalizante', '200', '50', '2023'),
+        ('9', 'Enfermagem', 'Saude', '600', '200', '2020'),
+        ('10', 'Nutricao', 'Saude', '400', '175', '2021');
 
-    update cursos
-    set ano = '2022' 
-    where id = '6';
-}
+        update cursos
+        set ano = '2022' 
+        where id = '6';
+    }
 
 se quiser alterar mais de uma informação na mesma linha/registro:
 
-{
-    update cursos
-    set totalaulas = '75', ano = '2020'
-    where id = '6';
-}
+    {
+        update cursos
+        set totalaulas = '75', ano = '2020'
+        where id = '6';
+    }
 
 se quiser garantir que só uma linha/registro seja modificada:
 
-{
-    update cursos
-    set totalaulas = '75', ano = '2020'
-    where id = '6'
-    limit 1;
-}
+    {
+        update cursos
+        set totalaulas = '75', ano = '2020'
+        where id = '6'
+        limit 1;
+    }
 
 para mudar varias/todas linhas ao mesmo dado: 
 OBS: Cuidado Para Não causar danos irreversiveis em seu banco de dados!
 
-{
-    update cursos
-    set ano = 2020
-    where ano = 2023;
-}
+    {
+        update cursos
+        set ano = 2020
+        where ano = 2023;
+    }
 
 para apagar uma linha/registro:
 
-{
-    delete from cursos
-    where id = '10';
-}
+    {
+        delete from cursos
+        where id = '10';
+    }
 
 para apagar mais de uma linha/registro usando algum dado igual:
 
-{
-    delete from cursos
-    where descricao = 'Artes'
-    limit 2;
-}
+    {
+        delete from cursos
+        where descricao = 'Artes'
+        limit 2;
+    }
 
 para apagar todas as linhas/registros:
-OBS: Cuidado para nao causar uma tragedia no banco de dados, mantenha sempre um back-up!
+    OBS: Cuidado para nao causar uma tragedia no banco de dados, mantenha sempre um back-up!
 
-{
-    truncate table cursos;
-}
+    {
+        truncate table cursos;
+    }
 
-repare que fora escluidos todos as linhas/registros da tabela, mas a estrutura da tabela foi mantida.
+    repare que fora escluidos todos as linhas/registros da tabela, mas a estrutura da tabela foi mantida.
 
 ------------------------------------------------------------------------------------------
 
@@ -333,15 +336,15 @@ outr boa opção é usar
 
 para viasuliazar os comando utilizado para criar uma table:
 
-{
-    show create table nomex;
-}
+    {
+        show create table nomex;
+    }
 
 da mesma maneira para visualizar os comandos utilizados para criar uma Base de dados:
 
-{
-    show creat database nomex;
-}
+    {
+        show creat database nomex;
+    }
 
 ------------------------------------------------------------------------------------------
 
@@ -355,81 +358,81 @@ Aula 11 - SELECT (parte 1)
 
 se quiser ordenar a tabela conforme algum parametro especifico:
 
-{
-    use cadastro;
+    {
+        use cadastro;
 
-    select * from gafanhotos;
+        select * from gafanhotos;
 
-    select * from gafanhotos
-    order by nome;
-}
+        select * from gafanhotos
+        order by nome;
+    }
 
 se quiser fazer em ordem descrescente:
 
-{
-    select * from gafanhotos
-    order by nome desc;
-} 
+    {
+        select * from gafanhotos
+        order by nome desc;
+    } 
 
 para selecionar colunas especificas:
 
-{
-    select nome, sexo, altura from gafanhotos
-    order by nome;
-}
+    {
+        select nome, sexo, altura from gafanhotos
+        order by nome;
+    }
 
 nesse caso voce alterar a ordem das colunas:
 
-{
-    select sexo, altura, nome from gafanhotos
-    order by sexo, altura;
-}
+    {
+        select sexo, altura, nome from gafanhotos
+        order by sexo, altura;
+    }
 
 para filtrar linhas especificas:
 
-{
-    select * from cursos
-    where ano = '2016'
-    order by idcurso;
-}
+    {
+        select * from cursos
+        where ano = '2016'
+        order by idcurso;
+    }
 
 voce pode usar mais comando comparativos ( >, <, =, <=, >=, !=, etc...)para filtrar:
 
-{
-    select nome, carga, totaulas, ano from cursos
-    Where carga >= 30
-    order by carga, totaulas;
-}
+    {
+        select nome, carga, totaulas, ano from cursos
+        Where carga >= 30
+        order by carga, totaulas;
+    }
 
 para definir um filtro com intervalo definido:
 
-{
-    select nome, carga, totaulas, ano from cursos
-    where ano between 2014 and 2016
-    order by ano, carga, totaulas;
-}
+    {
+        select nome, carga, totaulas, ano from cursos
+        where ano between 2014 and 2016
+        order by ano, carga, totaulas;
+    }
 
 para filtrar usando valores especificos:
 
-{
-    select nome, carga, totaulas, ano from cursos
-    where ano in (2015, 2017)
-    Order by ano, nome;
-}
+    {
+        select nome, carga, totaulas, ano from cursos
+        where ano in (2015, 2017)
+        Order by ano, nome;
+    }
 
 pode ainda definir um filtre logico (and, or, etc...) pode usar mais de um filtro:
 
-{
-    select nome, carga, totaulas from cursos
-    where carga > 35 and totaulas < 30
-    order by ano, nome;
-}
+    {
+        select nome, carga, totaulas from cursos
+        where carga > 35 and totaulas < 30
+        order by ano, nome;
+    }
 
-{
-    select nome, carga, totaulas from cursos
-    where carga > 35 or totaulas < 30
-    order by ano, nome;
-}
+    {
+        select nome, carga, totaulas from cursos
+        where carga > 35 or totaulas < 30
+        order by ano, nome;
+    }
 
 ------------------------------------------------------------------------------------------
 
@@ -437,84 +440,84 @@ Aula 11 - SELECT (parte 2)
 
 Para Filtrar registros semelhantes:
 
-{
-    select * from cursos
-    where nome like 'P%'
-    order by idcurso;
-}
+    {
+        select * from cursos
+        where nome like 'P%'
+        order by idcurso;
+    }
 
-OBS: o caractere '%' tem significa: nenhum ou varios valores
+    OBS: o caractere '%' tem significa: nenhum ou varios valores
 
-a posição do caractere '%' faz toda diferença:
+    a posição do caractere '%' faz toda diferença:
 
-{
-    select * from cursos
-    where nome like '%A'
-    order by idcurso;
-}
+    {
+        select * from cursos
+        where nome like '%A'
+        order by idcurso;
+    }
 
-{
-    select * from cursos
-    where nome like '%A%'
-    order by idcurso;
-}
+    {
+        select * from cursos
+        where nome like '%A%'
+        order by idcurso;
+    }
 
 se quiser sem nada dessa semelhança:
 
-{
-    select * from cursos
-    where nome not like '%A%'
-    order by idcurso;
-}
+    {
+        select * from cursos
+        where nome not like '%A%'
+        order by idcurso;
+    }
 
 caso queira que tenha um caractere no começo e no final:
 
-{
-    select * from cursos
-    where nome like 'ph%p_'
-    order by idcurso;
-}
+    {
+        select * from cursos
+        where nome like 'ph%p_'
+        order by idcurso;
+    }
 
-OBS: o caractere '_' obriga que tenha pelo menos um algorismo, e sua posição faz toda diferença.
+    OBS: o caractere '_' obriga que tenha pelo menos um algorismo, e sua posição faz toda diferença.
 
 
 caso queira fazer um filtro que distingua a variedade:
 
-{
-    select distinct nacionalidade from gafanhotos
-    order by nacionalidade;
-}
+    {
+        select distinct nacionalidade from gafanhotos
+        order by nacionalidade;
+    }
 
 para fazer uma contagem:
 
-{
-    select count(distinct nacionalidade) from gafanhotos;
-}
+    {
+        select count(distinct nacionalidade) from gafanhotos;
+    }
 
 para saber qual é o maior ou o menor:
 obs: Nesse caso ele soh vai mostrar o primeiro, para mostrar todos precisa usar agrupamento.
 
-{
-    select max(carga) from cursos;
-}
+    {
+        select max(carga) from cursos;
+    }
 
-{
-    select min(carga) from cursos;
-}
+    {
+        select min(carga) from cursos;
+    }
 
 para fazer um somatorio do total dos valores da tabela:
 
-{
-    select sum(carga) from cursos
-    where ano = '2016';
-}
+    {
+        select sum(carga) from cursos
+        where ano = '2016';
+    }
 
 para tirar a media dos valores de uma tabela:
 
-{
-    select avg(carga) from cursos
-    where ano = '2016';
-}
+    {
+        select avg(carga) from cursos
+        where ano = '2016';
+    }
 
 ------------------------------------------------------------------------------------------
 
@@ -591,7 +594,24 @@ Exercios:
 9 - Quantas mulheres tem mais de 1.90m de altura?
 
     {
-        select nome, altura from gafanhotos
+        select count(altura) from gafanhotos
         where sexo = 'F' and altura >= '1.90' 
-        order by altura;
+        order by altura;    
     }
+
+------------------------------------------------------------------------------------------
+
+Aula 13 - SELECT (Parte 3)
+
+para agrupar por registros iguais:
+    OBS: Usando apenas assim vc não consegue visualizar quanto tem em cada grupo!
+
+    {
+        select carga from cursos
+        group by carga
+        order by carga;
+    }
+
+Para
+
+
