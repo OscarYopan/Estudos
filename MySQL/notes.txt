@@ -690,4 +690,37 @@ Exercios:
 
 Aula 14 - Modelo Relacional
 
+Como é a estrutura:
+
+Entidade -> Atributos -> Registros
+
+entidade diferentes podem se relacionar a isso chamamos de:
+
+DER - Diagrama Entidade - Relacionamento
+
+Cardinalidade: é a quantidade de relacionamentos que um registo ou atributo podem fazer (n) para (n)
+
+Cardinalidade um para um: uma um atributo só pode manter até um unico relacionamento com atributo de outra entidade
+que tambem soh tem até uma relação.
+
+Cardinalidade um pra muitos: quando um atributos pode se relacionar a muitos atributos, mas o outro pode
+relanionar-se somente com até um atributo.
+
+Cardinalidade muitos pra muitos: quando os dois atributos pode relacionar-se com muitos atributos de outra entidade.
+
+chave primaria: o que define uma singularidade para um atributo.
+
+chave estrangeira: chave primaria que saiu de um lugar e foi para outro lugar.
+
+qaundo uma chave pimaria se torna um chave estrangeira, significa que elas estao relacionadas, e o tipo de Cardinalidade
+é excensial para saber quantas chaves estrangeiras um regitro pode possuir.
+
+no caso de Cardinalidade muitos pra muitos a ligação entre elas se torna uma entidade muitos e os lados se tornam 
+um. Ou seja a entidade relação poder ter muita chaves estrangeiras.
+
+
+------------------------------------------------------------------------------------------
+
+Aula 15 - Chaves estrangeiras e JOin
+
 
