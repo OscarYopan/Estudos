@@ -723,4 +723,67 @@ um. Ou seja a entidade relação poder ter muita chaves estrangeiras.
 
 Aula 15 - Chaves estrangeiras e JOin
 
+Engine - InnoDB - compativel com chaves estrangeiras
 
+ACID
+
+A - ATOMICIDADE (nao pode ser dividida em subtarefas, ou tudo acontece ou nada é considerado);
+C - CONSISTENCIA (Tudo tem que ocorrer bem, se estava tudo ok tem que terminar com tudo ok)
+I - ISOLAMENTO (Tarefas simultanes não podem interferir uma na outra)
+D - DURABILIDADE (Tem que durar o tempo que for necessario)
+
+para definir uma tabela como chave estrangeira:
+
+    OBS: é preciso fazer a relação entre a chave estrangeira(MUL) e a chave primaria(PRI) da tabela:
+    {
+        use cadastro;
+
+        describe gafanhotos;
+
+        alter table gafanhotos
+        add column cursopreferido int;
+
+        alter table gafanhotos
+        add foreign key(cursopreferido)
+        references cursos(idcurso);
+    }
+
+para atualizar a chave estrageira de um registro:
+
+    {
+        update gafanhotos
+        set cursopreferido = '6'
+        where id = '1';
+    }
+
+para atualizar a chave estrageira de muitos registros:
+    {
+        select * from gafanhotos;
+
+        //usando o a ferramenta WorkBanck selcione com o mouse os campos e preencha 
+        //no canto inferiror direito click 'Aply' e depos click 'Finish'
+    }
+
+    OBS: note que um registro que possui relação não podera ser apagado de maneira normal
+
+    {
+        delete from cursos
+        where idcurso = '12';
+    }
+
+JOIN  é usada para combinar linhas de duas ou mais tabelas, 
+com base em uma coluna relacionada entre eles:
+
+    {
+        select gafanhotos.nome, cursos.nome, cursos.ano from gafanhotos join cursos
+        on cursos.idcurso = gafanhotos.cursopreferido
+        order by gafanhotos.nome;
+    }
+
+para facilitar pode-se definir abraviações:
+
+    {
+        select g.nome, c.nome, c.ano from gafanhotos as g inner join cursos as c
+        on c.idcurso = g.cursopreferido
+        order by g.nome;
+    }
