@@ -807,3 +807,41 @@ para facilitar pode-se definir abraviações:
 
 Aula 16 - INNER JOIN com varias Tabelas
 
+primeiro vamos criar uma nova tabela
+    {
+        create table gafanhoto_assiste_curso (
+        id int not null auto_increment,
+        data date,
+        idgafanhoto int,
+        idcurso int,
+        primary key (id),
+        foreign key(idgafanhoto) references gafanhotos(id),
+        foreign key(idcurso) references cursos(idcurso)
+        )default char set utf8mb4;
+    }
+
+vamos juntar essa tabla criada com a tabela Antigamente:
+
+    {
+        select g.nome, idcurso from gafanhotos as g
+        inner join gafanhoto_assiste_curso as a
+        on g.id = a.idgafanhoto
+        order by g.nome;
+    }
+
+agora vamos juntar a uma terceira tabela:
+
+    {
+        select g.nome, a.idcurso, c.nome from gafanhotos as g
+        inner join gafanhoto_assiste_curso as a
+        on g.id = a.idgafanhoto
+        inner join cursos as c
+        on c.idcurso = a.idcurso
+        order by g.nome;
+    }
+
+
+
+
+//////////////////////////////////////-------- FIM DO CURSO--------//////////////////////////////////////////
+
